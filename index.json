@@ -221,7 +221,7 @@
 	"title": "Coding Guidelines Xcidic",
 	"tags": [],
 	"description": "",
-	"content": " Coding Guidelines Xcidic Main Contents  AngularJS Style Guide  Needs  Hugo. See Installation docs Installation. Quickstart  Setup  Clone this project. git clone --recursive git@github.com:xcidic/xcidic.github.io.git\n Enter Project folder cd xcidic.github.io\n Run hugo. hugo server\n  "
+	"content": " Coding Guidelines Xcidic Main Contents  AngularJS Style Guide  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/_header/",
