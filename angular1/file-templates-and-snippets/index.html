@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="">
+
+
+    <title>File Templates And Snippets :: Xcidic Coding Guideline</title>
+    <link rel="shortcut icon" href="/coding-guidelines/images/favicon.png" type="image/x-icon" />
+    <link href="/coding-guidelines/css/nucleus.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/hybrid.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/featherlight.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/horsey.css" rel="stylesheet">
+    
+    <link href="/coding-guidelines/css/theme.css" rel="stylesheet">
+    
+    
+      <link href="/coding-guidelines/css/theme-gold.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/coding-guidelines/css/bootstrap.min.css">
+    <script src="/coding-guidelines/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/coding-guidelines/angular1/file-templates-and-snippets/">
+    <nav id="sidebar" class="showVisitedLinks">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>Coding Guidelines Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/coding-guidelines/js/lunr.min.js"></script>
+<script type="text/javascript" src="/coding-guidelines/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/xcidic.github.io\/coding-guidelines\/";
+</script>
+<script type="text/javascript" src="/coding-guidelines/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/coding-guidelines/" class="dd-item">
+            <a href="/coding-guidelines/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
+parent
+
+
+">
+  <a href="/coding-guidelines/angular1/">
+    <span>Angular 1 Style Guide</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/single-responsibility/">
+            <span>Single Responsibility</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/iife/">
+            <span>IIFE</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/controllers/">
+            <span>Controllers</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/services/">
+            <span>Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/factories/">
+            <span>Factories</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/data-services/">
+            <span>Data Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/directives/">
+            <span>Directives</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/resolving-promises/">
+            <span>Resolving Promises</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
+            <span>Manual Annotating for Dependencies Injection</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/minification-and-annotation/">
+            <span>Minification and Annotation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/exception-handling/">
+            <span>Exception Handling</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/naming/">
+            <span>Naming</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
+            <span>Application Structure Lift Principle</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure/">
+            <span>Application Structure</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modularity/">
+            <span>Modularity</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/startup-logic/">
+            <span>Startuplogic</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-wrapper-services/">
+            <span>Angular $ Wrapper Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/testing/">
+            <span>Testing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/animations/">
+            <span>Animations</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jshint/">
+            <span>JShint</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jscs/">
+            <span>JSCS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/constants/">
+            <span>Constants</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
+         active
+          ">
+            <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
+            <span>File Templates And Snippets</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/yeoman-generator/">
+            <span>Yeoman Generator</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/routing/">
+            <span>Routing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/task-automation/">
+            <span>Task Automation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/filters/">
+            <span>Filters</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-docs/">
+            <span>Angular Docs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/coding-guidelines/'>Coding Guidelines Xcidic</a> > <a href='/coding-guidelines/angular1/'>Angular 1 Style Guide</a> > File Templates And Snippets
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#file-templates-and-snippets">File Templates and Snippets</a>
+<ul>
+<li><a href="#sublime-text">Sublime Text</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y250-style-y250">[Style <a href="#style-y250">Y250</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#visual-studio">Visual Studio</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y251-style-y251">[Style <a href="#style-y251">Y251</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#webstorm">WebStorm</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y252-style-y252">[Style <a href="#style-y252">Y252</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#atom">Atom</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y253-style-y253">[Style <a href="#style-y253">Y253</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#brackets">Brackets</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y254-style-y254">[Style <a href="#style-y254">Y254</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#vim">vim</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y255-style-y255">[Style <a href="#style-y255">Y255</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#visual-studio-code">Visual Studio Code</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y256-style-y256">[Style <a href="#style-y256">Y256</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#emacs">Emacs</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y257-style-y257">[Style <a href="#style-y257">Y257</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>File Templates And Snippets</h1>
+          
+
+
+
+
+
+
+<h2 id="file-templates-and-snippets">File Templates and Snippets</h2>
+
+<p>Use file templates or snippets to help follow consistent styles and patterns. Here are templates and/or snippets for some of the web development editors and IDEs.</p>
+
+<h3 id="sublime-text">Sublime Text</h3>
+
+<h6 id="style-y250-style-y250">[Style <a href="#style-y250">Y250</a>]</h6>
+
+<ul>
+<li><p>Angular snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/sublime-angular-snippets?raw=true">Sublime Angular snippets</a></li>
+<li>Place it in your Packages folder</li>
+<li>Restart Sublime</li>
+<li>In a JavaScript file type these commands followed by a <code>TAB</code></li>
+</ul>
+
+<pre><code class="language-javascript">ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngmodule     // creates an Angular module
+ngservice    // creates an Angular service
+ngfilter     // creates an Angular filter
+</code></pre></li>
+</ul>
+
+<h3 id="visual-studio">Visual Studio</h3>
+
+<h6 id="style-y251-style-y251">[Style <a href="#style-y251">Y251</a>]</h6>
+
+<ul>
+<li><p>Angular file templates that follow these styles and guidelines can be found at <a href="http://www.sidewaffle.com">SideWaffle</a></p>
+
+<ul>
+<li>Download the <a href="http://www.sidewaffle.com">SideWaffle</a> Visual Studio extension (vsix file)</li>
+<li>Run the vsix file</li>
+<li>Restart Visual Studio</li>
+</ul></li>
+</ul>
+
+<h3 id="webstorm">WebStorm</h3>
+
+<h6 id="style-y252-style-y252">[Style <a href="#style-y252">Y252</a>]</h6>
+
+<ul>
+<li><p>Angular live templates that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/webstorm-angular-live-templates/webstorm-angular-live-templates.xml?raw=true">webstorm-angular-live-templates.xml</a></li>
+<li>Place it in your <a href="https://www.jetbrains.com/webstorm/help/project-and-ide-settings.html">templates folder</a></li>
+<li>Restart WebStorm</li>
+<li>In a JavaScript file type these commands followed by a <code>TAB</code>:</li>
+</ul>
+
+<pre><code class="language-javascript">// These are full file snippets containing an IIFE
+ngapp     // creates an Angular module setter
+ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngfilter     // creates an Angular filter
+ngservice    // creates an Angular service
+
+// These are partial snippets intended to be chained
+ngconfig     // defines a configuration phase function
+ngmodule     // creates an Angular module getter
+ngroute      // defines an Angular ngRoute 'when' definition
+ngrun        // defines a run phase function
+ngstate      // creates an Angular UI Router state definition
+</code></pre></li>
+</ul>
+
+<p><em>Individual templates are also available for download within the <a href="assets/webstorm-angular-live-templates?raw=true">webstorm-angular-live-templates</a> folder</em></p>
+
+<h3 id="atom">Atom</h3>
+
+<h6 id="style-y253-style-y253">[Style <a href="#style-y253">Y253</a>]</h6>
+
+<ul>
+<li><p>Angular snippets that follow these styles and guidelines.</p>
+
+<pre><code>apm install angularjs-styleguide-snippets
+</code></pre>
+
+<p>or</p>
+
+<ul>
+<li>Open Atom, then open the Package Manager (Packages -&gt; Settings View -&gt; Install Packages/Themes)</li>
+<li>Search for the package &lsquo;angularjs-styleguide-snippets&rsquo;</li>
+<li>Click &lsquo;Install&rsquo; to install the package</li>
+</ul></li>
+
+<li><p>In a JavaScript file type these commands followed by a <code>TAB</code></p>
+
+<pre><code class="language-javascript">ngcontroller // creates an Angular controller
+ngdirective // creates an Angular directive
+ngfactory // creates an Angular factory
+ngmodule // creates an Angular module
+ngservice // creates an Angular service
+ngfilter // creates an Angular filter
+</code></pre></li>
+</ul>
+
+<h3 id="brackets">Brackets</h3>
+
+<h6 id="style-y254-style-y254">[Style <a href="#style-y254">Y254</a>]</h6>
+
+<ul>
+<li><p>Angular snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/brackets-angular-snippets.yaml?raw=true">Brackets Angular snippets</a></li>
+<li>Brackets Extension manager ( File &gt; Extension manager )</li>
+<li>Install <a href="https://github.com/chuyik/brackets-snippets">&lsquo;Brackets Snippets (by edc)&rsquo;</a></li>
+<li>Click the light bulb in brackets&rsquo; right gutter</li>
+<li>Click <code>Settings</code> and then <code>Import</code></li>
+<li>Choose the file and select to skip or override</li>
+<li>Click <code>Start Import</code></li>
+</ul></li>
+
+<li><p>In a JavaScript file type these commands followed by a <code>TAB</code></p>
+
+<pre><code class="language-javascript">// These are full file snippets containing an IIFE
+ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngapp        // creates an Angular module setter
+ngservice    // creates an Angular service
+ngfilter     // creates an Angular filter
+
+// These are partial snippets intended to chained
+ngmodule     // creates an Angular module getter
+ngstate      // creates an Angular UI Router state definition
+ngconfig     // defines a configuration phase function
+ngrun        // defines a run phase function
+ngwhen      // defines an Angular ngRoute 'when' definition
+ngtranslate  // uses $translate service with its promise
+</code></pre></li>
+</ul>
+
+<h3 id="vim">vim</h3>
+
+<h6 id="style-y255-style-y255">[Style <a href="#style-y255">Y255</a>]</h6>
+
+<ul>
+<li><p>vim snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/vim-angular-snippets?raw=true">vim Angular snippets</a></li>
+<li>set <a href="https://github.com/Shougo/neosnippet.vim">neosnippet.vim</a></li>
+<li>copy snippets to snippet directory</li>
+</ul></li>
+
+<li><p>vim UltiSnips snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/vim-angular-ultisnips?raw=true">vim Angular UltiSnips snippets</a></li>
+<li>set <a href="https://github.com/SirVer/ultisnips">UltiSnips</a></li>
+<li>copy snippets to UltiSnips directory</li>
+</ul>
+
+<pre><code class="language-javascript">ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngmodule     // creates an Angular module
+ngservice    // creates an Angular service
+ngfilter     // creates an Angular filter
+</code></pre></li>
+</ul>
+
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+
+<h6 id="style-y256-style-y256">[Style <a href="#style-y256">Y256</a>]</h6>
+
+<ul>
+<li><p><a href="https://code.visualstudio.com/">Visual Studio Code</a> snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/vscode-snippets/javascript.json?raw=true">VS Code Angular snippets</a></li>
+<li>copy snippets to snippet directory, or alternatively copy and paste the snippets into your existing ones</li>
+</ul>
+
+<pre><code class="language-javascript">ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngmodule     // creates an Angular module
+ngservice    // creates an Angular service
+</code></pre></li>
+</ul>
+
+<h3 id="emacs">Emacs</h3>
+
+<h6 id="style-y257-style-y257">[Style <a href="#style-y257">Y257</a>]</h6>
+
+<ul>
+<li><p><a href="https://www.gnu.org/software/emacs/">Emacs</a> snippets that follow these styles and guidelines.</p>
+
+<ul>
+<li>Download the <a href="assets/emacs-angular-snippets?raw=true">Emacs Angular snippets</a></li>
+</ul>
+
+<p>Note that yasnippet categorizes snippets by major mode, and there are several Emacs major modes for editing Javascript code. The snippets are in <code>js2-mode</code>, and the other directories contain only a dotfile to reference them there.</p>
+
+<ul>
+<li>install <a href="https://github.com/capitaomorte/yasnippet">yasnippet</a> (<code>M-x package-install RET yasnippet RET</code>)</li>
+<li>copy snippets to snippet directory, or modify your Emacs init to add snippet directory to <code>yas-snippet-dirs</code></li>
+</ul>
+
+<pre><code class="language-javascript">ngcontroller // creates an Angular controller
+ngdirective  // creates an Angular directive
+ngfactory    // creates an Angular factory
+ngmodule     // creates an Angular module
+ngservice    // creates an Angular service
+ngfilter     // creates an Angular filter
+</code></pre></li>
+</ul>
+
+<p><strong><a href="/coding-guidelines/angular1/">Back to Table of Contents</a></strong></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/coding-guidelines/angular1/constants/" title="Constants"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/coding-guidelines/angular1/yeoman-generator/" title="Yeoman Generator" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/coding-guidelines/js/clipboard.min.js"></script>
+    <script src="/coding-guidelines/js/featherlight.min.js"></script>
+    <script src="/coding-guidelines/js/html5shiv-printshiv.min.js"></script>
+    <script src="/coding-guidelines/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/coding-guidelines/js/modernizr.custom.71422.js"></script>
+    <script src="/coding-guidelines/js/learn.js"></script>
+    <script src="/coding-guidelines/js/hugo-learn.js"></script>
+
+    
+    <link href="/coding-guidelines/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/coding-guidelines/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+

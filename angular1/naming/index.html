@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="">
+
+
+    <title>Naming :: Xcidic Coding Guideline</title>
+    <link rel="shortcut icon" href="/coding-guidelines/images/favicon.png" type="image/x-icon" />
+    <link href="/coding-guidelines/css/nucleus.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/hybrid.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/featherlight.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/horsey.css" rel="stylesheet">
+    
+    <link href="/coding-guidelines/css/theme.css" rel="stylesheet">
+    
+    
+      <link href="/coding-guidelines/css/theme-gold.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/coding-guidelines/css/bootstrap.min.css">
+    <script src="/coding-guidelines/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/coding-guidelines/angular1/naming/">
+    <nav id="sidebar" class="showVisitedLinks">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>Coding Guidelines Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/coding-guidelines/js/lunr.min.js"></script>
+<script type="text/javascript" src="/coding-guidelines/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/xcidic.github.io\/coding-guidelines\/";
+</script>
+<script type="text/javascript" src="/coding-guidelines/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/coding-guidelines/" class="dd-item">
+            <a href="/coding-guidelines/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
+parent
+
+
+">
+  <a href="/coding-guidelines/angular1/">
+    <span>Angular 1 Style Guide</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/single-responsibility/">
+            <span>Single Responsibility</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/iife/">
+            <span>IIFE</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/controllers/">
+            <span>Controllers</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/services/">
+            <span>Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/factories/">
+            <span>Factories</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/data-services/">
+            <span>Data Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/directives/">
+            <span>Directives</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/resolving-promises/">
+            <span>Resolving Promises</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
+            <span>Manual Annotating for Dependencies Injection</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/minification-and-annotation/">
+            <span>Minification and Annotation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/exception-handling/">
+            <span>Exception Handling</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
+         active
+          ">
+            <a href="/coding-guidelines/angular1/naming/">
+            <span>Naming</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
+            <span>Application Structure Lift Principle</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure/">
+            <span>Application Structure</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modularity/">
+            <span>Modularity</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/startup-logic/">
+            <span>Startuplogic</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-wrapper-services/">
+            <span>Angular $ Wrapper Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/testing/">
+            <span>Testing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/animations/">
+            <span>Animations</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jshint/">
+            <span>JShint</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jscs/">
+            <span>JSCS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/constants/">
+            <span>Constants</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
+            <span>File Templates And Snippets</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/yeoman-generator/">
+            <span>Yeoman Generator</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/routing/">
+            <span>Routing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/task-automation/">
+            <span>Task Automation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/filters/">
+            <span>Filters</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-docs/">
+            <span>Angular Docs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/coding-guidelines/'>Coding Guidelines Xcidic</a> > <a href='/coding-guidelines/angular1/'>Angular 1 Style Guide</a> > Naming
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#naming">Naming</a>
+<ul>
+<li><a href="#naming-guidelines">Naming Guidelines</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y120-style-y120">[Style <a href="#style-y120">Y120</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#feature-file-names">Feature File Names</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y121-style-y121">[Style <a href="#style-y121">Y121</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#test-file-names">Test File Names</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y122-style-y122">[Style <a href="#style-y122">Y122</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#controller-names">Controller Names</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y123-style-y123">[Style <a href="#style-y123">Y123</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#controller-name-suffix">Controller Name Suffix</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y124-style-y124">[Style <a href="#style-y124">Y124</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#factory-and-service-names">Factory and Service Names</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y125-style-y125">[Style <a href="#style-y125">Y125</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#directive-component-names">Directive Component Names</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y126-style-y126">[Style <a href="#style-y126">Y126</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#modules">Modules</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y127-style-y127">[Style <a href="#style-y127">Y127</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#configuration">Configuration</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y128-style-y128">[Style <a href="#style-y128">Y128</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#routes">Routes</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y129-style-y129">[Style <a href="#style-y129">Y129</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>Naming</h1>
+          
+
+
+
+
+
+
+<h2 id="naming">Naming</h2>
+
+<h3 id="naming-guidelines">Naming Guidelines</h3>
+
+<h6 id="style-y120-style-y120">[Style <a href="#style-y120">Y120</a>]</h6>
+
+<ul>
+<li><p>Use consistent names for all components following a pattern that describes the component&rsquo;s feature then (optionally) its type. My recommended pattern is <code>feature.type.js</code>. There are 2 names for most assets:</p>
+
+<ul>
+<li>the file name (<code>avengers.controller.js</code>)</li>
+<li>the registered component name with Angular (<code>AvengersController</code>)</li>
+</ul>
+
+<p><em>Why?</em>: Naming conventions help provide a consistent way to find content at a glance. Consistency within the project is vital. Consistency with a team is important. Consistency across a company provides tremendous efficiency.</p>
+
+<p><em>Why?</em>: The naming conventions should simply help you find your code faster and make it easier to understand.</p></li>
+</ul>
+
+<h3 id="feature-file-names">Feature File Names</h3>
+
+<h6 id="style-y121-style-y121">[Style <a href="#style-y121">Y121</a>]</h6>
+
+<ul>
+<li><p>Use consistent names for all components following a pattern that describes the component&rsquo;s feature then (optionally) its type. My recommended pattern is <code>feature.type.js</code>.</p>
+
+<p><em>Why?</em>: Provides a consistent way to quickly identify components.</p>
+
+<p><em>Why?</em>: Provides pattern matching for any automated tasks.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>common options
+*/</li>
+</ul>
+
+<p>// Controllers
+avengers.js
+avengers.controller.js
+avengersController.js</p>
+
+<p>// Services/Factories
+logger.js
+logger.service.js
+loggerService.js</p>
+
+<pre><code>
+```javascript
+/**
+ * recommended
+ */
+
+// controllers
+avengers.controller.js
+avengers.controller.spec.js
+
+// services/factories
+logger.service.js
+logger.service.spec.js
+
+// constants
+constants.js
+
+// module definition
+avengers.module.js
+
+// routes
+avengers.routes.js
+avengers.routes.spec.js
+
+// configuration
+avengers.config.js
+
+// directives
+avenger-profile.directive.js
+avenger-profile.directive.spec.js
+</code></pre></li>
+</ul>
+
+<p>Note: Another common convention is naming controller files without the word <code>controller</code> in the file name such as <code>avengers.js</code> instead of <code>avengers.controller.js</code>. All other conventions still hold using a suffix of the type. Controllers are the most common type of component so this just saves typing and is still easily identifiable. I recommend you choose 1 convention and be consistent for your team. My preference is <code>avengers.controller.js</code> identifying the <code>AvengersController</code>.</p>
+
+<pre><code>```javascript
+/**
+ * recommended
+ */
+// Controllers
+avengers.js
+avengers.spec.js
+```
+</code></pre>
+
+<h3 id="test-file-names">Test File Names</h3>
+
+<h6 id="style-y122-style-y122">[Style <a href="#style-y122">Y122</a>]</h6>
+
+<ul>
+<li><p>Name test specifications similar to the component they test with a suffix of <code>spec</code>.</p>
+
+<p><em>Why?</em>: Provides a consistent way to quickly identify components.</p>
+
+<p><em>Why?</em>: Provides pattern matching for <a href="http://karma-runner.github.io/">karma</a> or other test runners.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>recommended
+*/
+avengers.controller.spec.js
+logger.service.spec.js
+avengers.routes.spec.js
+avenger-profile.directive.spec.js
+```</li>
+</ul></li>
+</ul>
+
+<h3 id="controller-names">Controller Names</h3>
+
+<h6 id="style-y123-style-y123">[Style <a href="#style-y123">Y123</a>]</h6>
+
+<ul>
+<li><p>Use consistent names for all controllers named after their feature. Use UpperCamelCase for controllers, as they are constructors.</p>
+
+<p><em>Why?</em>: Provides a consistent way to quickly identify and reference controllers.</p>
+
+<p><em>Why?</em>: UpperCamelCase is conventional for identifying object that can be instantiated using a constructor.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>recommended
+*/</li>
+</ul>
+
+<p>// avengers.controller.js
+angular
+    .module
+    .controller(&lsquo;HeroAvengersController&rsquo;, HeroAvengersController);</p>
+
+<p>function HeroAvengersController() { }
+```</p></li>
+</ul>
+
+<h3 id="controller-name-suffix">Controller Name Suffix</h3>
+
+<h6 id="style-y124-style-y124">[Style <a href="#style-y124">Y124</a>]</h6>
+
+<ul>
+<li><p>Append the controller name with the suffix <code>Controller</code>.</p>
+
+<p><em>Why?</em>: The <code>Controller</code> suffix is more commonly used and is more explicitly descriptive.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>recommended
+*/</li>
+</ul>
+
+<p>// avengers.controller.js
+angular
+    .module
+    .controller(&lsquo;AvengersController&rsquo;, AvengersController);</p>
+
+<p>function AvengersController() { }
+```</p></li>
+</ul>
+
+<h3 id="factory-and-service-names">Factory and Service Names</h3>
+
+<h6 id="style-y125-style-y125">[Style <a href="#style-y125">Y125</a>]</h6>
+
+<ul>
+<li><p>Use consistent names for all factories and services named after their feature. Use camel-casing for services and factories. Avoid prefixing factories and services with <code>$</code>. Only suffix service and factories with <code>Service</code> when it is not clear what they are (i.e. when they are nouns).</p>
+
+<p><em>Why?</em>: Provides a consistent way to quickly identify and reference factories.</p>
+
+<p><em>Why?</em>: Avoids name collisions with built-in factories and services that use the <code>$</code> prefix.</p>
+
+<p><em>Why?</em>: Clear service names such as <code>logger</code> do not require a suffix.</p>
+
+<p><em>Why?</em>: Service names such as <code>avengers</code> are nouns and require a suffix and should be named <code>avengersService</code>.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>recommended
+*/</li>
+</ul>
+
+<p>// logger.service.js
+angular
+    .module
+    .factory(&lsquo;logger&rsquo;, logger);</p>
+
+<p>function logger() { }</p>
+
+<pre><code>
+```javascript
+/**
+ * recommended
+ */
+
+// credit.service.js
+angular
+    .module
+    .factory('creditService', creditService);
+
+function creditService() { }
+
+// customer.service.js
+angular
+    .module
+    .service('customerService', customerService);
+
+function customerService() { }
+</code></pre></li>
+</ul>
+
+<h3 id="directive-component-names">Directive Component Names</h3>
+
+<h6 id="style-y126-style-y126">[Style <a href="#style-y126">Y126</a>]</h6>
+
+<ul>
+<li><p>Use consistent names for all directives using camelCase. Use a short prefix to describe the area that the directives belong (some example are company prefix or project prefix).</p>
+
+<p><em>Why?</em>: Provides a consistent way to quickly identify and reference components.</p>
+
+<p>```javascript
+/**</p>
+
+<ul>
+<li>recommended
+*/</li>
+</ul>
+
+<p>// avenger-profile.directive.js
+angular
+    .module
+    .directive(&lsquo;xxAvengerProfile&rsquo;, xxAvengerProfile);</p>
+
+<p>// usage is <xx-avenger-profile> </xx-avenger-profile></p>
+
+<p>function xxAvengerProfile() { }
+```</p></li>
+</ul>
+
+<h3 id="modules">Modules</h3>
+
+<h6 id="style-y127-style-y127">[Style <a href="#style-y127">Y127</a>]</h6>
+
+<ul>
+<li><p>When there are multiple modules, the main module file is named <code>app.module.js</code> while other dependent modules are named after what they represent. For example, an admin module is named <code>admin.module.js</code>. The respective registered module names would be <code>app</code> and <code>admin</code>.</p>
+
+<p><em>Why?</em>: Provides consistency for multiple module apps, and for expanding to large applications.</p>
+
+<p><em>Why?</em>: Provides easy way to use task automation to load all module definitions first, then all other angular files (for bundling).</p></li>
+</ul>
+
+<h3 id="configuration">Configuration</h3>
+
+<h6 id="style-y128-style-y128">[Style <a href="#style-y128">Y128</a>]</h6>
+
+<ul>
+<li><p>Separate configuration for a module into its own file named after the module. A configuration file for the main <code>app</code> module is named <code>app.config.js</code> (or simply <code>config.js</code>). A configuration for a module named <code>admin.module.js</code> is named <code>admin.config.js</code>.</p>
+
+<p><em>Why?</em>: Separates configuration from module definition, components, and active code.</p>
+
+<p><em>Why?</em>: Provides an identifiable place to set configuration for a module.</p></li>
+</ul>
+
+<h3 id="routes">Routes</h3>
+
+<h6 id="style-y129-style-y129">[Style <a href="#style-y129">Y129</a>]</h6>
+
+<ul>
+<li>Separate route configuration into its own file. Examples might be <code>app.route.js</code> for the main module and <code>admin.route.js</code> for the <code>admin</code> module. Even in smaller apps I prefer this separation from the rest of the configuration.</li>
+</ul>
+
+<p><strong><a href="/coding-guidelines/angular1/">Back to Table of Contents</a></strong></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/coding-guidelines/angular1/exception-handling/" title="Exception Handling"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/coding-guidelines/angular1/application-structure-lift-principle/" title="Application Structure Lift Principle" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/coding-guidelines/js/clipboard.min.js"></script>
+    <script src="/coding-guidelines/js/featherlight.min.js"></script>
+    <script src="/coding-guidelines/js/html5shiv-printshiv.min.js"></script>
+    <script src="/coding-guidelines/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/coding-guidelines/js/modernizr.custom.71422.js"></script>
+    <script src="/coding-guidelines/js/learn.js"></script>
+    <script src="/coding-guidelines/js/hugo-learn.js"></script>
+
+    
+    <link href="/coding-guidelines/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/coding-guidelines/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+

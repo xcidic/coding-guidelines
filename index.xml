@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding Guidelines Xcidic on Xcidic Coding Guideline</title>
+    <link>https://xcidic.github.io/coding-guidelines/</link>
+    <description>Recent content in Coding Guidelines Xcidic on Xcidic Coding Guideline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Apr 2017 18:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://xcidic.github.io/coding-guidelines/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Single Responsibility</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</link>
+      <pubDate>Mon, 10 Jul 2017 18:48:19 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</guid>
+      <description>Single Responsibility Rule of 1 [Style Y001]  Define 1 component per file, recommended to be less than 400 lines of code.  Why?: One component per file promotes easier unit testing and mocking.
+Why?: One component per file makes it far easier to read, maintain, and avoid collisions with teams in source control.
+Why?: One component per file avoids hidden bugs that often arise when combining components in a file where they may share variables, create unwanted closures, or unwanted coupling with dependencies.</description>
+    </item>
+    
+    <item>
+      <title>IIFE</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/iife/</link>
+      <pubDate>Mon, 10 Jul 2017 18:45:46 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/iife/</guid>
+      <description>IIFE JavaScript Scopes [Style Y010]  Wrap Angular components in an Immediately Invoked Function Expression (IIFE).  Why?: An IIFE removes variables from the global scope. This helps prevent variables and function declarations from living longer than expected in the global scope, which also helps avoid variable collisions.
+Why?: When your code is minified and bundled into a single file for deployment to a production server, you could have collisions of variables and many global variables.</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/modules/</link>
+      <pubDate>Mon, 10 Jul 2017 18:47:01 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/modules/</guid>
+      <description>Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.
+Definitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?</description>
+    </item>
+    
+    <item>
+      <title>Controllers</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/controllers/</link>
+      <pubDate>Mon, 10 Jul 2017 18:43:46 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/controllers/</guid>
+      <description>Controllers controllerAs View Syntax [Style Y030]  Use the controllerAs syntax over the classic controller with $scope syntax.  Why?: Controllers are constructed, &amp;ldquo;newed&amp;rdquo; up, and provide a single new instance, and the controllerAs syntax is closer to that of a JavaScript constructor than the classic $scope syntax.
+Why?: It promotes the use of binding to a &amp;ldquo;dotted&amp;rdquo; object in the View (e.g. customer.name instead of name), which is more contextual, easier to read, and avoids any reference issues that may occur without &amp;ldquo;dotting&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/services/</link>
+      <pubDate>Mon, 10 Jul 2017 18:47:34 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/services/</guid>
+      <description>Services Singletons [Style Y040]  Services are instantiated with the new keyword, use this for public methods and variables. Since these are so similar to factories, use a factory instead for consistency.
+Note: All Angular services are singletons. This means that there is only one instance of a given service per injector.
+  // service angular .module(&#39;app&#39;) .service(&#39;logger&#39;, logger); function logger() { this.logError = function(msg) { /* */ }; }  // factory angular .</description>
+    </item>
+    
+    <item>
+      <title>Factories</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/factories/</link>
+      <pubDate>Mon, 10 Jul 2017 18:44:58 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/factories/</guid>
+      <description>Factories Single Responsibility [Style Y050]  Factories should have a single responsibility, that is encapsulated by its context. Once a factory begins to exceed that singular purpose, a new factory should be created.  Singletons [Style Y051]  Factories are singletons and return an object that contains the members of the service.
+Note: All Angular services are singletons.
+  Accessible Members Up Top [Style Y052]  Expose the callable members of the service (its interface) at the top, using a technique derived from the Revealing Module Pattern.</description>
+    </item>
+    
+    <item>
+      <title>Data Services</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/data-services/</link>
+      <pubDate>Mon, 10 Jul 2017 18:44:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/data-services/</guid>
+      <description>Data Services Separate Data Calls [Style Y060]  Refactor logic for making data operations and interacting with data to a factory. Make data services responsible for XHR calls, local storage, stashing in memory, or any other data operations.
+Why?: The controller&amp;rsquo;s responsibility is for the presentation and gathering of information for the view. It should not care how it gets the data, just that it knows who to ask for it.</description>
+    </item>
+    
+    <item>
+      <title>Directives</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/directives/</link>
+      <pubDate>Mon, 10 Jul 2017 18:44:12 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/directives/</guid>
+      <description>Directives Limit 1 Per File [Style Y070]  Create one directive per file. Name the file for the directive.
+Why?: It is easy to mash all the directives in one file, but difficult to then break those out so some are shared across apps, some across modules, some just for one module.
+Why?: One directive per file is easy to maintain.
+ Note: &amp;ldquo;Best Practice: Directives should clean up after themselves.</description>
+    </item>
+    
+    <item>
+      <title>Resolving Promises</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/resolving-promises/</link>
+      <pubDate>Mon, 10 Jul 2017 18:47:19 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/resolving-promises/</guid>
+      <description>Resolving Promises Controller Activation Promises [Style Y080]  Resolve start-up logic for a controller in an activate function.
+Why?: Placing start-up logic in a consistent place in the controller makes it easier to locate, more consistent to test, and helps avoid spreading out the activation logic across the controller.
+Why?: The controller activate makes it convenient to re-use the logic for a refresh for the controller/View, keeps the logic together, gets the user to the View faster, makes animations easy on the ng-view or ui-view, and feels snappier to the user.</description>
+    </item>
+    
+    <item>
+      <title>Manual Annotating for Dependencies Injection</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/manual-annotating-for-dependency-injection/</link>
+      <pubDate>Mon, 10 Jul 2017 18:46:24 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/manual-annotating-for-dependency-injection/</guid>
+      <description>Manual Annotating for Dependency Injection UnSafe from Minification [Style Y090]  Avoid using the shortcut syntax of declaring dependencies without using a minification-safe approach.
+Why?: The parameters to the component (e.g. controller, factory, etc) will be converted to mangled variables. For example, common and dataservice may become a or b and not be found by Angular.
+/* avoid - not minification-safe*/ angular .module(&#39;app&#39;) .controller(&#39;DashboardController&#39;, DashboardController); function DashboardController(common, dataservice) { }  This code may produce mangled variables when minified and thus cause runtime errors.</description>
+    </item>
+    
+    <item>
+      <title>Minification and Annotation</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/minification-and-annotation/</link>
+      <pubDate>Mon, 10 Jul 2017 18:46:45 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/minification-and-annotation/</guid>
+      <description>Minification and Annotation ng-annotate [Style Y100]  Use ng-annotate for Gulp or Grunt and comment functions that need automated dependency injection using /* @ngInject */
+Why?: This safeguards your code from any dependencies that may not be using minification-safe practices.
+Why?: ng-min is deprecated
+ I prefer Gulp as I feel it is easier to write, to read, and to debug.
+ The following code is not using minification safe dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Exception Handling</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/exception-handling/</link>
+      <pubDate>Mon, 10 Jul 2017 18:44:45 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/exception-handling/</guid>
+      <description>Exception Handling decorators [Style Y110]  Use a decorator, at config time using the $provide service, on the $exceptionHandler service to perform custom actions when exceptions occur.
+Why?: Provides a consistent way to handle uncaught Angular exceptions for development-time or run-time.
+Note: Another option is to override the service instead of using a decorator. This is a fine option, but if you want to keep the default behavior and extend it a decorator is recommended.</description>
+    </item>
+    
+    <item>
+      <title>Naming</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/naming/</link>
+      <pubDate>Mon, 10 Jul 2017 18:47:09 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/naming/</guid>
+      <description>Naming Naming Guidelines [Style Y120]  Use consistent names for all components following a pattern that describes the component&amp;rsquo;s feature then (optionally) its type. My recommended pattern is feature.type.js. There are 2 names for most assets:
+ the file name (avengers.controller.js) the registered component name with Angular (AvengersController)  Why?: Naming conventions help provide a consistent way to find content at a glance. Consistency within the project is vital. Consistency with a team is important.</description>
+    </item>
+    
+    <item>
+      <title>Application Structure Lift Principle</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/application-structure-lift-principle/</link>
+      <pubDate>Mon, 10 Jul 2017 18:42:53 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/application-structure-lift-principle/</guid>
+      <description>Application Structure LIFT Principle LIFT [Style Y140]  Structure your app such that you can Locate your code quickly, Identify the code at a glance, keep the Flattest structure you can, and Try to stay DRY. The structure should follow these 4 basic guidelines.
+Why LIFT?: Provides a consistent structure that scales well, is modular, and makes it easier to increase developer efficiency by finding code quickly. Another way to check your app structure is to ask yourself: How quickly can you open and work in all of the related files for a feature?</description>
+    </item>
+    
+    <item>
+      <title>Application Structure</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/application-structure/</link>
+      <pubDate>Mon, 10 Jul 2017 18:43:01 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/application-structure/</guid>
+      <description>Application Structure Overall Guidelines [Style Y150]  Have a near term view of implementation and a long term vision. In other words, start small but keep in mind on where the app is heading down the road. All of the app&amp;rsquo;s code goes in a root folder named app. All content is 1 feature per file. Each controller, service, module, view is in its own file. All 3rd party vendor scripts are stored in another root folder and not in the app folder.</description>
+    </item>
+    
+    <item>
+      <title>Modularity</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/modularity/</link>
+      <pubDate>Mon, 10 Jul 2017 18:46:55 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/modularity/</guid>
+      <description>Modularity Many Small, Self Contained Modules [Style Y160]  Create small modules that encapsulate one responsibility.
+Why?: Modular applications make it easy to plug and go as they allow the development teams to build vertical slices of the applications and roll out incrementally. This means we can plug in new features as we develop them.
+  Create an App Module [Style Y161]  Create an application root module whose role is to pull together all of the modules and features of your application.</description>
+    </item>
+    
+    <item>
+      <title>Startuplogic</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/startup-logic/</link>
+      <pubDate>Mon, 10 Jul 2017 18:48:31 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/startup-logic/</guid>
+      <description>Startup Logic Configuration [Style Y170]  Inject code into module configuration that must be configured before running the angular app. Ideal candidates include providers and constants.
+Why?: This makes it easier to have less places for configuration.
+  angular .module(&#39;app&#39;) .config(configure); configure.$inject = [&#39;routerHelperProvider&#39;, &#39;exceptionHandlerProvider&#39;, &#39;toastr&#39;]; function configure (routerHelperProvider, exceptionHandlerProvider, toastr) { exceptionHandlerProvider.configure(config.appErrorPrefix); configureStateHelper(); toastr.options.timeOut = 4000; toastr.options.positionClass = &#39;toast-bottom-right&#39;; //////////////// function configureStateHelper() { routerHelperProvider.configure({ docTitle: &#39;NG-Modular: &#39; }); } }  Run Blocks [Style Y171]  Any code that needs to run when an application starts should be declared in a factory, exposed via a function, and injected into the run block.</description>
+    </item>
+    
+    <item>
+      <title>Angular $ Wrapper Services</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/angular-wrapper-services/</link>
+      <pubDate>Mon, 10 Jul 2017 18:42:17 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/angular-wrapper-services/</guid>
+      <description>Angular $ Wrapper Services $document and $window [Style Y180]  Use $document and $window instead of document and window.
+Why?: These services are wrapped by Angular and more easily testable than using document and window in tests. This helps you avoid having to mock document and window yourself.
+  $timeout and $interval [Style Y181]  Use $timeout and $interval instead of setTimeout and setInterval .
+Why?: These services are wrapped by Angular and more easily testable and handle Angular&amp;rsquo;s digest cycle thus keeping data binding in sync.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/testing/</link>
+      <pubDate>Mon, 10 Jul 2017 18:49:01 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/testing/</guid>
+      <description>Testing Unit testing helps maintain clean code, as such I included some of my recommendations for unit testing foundations with links for more information.
+Write Tests with Stories [Style Y190]  Write a set of tests for every story. Start with an empty test and fill them in as you write the code for the story.
+Why?: Writing the test descriptions helps clearly define what your story will do, will not do, and how you can measure success.</description>
+    </item>
+    
+    <item>
+      <title>Animations</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/animations/</link>
+      <pubDate>Mon, 10 Jul 2017 18:42:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/animations/</guid>
+      <description>Animations Usage [Style Y210]  Use subtle animations with Angular to transition between states for views and primary visual elements. Include the ngAnimate module. The 3 keys are subtle, smooth, seamless.
+Why?: Subtle animations can improve User Experience when used appropriately.
+Why?: Subtle animations can improve perceived performance as views transition.
+  Sub Second [Style Y211]  Use short durations for animations. I generally start with 300ms and adjust until appropriate.</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/comments/</link>
+      <pubDate>Mon, 10 Jul 2017 18:43:13 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/comments/</guid>
+      <description>Comments jsDoc [Style Y220]  If planning to produce documentation, use jsDoc syntax to document function names, description, params and returns. Use @namespace and @memberOf to match your app structure.
+Why?: You can generate (and regenerate) documentation from your code, instead of writing it from scratch.
+Why?: Provides consistency using a common industry tool.
+  /** * Logger Factory * @namespace Factories */ (function() { angular .module(&#39;app&#39;) .factory(&#39;logger&#39;, logger); /** * @namespace Logger * @desc Application wide logger * @memberOf Factories */ function logger($log) { var service = { logError: logError }; return service; //////////// s /** * @name logError * @desc Logs errors * @param {String} msg Message to log * @returns {String} * @memberOf Factories.</description>
+    </item>
+    
+    <item>
+      <title>JShint</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/jshint/</link>
+      <pubDate>Mon, 10 Jul 2017 18:45:57 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/jshint/</guid>
+      <description>JS Hint Use an Options File [Style Y230]  Use JS Hint for linting your JavaScript and be sure to customize the JS Hint options file and include in source control. See the JS Hint docs for details on the options.
+Why?: Provides a first alert prior to committing any code to source control.
+Why?: Provides consistency across your team.
+{ &amp;quot;bitwise&amp;quot;: true, &amp;quot;camelcase&amp;quot;: true, &amp;quot;curly&amp;quot;: true, &amp;quot;eqeqeq&amp;quot;: true, &amp;quot;esversion&amp;quot;: 6, &amp;quot;forin&amp;quot;: true, &amp;quot;freeze&amp;quot;: true, &amp;quot;immed&amp;quot;: true, &amp;quot;indent&amp;quot;: 4, &amp;quot;latedef&amp;quot;: &amp;quot;nofunc&amp;quot;, &amp;quot;newcap&amp;quot;: true, &amp;quot;noarg&amp;quot;: true, &amp;quot;noempty&amp;quot;: true, &amp;quot;nonbsp&amp;quot;: true, &amp;quot;nonew&amp;quot;: true, &amp;quot;plusplus&amp;quot;: false, &amp;quot;quotmark&amp;quot;: &amp;quot;single&amp;quot;, &amp;quot;undef&amp;quot;: true, &amp;quot;unused&amp;quot;: false, &amp;quot;strict&amp;quot;: false, &amp;quot;maxparams&amp;quot;: 10, &amp;quot;maxdepth&amp;quot;: 5, &amp;quot;maxstatements&amp;quot;: 40, &amp;quot;maxcomplexity&amp;quot;: 8, &amp;quot;maxlen&amp;quot;: 120, &amp;quot;asi&amp;quot;: false, &amp;quot;boss&amp;quot;: false, &amp;quot;debug&amp;quot;: false, &amp;quot;eqnull&amp;quot;: true, &amp;quot;esnext&amp;quot;: false, &amp;quot;evil&amp;quot;: false, &amp;quot;expr&amp;quot;: false, &amp;quot;funcscope&amp;quot;: false, &amp;quot;globalstrict&amp;quot;: false, &amp;quot;iterator&amp;quot;: false, &amp;quot;lastsemic&amp;quot;: false, &amp;quot;laxbreak&amp;quot;: false, &amp;quot;laxcomma&amp;quot;: false, &amp;quot;loopfunc&amp;quot;: true, &amp;quot;maxerr&amp;quot;: 50, &amp;quot;moz&amp;quot;: false, &amp;quot;multistr&amp;quot;: false, &amp;quot;notypeof&amp;quot;: false, &amp;quot;proto&amp;quot;: false, &amp;quot;scripturl&amp;quot;: false, &amp;quot;shadow&amp;quot;: false, &amp;quot;sub&amp;quot;: true, &amp;quot;supernew&amp;quot;: false, &amp;quot;validthis&amp;quot;: false, &amp;quot;noyield&amp;quot;: false, &amp;quot;browser&amp;quot;: true, &amp;quot;node&amp;quot;: true, &amp;quot;globals&amp;quot;: { &amp;quot;angular&amp;quot;: false, &amp;quot;$&amp;quot;: false } }   Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>JSCS</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/jscs/</link>
+      <pubDate>Mon, 10 Jul 2017 18:45:51 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/jscs/</guid>
+      <description>JSCS Use an Options File [Style Y235]  Use JSCS for checking your coding styles your JavaScript and be sure to customize the JSCS options file and include in source control. See the JSCS docs for details on the options.
+Why?: Provides a first alert prior to committing any code to source control.
+Why?: Provides consistency across your team.
+{ &amp;quot;excludeFiles&amp;quot;: [&amp;quot;node_modules/**&amp;quot;, &amp;quot;bower_components/**&amp;quot;], &amp;quot;requireCurlyBraces&amp;quot;: [ &amp;quot;if&amp;quot;, &amp;quot;else&amp;quot;, &amp;quot;for&amp;quot;, &amp;quot;while&amp;quot;, &amp;quot;do&amp;quot;, &amp;quot;try&amp;quot;, &amp;quot;catch&amp;quot; ], &amp;quot;requireOperatorBeforeLineBreak&amp;quot;: true, &amp;quot;requireCamelCaseOrUpperCaseIdentifiers&amp;quot;: true, &amp;quot;maximumLineLength&amp;quot;: { &amp;quot;value&amp;quot;: 100, &amp;quot;allowComments&amp;quot;: true, &amp;quot;allowRegex&amp;quot;: true }, &amp;quot;validateIndentation&amp;quot;: 4, &amp;quot;validateQuoteMarks&amp;quot;: &amp;quot;&#39;&amp;quot;, &amp;quot;disallowMultipleLineStrings&amp;quot;: true, &amp;quot;disallowMixedSpacesAndTabs&amp;quot;: true, &amp;quot;disallowTrailingWhitespace&amp;quot;: true, &amp;quot;disallowSpaceAfterPrefixUnaryOperators&amp;quot;: true, &amp;quot;disallowMultipleVarDecl&amp;quot;: null, &amp;quot;requireSpaceAfterKeywords&amp;quot;: [ &amp;quot;if&amp;quot;, &amp;quot;else&amp;quot;, &amp;quot;for&amp;quot;, &amp;quot;while&amp;quot;, &amp;quot;do&amp;quot;, &amp;quot;switch&amp;quot;, &amp;quot;return&amp;quot;, &amp;quot;try&amp;quot;, &amp;quot;catch&amp;quot; ], &amp;quot;requireSpaceBeforeBinaryOperators&amp;quot;: [ &amp;quot;=&amp;quot;, &amp;quot;+=&amp;quot;, &amp;quot;-=&amp;quot;, &amp;quot;*=&amp;quot;, &amp;quot;/=&amp;quot;, &amp;quot;%=&amp;quot;, &amp;quot;&amp;lt;&amp;lt;=&amp;quot;, &amp;quot;&amp;gt;&amp;gt;=&amp;quot;, &amp;quot;&amp;gt;&amp;gt;&amp;gt;=&amp;quot;, &amp;quot;&amp;amp;=&amp;quot;, &amp;quot;|=&amp;quot;, &amp;quot;^=&amp;quot;, &amp;quot;+=&amp;quot;, &amp;quot;+&amp;quot;, &amp;quot;-&amp;quot;, &amp;quot;*&amp;quot;, &amp;quot;/&amp;quot;, &amp;quot;%&amp;quot;, &amp;quot;&amp;lt;&amp;lt;&amp;quot;, &amp;quot;&amp;gt;&amp;gt;&amp;quot;, &amp;quot;&amp;gt;&amp;gt;&amp;gt;&amp;quot;, &amp;quot;&amp;amp;&amp;quot;, &amp;quot;|&amp;quot;, &amp;quot;^&amp;quot;, &amp;quot;&amp;amp;&amp;amp;&amp;quot;, &amp;quot;||&amp;quot;, &amp;quot;===&amp;quot;, &amp;quot;==&amp;quot;, &amp;quot;&amp;gt;=&amp;quot;, &amp;quot;&amp;lt;=&amp;quot;, &amp;quot;&amp;lt;&amp;quot;, &amp;quot;&amp;gt;&amp;quot;, &amp;quot;!</description>
+    </item>
+    
+    <item>
+      <title>Constants</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/constants/</link>
+      <pubDate>Mon, 10 Jul 2017 18:43:30 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/constants/</guid>
+      <description>Constants Vendor Globals [Style Y240]  Create an Angular Constant for vendor libraries&amp;rsquo; global variables.
+Why?: Provides a way to inject vendor libraries that otherwise are globals. This improves code testability by allowing you to more easily know what the dependencies of your components are (avoids leaky abstractions). It also allows you to mock these dependencies, where it makes sense.
+// constants.js /* global toastr:false, moment:false */ (function() { &#39;use strict&#39;; angular .</description>
+    </item>
+    
+    <item>
+      <title>File Templates And Snippets</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/file-templates-and-snippets/</link>
+      <pubDate>Mon, 10 Jul 2017 18:45:30 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/file-templates-and-snippets/</guid>
+      <description>File Templates and Snippets Use file templates or snippets to help follow consistent styles and patterns. Here are templates and/or snippets for some of the web development editors and IDEs.
+Sublime Text [Style Y250]  Angular snippets that follow these styles and guidelines.
+ Download the Sublime Angular snippets Place it in your Packages folder Restart Sublime In a JavaScript file type these commands followed by a TAB  ngcontroller // creates an Angular controller ngdirective // creates an Angular directive ngfactory // creates an Angular factory ngmodule // creates an Angular module ngservice // creates an Angular service ngfilter // creates an Angular filter   Visual Studio [Style Y251]  Angular file templates that follow these styles and guidelines can be found at SideWaffle</description>
+    </item>
+    
+    <item>
+      <title>Yeoman Generator</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/yeoman-generator/</link>
+      <pubDate>Mon, 10 Jul 2017 18:49:13 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/yeoman-generator/</guid>
+      <description>Yeoman Generator [Style Y260] You can use the HotTowel yeoman generator to create an app that serves as a starting point for Angular that follows this style guide.
+ Install generator-hottowel   npm install -g generator-hottowel   Create a new folder and change directory to it   mkdir myapp cd myapp   Run the generator   yo hottowel helloWorld  Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Routing</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/routing/</link>
+      <pubDate>Mon, 10 Jul 2017 18:47:27 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/routing/</guid>
+      <description>Routing Client-side routing is important for creating a navigation flow between views and composing views that are made of many smaller templates and directives.
+[Style Y270]  Use the AngularUI Router for client-side routing.
+Why?: UI Router offers all the features of the Angular router plus a few additional ones including nested routes and states.
+Why?: The syntax is quite similar to the Angular router and is easy to migrate to UI Router.</description>
+    </item>
+    
+    <item>
+      <title>Task Automation</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/task-automation/</link>
+      <pubDate>Mon, 10 Jul 2017 18:48:49 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/task-automation/</guid>
+      <description>Task Automation Use Gulp or Grunt for creating automated tasks. Gulp leans to code over configuration while Grunt leans to configuration over code. I personally prefer Gulp as I feel it is easier to read and write, but both are excellent.
+ Learn more about gulp and patterns for task automation in my Gulp Pluralsight course
+ [Style Y400]  Use task automation to list module definition files *.module.js before all other application JavaScript files.</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/filters/</link>
+      <pubDate>Mon, 10 Jul 2017 18:45:41 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/filters/</guid>
+      <description>Filters [Style Y420]  Avoid using filters for scanning all properties of a complex object graph. Use filters for select properties.
+Why?: Filters can easily be abused and negatively affect performance if not used wisely, for example when a filter hits a large and deep object graph.
+  Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Angular Docs</title>
+      <link>https://xcidic.github.io/coding-guidelines/angular1/angular-docs/</link>
+      <pubDate>Mon, 10 Jul 2017 18:42:05 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/angular1/angular-docs/</guid>
+      <description>Angular docs For anything else, API reference, check the Angular documentation.
+Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>header</title>
+      <link>https://xcidic.github.io/coding-guidelines/_header/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/_header/</guid>
+      <description>Coding Guidelines Documentation</description>
+    </item>
+    
+  </channel>
+</rss>

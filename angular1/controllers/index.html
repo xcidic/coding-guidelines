@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="">
+
+
+    <title>Controllers :: Xcidic Coding Guideline</title>
+    <link rel="shortcut icon" href="/coding-guidelines/images/favicon.png" type="image/x-icon" />
+    <link href="/coding-guidelines/css/nucleus.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/hybrid.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/featherlight.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/horsey.css" rel="stylesheet">
+    
+    <link href="/coding-guidelines/css/theme.css" rel="stylesheet">
+    
+    
+      <link href="/coding-guidelines/css/theme-gold.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/coding-guidelines/css/bootstrap.min.css">
+    <script src="/coding-guidelines/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/coding-guidelines/angular1/controllers/">
+    <nav id="sidebar" class="showVisitedLinks">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>Coding Guidelines Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/coding-guidelines/js/lunr.min.js"></script>
+<script type="text/javascript" src="/coding-guidelines/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/xcidic.github.io\/coding-guidelines\/";
+</script>
+<script type="text/javascript" src="/coding-guidelines/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/coding-guidelines/" class="dd-item">
+            <a href="/coding-guidelines/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
+parent
+
+
+">
+  <a href="/coding-guidelines/angular1/">
+    <span>Angular 1 Style Guide</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/single-responsibility/">
+            <span>Single Responsibility</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/iife/">
+            <span>IIFE</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
+         active
+          ">
+            <a href="/coding-guidelines/angular1/controllers/">
+            <span>Controllers</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/services/">
+            <span>Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/factories/">
+            <span>Factories</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/data-services/">
+            <span>Data Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/directives/">
+            <span>Directives</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/resolving-promises/">
+            <span>Resolving Promises</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
+            <span>Manual Annotating for Dependencies Injection</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/minification-and-annotation/">
+            <span>Minification and Annotation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/exception-handling/">
+            <span>Exception Handling</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/naming/">
+            <span>Naming</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
+            <span>Application Structure Lift Principle</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure/">
+            <span>Application Structure</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modularity/">
+            <span>Modularity</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/startup-logic/">
+            <span>Startuplogic</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-wrapper-services/">
+            <span>Angular $ Wrapper Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/testing/">
+            <span>Testing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/animations/">
+            <span>Animations</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jshint/">
+            <span>JShint</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jscs/">
+            <span>JSCS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/constants/">
+            <span>Constants</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
+            <span>File Templates And Snippets</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/yeoman-generator/">
+            <span>Yeoman Generator</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/routing/">
+            <span>Routing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/task-automation/">
+            <span>Task Automation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/filters/">
+            <span>Filters</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-docs/">
+            <span>Angular Docs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/coding-guidelines/'>Coding Guidelines Xcidic</a> > <a href='/coding-guidelines/angular1/'>Angular 1 Style Guide</a> > Controllers
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#controllers">Controllers</a>
+<ul>
+<li><a href="#controlleras-view-syntax">controllerAs View Syntax</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y030-style-y030">[Style <a href="#style-y030">Y030</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#controlleras-controller-syntax">controllerAs Controller Syntax</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y031-style-y031">[Style <a href="#style-y031">Y031</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#controlleras-with-vm">controllerAs with vm</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y032-style-y032">[Style <a href="#style-y032">Y032</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#bindable-members-up-top">Bindable Members Up Top</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y033-style-y033">[Style <a href="#style-y033">Y033</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#function-declarations-to-hide-implementation-details">Function Declarations to Hide Implementation Details</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y034-style-y034">[Style <a href="#style-y034">Y034</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#defer-controller-logic-to-services">Defer Controller Logic to Services</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y035-style-y035">[Style <a href="#style-y035">Y035</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#keep-controllers-focused">Keep Controllers Focused</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y037-style-y037">[Style <a href="#style-y037">Y037</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#assigning-controllers">Assigning Controllers</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#style-y038-style-y038">[Style <a href="#style-y038">Y038</a>]</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>Controllers</h1>
+          
+
+
+
+
+
+
+<h2 id="controllers">Controllers</h2>
+
+<h3 id="controlleras-view-syntax">controllerAs View Syntax</h3>
+
+<h6 id="style-y030-style-y030">[Style <a href="#style-y030">Y030</a>]</h6>
+
+<ul>
+<li>Use the <a href="http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/"><code>controllerAs</code></a> syntax over the <code>classic controller with $scope</code> syntax.</li>
+</ul>
+
+<p><em>Why?</em>: Controllers are constructed, &ldquo;newed&rdquo; up, and provide a single new instance, and the <code>controllerAs</code> syntax is closer to that of a JavaScript constructor than the <code>classic $scope syntax</code>.</p>
+
+<p><em>Why?</em>: It promotes the use of binding to a &ldquo;dotted&rdquo; object in the View (e.g. <code>customer.name</code> instead of <code>name</code>), which is more contextual, easier to read, and avoids any reference issues that may occur without &ldquo;dotting&rdquo;.</p>
+
+<p><em>Why?</em>: Helps avoid using <code>$parent</code> calls in Views with nested controllers.</p>
+
+<pre><code class="language-html">  &lt;!-- avoid --&gt;
+  &lt;div ng-controller=&quot;CustomerController&quot;&gt;
+      {{ name }}
+  &lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-html">  &lt;!-- recommended --&gt;
+  &lt;div ng-controller=&quot;CustomerController as customer&quot;&gt;
+      {{ customer.name }}
+  &lt;/div&gt;
+</code></pre>
+
+<h3 id="controlleras-controller-syntax">controllerAs Controller Syntax</h3>
+
+<h6 id="style-y031-style-y031">[Style <a href="#style-y031">Y031</a>]</h6>
+
+<ul>
+<li><p>Use the <code>controllerAs</code> syntax over the <code>classic controller with $scope</code> syntax.</p></li>
+
+<li><p>The <code>controllerAs</code> syntax uses <code>this</code> inside controllers which gets bound to <code>$scope</code></p></li>
+</ul>
+
+<p><em>Why?</em>: <code>controllerAs</code> is syntactic sugar over <code>$scope</code>. You can still bind to the View and still access <code>$scope</code> methods.</p>
+
+<p><em>Why?</em>: Helps avoid the temptation of using <code>$scope</code> methods inside a controller when it may otherwise be better to avoid them or move the method to a factory, and reference them from the controller. Consider using <code>$scope</code> in a controller only when needed. For example when publishing and subscribing events using <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$emit"><code>$emit</code></a>, <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$broadcast"><code>$broadcast</code></a>, or <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$on"><code>$on</code></a>.</p>
+
+<pre><code class="language-javascript">  /* avoid */
+  function CustomerController($scope) {
+      $scope.name = {};
+      $scope.sendMessage = function() { };
+  }
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended - but see next section */
+  function CustomerController() {
+      this.name = {};
+      this.sendMessage = function() { };
+  }
+</code></pre>
+
+<h3 id="controlleras-with-vm">controllerAs with vm</h3>
+
+<h6 id="style-y032-style-y032">[Style <a href="#style-y032">Y032</a>]</h6>
+
+<ul>
+<li>Use a capture variable for <code>this</code> when using the <code>controllerAs</code> syntax. Choose a consistent variable name such as <code>vm</code>, which stands for ViewModel.</li>
+</ul>
+
+<p><em>Why?</em>: The <code>this</code> keyword is contextual and when used within a function inside a controller may change its context. Capturing the context of <code>this</code> avoids encountering this problem.</p>
+
+<pre><code class="language-javascript">  /* avoid */
+  function CustomerController() {
+      this.name = {};
+      this.sendMessage = function() { };
+  }
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended */
+  function CustomerController() {
+      var vm = this;
+      vm.name = {};
+      vm.sendMessage = function() { };
+  }
+</code></pre>
+
+<p>Note: You can avoid any <a href="http://jshint.com/">jshint</a> warnings by placing the comment above the line of code. However it is not needed when the function is named using UpperCasing, as this convention means it is a constructor function, which is what a controller is in Angular.</p>
+
+<pre><code class="language-javascript">  /* jshint validthis: true */
+  var vm = this;
+</code></pre>
+
+<p>Note: When creating watches in a controller using <code>controller as</code>, you can watch the <code>vm.*</code> member using the following syntax. (Create watches with caution as they add more load to the digest cycle.)</p>
+
+<pre><code class="language-html">  &lt;input ng-model=&quot;vm.title&quot;/&gt;
+</code></pre>
+
+<pre><code class="language-javascript">  function SomeController($scope, $log) {
+      var vm = this;
+      vm.title = 'Some Title';
+
+      $scope.$watch('vm.title', function(current, original) {
+          $log.info('vm.title was %s', original);
+          $log.info('vm.title is now %s', current);
+      });
+  }
+</code></pre>
+
+<p>Note: When working with larger codebases, using a more descriptive name can help ease cognitive overhead &amp; searchability. Avoid overly verbose names that are cumbersome to type.</p>
+
+<pre><code class="language-html">  &lt;!-- avoid --&gt;
+  &lt;input ng-model=&quot;customerProductItemVm.title&quot;&gt;
+</code></pre>
+
+<pre><code class="language-html">  &lt;!-- recommended --&gt;
+  &lt;input ng-model=&quot;productVm.title&quot;&gt;
+</code></pre>
+
+<h3 id="bindable-members-up-top">Bindable Members Up Top</h3>
+
+<h6 id="style-y033-style-y033">[Style <a href="#style-y033">Y033</a>]</h6>
+
+<ul>
+<li><p>Place bindable members at the top of the controller, alphabetized, and not spread through the controller code.</p>
+
+<p><em>Why?</em>: Placing bindable members at the top makes it easy to read and helps you instantly identify which members of the controller can be bound and used in the View.</p>
+
+<p><em>Why?</em>: Setting anonymous functions in-line can be easy, but when those functions are more than 1 line of code they can reduce the readability. Defining the functions below the bindable members (the functions will be hoisted) moves the implementation details down, keeps the bindable members up top, and makes it easier to read.</p></li>
+</ul>
+
+<pre><code class="language-javascript">  /* avoid */
+  function SessionsController() {
+      var vm = this;
+
+      vm.gotoSession = function() {
+        /* ... */
+      };
+      vm.refresh = function() {
+        /* ... */
+      };
+      vm.search = function() {
+        /* ... */
+      };
+      vm.sessions = [];
+      vm.title = 'Sessions';
+  }
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended */
+  function SessionsController() {
+      var vm = this;
+
+      vm.gotoSession = gotoSession;
+      vm.refresh = refresh;
+      vm.search = search;
+      vm.sessions = [];
+      vm.title = 'Sessions';
+
+      ////////////
+
+      function gotoSession() {
+        /* */
+      }
+
+      function refresh() {
+        /* */
+      }
+
+      function search() {
+        /* */
+      }
+  }
+</code></pre>
+
+<pre><code>![Controller Using &quot;Above the Fold&quot;](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-1.png)
+</code></pre>
+
+<p>Note: If the function is a 1 liner consider keeping it right up top, as long as readability is not affected.</p>
+
+<pre><code class="language-javascript">  /* avoid */
+  function SessionsController(data) {
+      var vm = this;
+
+      vm.gotoSession = gotoSession;
+      vm.refresh = function() {
+          /**
+           * lines
+           * of
+           * code
+           * affects
+           * readability
+           */
+      };
+      vm.search = search;
+      vm.sessions = [];
+      vm.title = 'Sessions';
+  }
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended */
+  function SessionsController(sessionDataService) {
+      var vm = this;
+
+      vm.gotoSession = gotoSession;
+      vm.refresh = sessionDataService.refresh; // 1 liner is OK
+      vm.search = search;
+      vm.sessions = [];
+      vm.title = 'Sessions';
+  }
+</code></pre>
+
+<h3 id="function-declarations-to-hide-implementation-details">Function Declarations to Hide Implementation Details</h3>
+
+<h6 id="style-y034-style-y034">[Style <a href="#style-y034">Y034</a>]</h6>
+
+<ul>
+<li><p>Use function declarations to hide implementation details. Keep your bindable members up top. When you need to bind a function in a controller, point it to a function declaration that appears later in the file. This is tied directly to the section Bindable Members Up Top. For more details see <a href="http://www.johnpapa.net/angular-function-declarations-function-expressions-and-readable-code/">this post</a>.</p>
+
+<p><em>Why?</em>: Placing bindable members at the top makes it easy to read and helps you instantly identify which members of the controller can be bound and used in the View. (Same as above.)</p>
+
+<p><em>Why?</em>: Placing the implementation details of a function later in the file moves that complexity out of view so you can see the important stuff up top.</p>
+
+<p><em>Why?</em>: Function declarations are hoisted so there are no concerns over using a function before it is defined (as there would be with function expressions).</p>
+
+<p><em>Why?</em>: You never have to worry with function declarations that moving <code>var a</code> before <code>var b</code> will break your code because <code>a</code> depends on <code>b</code>.</p>
+
+<p><em>Why?</em>: Order is critical with function expressions</p></li>
+</ul>
+
+<pre><code class="language-javascript">  /**
+   * avoid
+   * Using function expressions.
+   */
+  function AvengersController(avengersService, logger) {
+      var vm = this;
+      vm.avengers = [];
+      vm.title = 'Avengers';
+
+      var activate = function() {
+          return getAvengers().then(function() {
+              logger.info('Activated Avengers View');
+          });
+      }
+
+      var getAvengers = function() {
+          return avengersService.getAvengers().then(function(data) {
+              vm.avengers = data;
+              return vm.avengers;
+          });
+      }
+
+      vm.getAvengers = getAvengers;
+
+      activate();
+  }
+</code></pre>
+
+<p>Notice that the important stuff is scattered in the preceding example. In the example below, notice that the important stuff is up top. For example, the members bound to the controller such as <code>vm.avengers</code> and <code>vm.title</code>. The implementation details are down below. This is just easier to read.</p>
+
+<pre><code class="language-javascript">  /*
+   * recommend
+   * Using function declarations
+   * and bindable members up top.
+   */
+  function AvengersController(avengersService, logger) {
+      var vm = this;
+      vm.avengers = [];
+      vm.getAvengers = getAvengers;
+      vm.title = 'Avengers';
+
+      activate();
+
+      function activate() {
+          return getAvengers().then(function() {
+              logger.info('Activated Avengers View');
+          });
+      }
+
+      function getAvengers() {
+          return avengersService.getAvengers().then(function(data) {
+              vm.avengers = data;
+              return vm.avengers;
+          });
+      }
+  }
+</code></pre>
+
+<h3 id="defer-controller-logic-to-services">Defer Controller Logic to Services</h3>
+
+<h6 id="style-y035-style-y035">[Style <a href="#style-y035">Y035</a>]</h6>
+
+<ul>
+<li><p>Defer logic in a controller by delegating to services and factories.</p>
+
+<p><em>Why?</em>: Logic may be reused by multiple controllers when placed within a service and exposed via a function.</p>
+
+<p><em>Why?</em>: Logic in a service can more easily be isolated in a unit test, while the calling logic in the controller can be easily mocked.</p>
+
+<p><em>Why?</em>: Removes dependencies and hides implementation details from the controller.</p>
+
+<p><em>Why?</em>: Keeps the controller slim, trim, and focused.</p></li>
+</ul>
+
+<pre><code class="language-javascript">
+  /* avoid */
+  function OrderController($http, $q, config, userInfo) {
+      var vm = this;
+      vm.checkCredit = checkCredit;
+      vm.isCreditOk;
+      vm.total = 0;
+
+      function checkCredit() {
+          var settings = {};
+          // Get the credit service base URL from config
+          // Set credit service required headers
+          // Prepare URL query string or data object with request data
+          // Add user-identifying info so service gets the right credit limit for this user.
+          // Use JSONP for this browser if it doesn't support CORS
+          return $http.get(settings)
+              .then(function(data) {
+               // Unpack JSON data in the response object
+                 // to find maxRemainingAmount
+                 vm.isCreditOk = vm.total &lt;= maxRemainingAmount
+              })
+              .catch(function(error) {
+                 // Interpret error
+                 // Cope w/ timeout? retry? try alternate service?
+                 // Re-reject with appropriate error for a user to see
+              });
+      };
+  }
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended */
+  function OrderController(creditService) {
+      var vm = this;
+      vm.checkCredit = checkCredit;
+      vm.isCreditOk;
+      vm.total = 0;
+
+      function checkCredit() {
+         return creditService.isOrderTotalOk(vm.total)
+            .then(function(isOk) { vm.isCreditOk = isOk; })
+            .catch(showError);
+      };
+  }
+</code></pre>
+
+<h3 id="keep-controllers-focused">Keep Controllers Focused</h3>
+
+<h6 id="style-y037-style-y037">[Style <a href="#style-y037">Y037</a>]</h6>
+
+<ul>
+<li><p>Define a controller for a view, and try not to reuse the controller for other views. Instead, move reusable logic to factories and keep the controller simple and focused on its view.</p>
+
+<p><em>Why?</em>: Reusing controllers with several views is brittle and good end-to-end (e2e) test coverage is required to ensure stability across large applications.</p></li>
+</ul>
+
+<h3 id="assigning-controllers">Assigning Controllers</h3>
+
+<h6 id="style-y038-style-y038">[Style <a href="#style-y038">Y038</a>]</h6>
+
+<ul>
+<li><p>When a controller must be paired with a view and either component may be re-used by other controllers or views, define controllers along with their routes.</p>
+
+<p>Note: If a View is loaded via another means besides a route, then use the <code>ng-controller=&quot;Avengers as vm&quot;</code> syntax.</p>
+
+<p><em>Why?</em>: Pairing the controller in the route allows different routes to invoke different pairs of controllers and views. When controllers are assigned in the view using <a href="https://docs.angularjs.org/api/ng/directive/ngController"><code>ng-controller</code></a>, that view is always associated with the same controller.</p></li>
+</ul>
+
+<pre><code class="language-javascript">  /* avoid - when using with a route and dynamic pairing is desired */
+
+  // route-config.js
+  angular
+      .module('app')
+      .config(config);
+
+  function config($routeProvider) {
+      $routeProvider
+          .when('/avengers', {
+            templateUrl: 'avengers.html'
+          });
+  }
+</code></pre>
+
+<pre><code class="language-html">  &lt;!-- avengers.html --&gt;
+  &lt;div ng-controller=&quot;AvengersController as vm&quot;&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-javascript">  /* recommended */
+
+  // route-config.js
+  angular
+      .module('app')
+      .config(config);
+
+  function config($routeProvider) {
+      $routeProvider
+          .when('/avengers', {
+              templateUrl: 'avengers.html',
+              controller: 'Avengers',
+              controllerAs: 'vm'
+          });
+  }
+</code></pre>
+
+<pre><code class="language-html">  &lt;!-- avengers.html --&gt;
+  &lt;div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<p><strong><a href="/coding-guidelines/angular1/">Back to Table of Contents</a></strong></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/coding-guidelines/angular1/modules/" title="Modules"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/coding-guidelines/angular1/services/" title="Services" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/coding-guidelines/js/clipboard.min.js"></script>
+    <script src="/coding-guidelines/js/featherlight.min.js"></script>
+    <script src="/coding-guidelines/js/html5shiv-printshiv.min.js"></script>
+    <script src="/coding-guidelines/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/coding-guidelines/js/modernizr.custom.71422.js"></script>
+    <script src="/coding-guidelines/js/learn.js"></script>
+    <script src="/coding-guidelines/js/hugo-learn.js"></script>
+
+    
+    <link href="/coding-guidelines/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/coding-guidelines/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+
