@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coding Guidelines Xcidic on Xcidic Coding Guideline</title>
+    <title>Xcidic Coding Guidelines on Xcidic Coding Guideline</title>
     <link>https://xcidic.github.io/coding-guidelines/</link>
-    <description>Recent content in Coding Guidelines Xcidic on Xcidic Coding Guideline</description>
+    <description>Recent content in Xcidic Coding Guidelines on Xcidic Coding Guideline</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Apr 2017 18:36:24 +0200</lastBuildDate>
@@ -338,6 +338,583 @@ Why?: Filters can easily be abused and negatively affect performance if not used
       <guid>https://xcidic.github.io/coding-guidelines/angular1/angular-docs/</guid>
       <description>Angular docs For anything else, API reference, check the Angular documentation.
 Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Types</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/types/</link>
+      <pubDate>Tue, 11 Jul 2017 11:10:34 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/types/</guid>
+      <description>Types  Primitives: When you access a primitive type you work directly on its value.
+ string number boolean null undefined  var foo = 1; var bar = foo; bar = 9; console.log(foo, bar); // =&amp;gt; 1, 9  Complex: When you access a complex type you work on a reference to its value.
+ object array function  var foo = [1, 2]; var bar = foo; bar[0] = 9; console.</description>
+    </item>
+    
+    <item>
+      <title>Objects</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/objects/</link>
+      <pubDate>Tue, 11 Jul 2017 11:14:02 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/objects/</guid>
+      <description>Objects  Use the literal syntax for object creation.
+// bad var item = new Object(); // good var item = {};  Don&amp;rsquo;t use reserved words as keys. It won&amp;rsquo;t work in IE8. More info.
+// bad var superman = { default: { clark: &#39;kent&#39; }, private: true }; // good var superman = { defaults: { clark: &#39;kent&#39; }, hidden: true };  Use readable synonyms in place of reserved words.</description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/arrays/</link>
+      <pubDate>Tue, 11 Jul 2017 11:18:30 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/arrays/</guid>
+      <description>Arrays  Use the literal syntax for array creation.
+// bad var items = new Array(); // good var items = [];  Use Array#push instead of direct assignment to add items to an array.
+var someStack = []; // bad someStack[someStack.length] = &#39;abracadabra&#39;; // good someStack.push(&#39;abracadabra&#39;);  When you need to copy an array use Array#slice. jsPerf
+var len = items.length; var itemsCopy = []; var i; // bad for (i = 0; i &amp;lt; len; i++) { itemsCopy[i] = items[i]; } // good itemsCopy = items.</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/strings/</link>
+      <pubDate>Tue, 11 Jul 2017 11:20:52 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/strings/</guid>
+      <description>Strings  Use single quotes &#39;&#39; for strings.
+// bad var name = &amp;quot;Bob Parr&amp;quot;; // good var name = &#39;Bob Parr&#39;; // bad var fullName = &amp;quot;Bob &amp;quot; + this.lastName; // good var fullName = &#39;Bob &#39; + this.lastName;  Strings longer than 100 characters should be written across multiple lines using string concatenation.
+ Note: If overused, long strings with concatenation could impact performance. jsPerf &amp;amp; Discussion.</description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/functions/</link>
+      <pubDate>Tue, 11 Jul 2017 11:23:51 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/functions/</guid>
+      <description>Functions  Function expressions:
+// anonymous function expression var anonymous = function () { return true; }; // named function expression var named = function named() { return true; }; // immediately-invoked function expression (IIFE) (function () { console.log(&#39;Welcome to the Internet. Please follow me.&#39;); }());  Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.</description>
+    </item>
+    
+    <item>
+      <title>Properties</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/properties/</link>
+      <pubDate>Tue, 11 Jul 2017 11:26:38 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/properties/</guid>
+      <description>Properties  Use dot notation when accessing properties.
+var luke = { jedi: true, age: 28 }; // bad var isJedi = luke[&#39;jedi&#39;]; // good var isJedi = luke.jedi;  Use subscript notation [] when accessing properties with a variable.
+var luke = { jedi: true, age: 28 }; function getProp(prop) { return luke[prop]; } var isJedi = getProp(&#39;jedi&#39;);   ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/variables/</link>
+      <pubDate>Tue, 11 Jul 2017 11:28:52 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/variables/</guid>
+      <description>Variables  Always use var to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
+// bad superPower = new SuperPower(); // good var superPower = new SuperPower();  Use one var declaration per variable. It&amp;rsquo;s easier to add new variable declarations this way, and you never have to worry about swapping out a ; for a , or introducing punctuation-only diffs.</description>
+    </item>
+    
+    <item>
+      <title>Hoisting</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/hoisting/</link>
+      <pubDate>Tue, 11 Jul 2017 11:32:17 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/hoisting/</guid>
+      <description>Hoisting  Variable declarations get hoisted to the top of their scope, but their assignment does not.
+// we know this wouldn&#39;t work (assuming there // is no notDefined global variable) function example() { console.log(notDefined); // =&amp;gt; throws a ReferenceError } // creating a variable declaration after you // reference the variable will work due to // variable hoisting. Note: the assignment // value of `true` is not hoisted. function example() { console.</description>
+    </item>
+    
+    <item>
+      <title>Comparison Operators &amp; Equality</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/comparison-operators--equality/</link>
+      <pubDate>Tue, 11 Jul 2017 11:34:25 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/comparison-operators--equality/</guid>
+      <description>Comparison Operators &amp;amp; Equality  Use === and !== over == and !=. Conditional statements such as the if statement evaluate their expression using coercion with the ToBoolean abstract method and always follow these simple rules:
+ Objects evaluate to true Undefined evaluates to false Null evaluates to false Booleans evaluate to the value of the boolean Numbers evaluate to false if +0, -0, or NaN, otherwise true Strings evaluate to false if an empty string &#39;&#39;, otherwise true  if ([0]) { // true // An array is an object, objects evaluate to true }  Use shortcuts.</description>
+    </item>
+    
+    <item>
+      <title>Blocks</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/blocks/</link>
+      <pubDate>Tue, 11 Jul 2017 11:39:23 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/blocks/</guid>
+      <description>Blocks  Use braces with all multi-line blocks.
+// bad if (test) return false; // good if (test) return false; // good if (test) { return false; } // bad function () { return false; } // good function () { return false; }  If you&amp;rsquo;re using multi-line blocks with if and else, put else on the same line as your if block&amp;rsquo;s closing brace.
+// bad if (test) { thing1(); thing2(); } else { thing3(); } // good if (test) { thing1(); thing2(); } else { thing3(); }   ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/comments/</link>
+      <pubDate>Tue, 11 Jul 2017 11:41:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/comments/</guid>
+      <description>Comments  Use /** ... */ for multi-line comments. Include a description, specify types and values for all parameters and return values.
+```javascript // bad // make() returns a new element // based on the passed in tag name // // @param {String} tag // @return {Element} element function make(tag) {
+// &amp;hellip;stuff&amp;hellip;
+return element; }
+// good /**
+ make() returns a new element based on the passed in tag name * @param {String} tag @return {Element} element */ function make(tag) {  // &amp;hellip;stuff&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Whitespace</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/whitespace/</link>
+      <pubDate>Tue, 11 Jul 2017 11:44:04 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/whitespace/</guid>
+      <description>Whitespace  Use soft tabs set to 2 spaces.
+// bad function () { ∙∙∙∙var name; } // bad function () { ∙var name; } // good function () { ∙∙var name; }  Place 1 space before the leading brace.
+// bad function test(){ console.log(&#39;test&#39;); } // good function test() { console.log(&#39;test&#39;); } // bad dog.set(&#39;attr&#39;,{ age: &#39;1 year&#39;, breed: &#39;Bernese Mountain Dog&#39; }); // good dog.set(&#39;attr&#39;, { age: &#39;1 year&#39;, breed: &#39;Bernese Mountain Dog&#39; });  Place 1 space before the opening parenthesis in control statements (if, while etc.</description>
+    </item>
+    
+    <item>
+      <title>Commas</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/commas/</link>
+      <pubDate>Tue, 11 Jul 2017 11:46:18 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/commas/</guid>
+      <description>Commas  Leading commas: Nope.
+// bad var story = [ once , upon , aTime ]; // good var story = [ once, upon, aTime ]; // bad var hero = { firstName: &#39;Bob&#39; , lastName: &#39;Parr&#39; , heroName: &#39;Mr. Incredible&#39; , superPower: &#39;strength&#39; }; // good var hero = { firstName: &#39;Bob&#39;, lastName: &#39;Parr&#39;, heroName: &#39;Mr. Incredible&#39;, superPower: &#39;strength&#39; };  Additional trailing comma: Nope. This can cause problems with IE6/7 and IE9 if it&amp;rsquo;s in quirksmode.</description>
+    </item>
+    
+    <item>
+      <title>Semicolons</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/semicolons/</link>
+      <pubDate>Tue, 11 Jul 2017 11:48:05 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/semicolons/</guid>
+      <description>Semicolons  Yup.
+// bad (function () { var name = &#39;Skywalker&#39; return name })() // good (function () { var name = &#39;Skywalker&#39;; return name; })(); // good (guards against the function becoming an argument when two files with IIFEs are concatenated) ;(function () { var name = &#39;Skywalker&#39;; return name; })();  Read more.
+  ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Type Casting &amp; Coercion</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/type-casting--coercion/</link>
+      <pubDate>Tue, 11 Jul 2017 11:50:17 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/type-casting--coercion/</guid>
+      <description>Type Casting &amp;amp; Coercion  Perform type coercion at the beginning of the statement. Strings:
+// =&amp;gt; this.reviewScore = 9; // bad var totalScore = this.reviewScore + &#39;&#39;; // good var totalScore = &#39;&#39; + this.reviewScore; // bad var totalScore = &#39;&#39; + this.reviewScore + &#39; total score&#39;; // good var totalScore = this.reviewScore + &#39; total score&#39;;  Use parseInt for Numbers and always with a radix for type casting.</description>
+    </item>
+    
+    <item>
+      <title>Naming Conventions</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/naming-conventions/</link>
+      <pubDate>Tue, 11 Jul 2017 11:52:43 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/naming-conventions/</guid>
+      <description>Naming Conventions  Avoid single letter names. Be descriptive with your naming.
+// bad function q() { // ...stuff... } // good function query() { // ..stuff.. }  Use camelCase when naming objects, functions, and instances.
+// bad var OBJEcttsssss = {}; var this_is_my_object = {}; var o = {}; function c() {} // good var thisIsMyObject = {}; function thisIsMyFunction() {}  Use PascalCase when naming constructors or classes.</description>
+    </item>
+    
+    <item>
+      <title>Accessors</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/accessors/</link>
+      <pubDate>Tue, 11 Jul 2017 13:29:09 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/accessors/</guid>
+      <description>Accessors  Accessor functions for properties are not required. If you do make accessor functions use getVal() and setVal(&amp;lsquo;hello&amp;rsquo;).
+// bad dragon.age(); // good dragon.getAge(); // bad dragon.age(25); // good dragon.setAge(25);  If the property is a boolean, use isVal() or hasVal().
+// bad if (!dragon.age()) { return false; } // good if (!dragon.hasAge()) { return false; }  It&amp;rsquo;s okay to create get() and set() functions, but be consistent.</description>
+    </item>
+    
+    <item>
+      <title>Constructors</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/constructors/</link>
+      <pubDate>Tue, 11 Jul 2017 13:41:07 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/constructors/</guid>
+      <description>Constructors  Assign methods to the prototype object, instead of overwriting the prototype with a new object. Overwriting the prototype makes inheritance impossible: by resetting the prototype you&amp;rsquo;ll overwrite the base!
+function Jedi() { console.log(&#39;new jedi&#39;); } // bad Jedi.prototype = { fight: function fight() { console.log(&#39;fighting&#39;); }, block: function block() { console.log(&#39;blocking&#39;); } }; // good Jedi.prototype.fight = function fight() { console.log(&#39;fighting&#39;); }; Jedi.prototype.block = function block() { console.</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/events/</link>
+      <pubDate>Tue, 11 Jul 2017 13:45:09 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/events/</guid>
+      <description>Events  When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass a hash instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
+// bad $(this).trigger(&#39;listingUpdated&#39;, listing.id); ... $(this).on(&#39;listingUpdated&#39;, function (e, listingId) { // do something with listingId });  prefer:</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/modules/</link>
+      <pubDate>Tue, 11 Jul 2017 13:46:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/modules/</guid>
+      <description>Modules  The module should start with a !. This ensures that if a malformed module forgets to include a final semicolon there aren&amp;rsquo;t errors in production when the scripts get concatenated. Explanation The file should be named with camelCase, live in a folder with the same name, and match the name of the single export. Add a method called noConflict() that sets the exported module to the previous version and returns this one.</description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/jquery/</link>
+      <pubDate>Tue, 11 Jul 2017 13:52:43 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/jquery/</guid>
+      <description>jQuery  Prefix jQuery object variables with a $.
+// bad var sidebar = $(&#39;.sidebar&#39;); // good var $sidebar = $(&#39;.sidebar&#39;);  Cache jQuery lookups.
+// bad function setSidebar() { $(&#39;.sidebar&#39;).hide(); // ...stuff... $(&#39;.sidebar&#39;).css({ &#39;background-color&#39;: &#39;pink&#39; }); } // good function setSidebar() { var $sidebar = $(&#39;.sidebar&#39;); $sidebar.hide(); // ...stuff... $sidebar.css({ &#39;background-color&#39;: &#39;pink&#39; }); }  For DOM queries use Cascading $(&#39;.sidebar ul&#39;) or parent &amp;gt; child $(&#39;.sidebar &amp;gt; ul&#39;).</description>
+    </item>
+    
+    <item>
+      <title>Ecmascript 5 Compatibility</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es5/ecmascript-5-compatibility/</link>
+      <pubDate>Tue, 11 Jul 2017 13:56:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es5/ecmascript-5-compatibility/</guid>
+      <description> ECMAScript 5 Compatibility  Refer to Kangax&amp;rsquo;s ES5 compatibility table.  ⬆ Back to Table of Contents
+}; </description>
+    </item>
+    
+    <item>
+      <title>Types</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/types/</link>
+      <pubDate>Tue, 11 Jul 2017 14:03:46 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/types/</guid>
+      <description>Types  1.1 Primitives: When you access a primitive type you work directly on its value.
+ string number boolean null undefined  const foo = 1; let bar = foo; bar = 9; console.log(foo, bar); // =&amp;gt; 1, 9  1.2 Complex: When you access a complex type you work on a reference to its value.
+ object array function  const foo = [1, 2]; const bar = foo; bar[0] = 9; console.</description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/references/</link>
+      <pubDate>Tue, 11 Jul 2017 14:12:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/references/</guid>
+      <description>References  2.1 Use const for all of your references; avoid using var. eslint: prefer-const, no-const-assign
+ Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+ // bad var a = 1; var b = 2; // good const a = 1; const b = 2;  2.2 If you must reassign references, use let instead of var. eslint: no-var jscs: disallowVar</description>
+    </item>
+    
+    <item>
+      <title>Objects</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/objects/</link>
+      <pubDate>Tue, 11 Jul 2017 14:15:33 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/objects/</guid>
+      <description>Objects  3.1 Use the literal syntax for object creation. eslint: no-new-object
+// bad const item = new Object(); // good const item = {};  3.2 Use computed property names when creating objects with dynamic property names.
+ Why? They allow you to define all the properties of an object in one place.
+ function getKey(k) { return `a key named ${k}`; } // bad const obj = { id: 5, name: &#39;San Francisco&#39;, }; obj[getKey(&#39;enabled&#39;)] = true; // good const obj = { id: 5, name: &#39;San Francisco&#39;, [getKey(&#39;enabled&#39;)]: true, };  3.</description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/arrays/</link>
+      <pubDate>Tue, 11 Jul 2017 15:13:24 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/arrays/</guid>
+      <description>Arrays  4.1 Use the literal syntax for array creation. eslint: no-array-constructor
+// bad const items = new Array(); // good const items = [];  4.2 Use Array#push instead of direct assignment to add items to an array.
+const someStack = []; // bad someStack[someStack.length] = &#39;abracadabra&#39;; // good someStack.push(&#39;abracadabra&#39;);  4.3 Use array spreads ... to copy arrays.
+// bad const len = items.length; const itemsCopy = []; let i; for (i = 0; i &amp;lt; len; i += 1) { itemsCopy[i] = items[i]; } // good const itemsCopy = [.</description>
+    </item>
+    
+    <item>
+      <title>Destructuring</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/destructuring/</link>
+      <pubDate>Tue, 11 Jul 2017 15:16:52 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/destructuring/</guid>
+      <description>Destructuring  5.1 Use object destructuring when accessing and using multiple properties of an object. jscs: requireObjectDestructuring
+ Why? Destructuring saves you from creating temporary references for those properties.
+ // bad function getFullName(user) { const firstName = user.firstName; const lastName = user.lastName; return `${firstName} ${lastName}`; } // good function getFullName(user) { const { firstName, lastName } = user; return `${firstName} ${lastName}`; } // best function getFullName({ firstName, lastName }) { return `${firstName} ${lastName}`; }  5.</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/strings/</link>
+      <pubDate>Tue, 11 Jul 2017 15:22:27 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/strings/</guid>
+      <description>Strings  6.1 Use single quotes &#39;&#39; for strings. eslint: quotes jscs: validateQuoteMarks
+// bad const name = &amp;quot;Capt. Janeway&amp;quot;; // bad - template literals should contain interpolation or newlines const name = `Capt. Janeway`; // good const name = &#39;Capt. Janeway&#39;;  6.2 Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
+ Why? Broken strings are painful to work with and make code less searchable.</description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/functions/</link>
+      <pubDate>Tue, 11 Jul 2017 15:24:42 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/functions/</guid>
+      <description>Functions  7.1 Use named function expressions instead of function declarations. eslint: func-style jscs: disallowFunctionDeclarations
+ Why? Function declarations are hoisted, which means that it’s easy - too easy - to reference the function before it is defined in the file. This harms readability and maintainability. If you find that a function’s definition is large or complex enough that it is interfering with understanding the rest of the file, then perhaps it’s time to extract it to its own module!</description>
+    </item>
+    
+    <item>
+      <title>Arrow Functions</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/arrow-functions/</link>
+      <pubDate>Tue, 11 Jul 2017 15:28:30 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/arrow-functions/</guid>
+      <description>Arrow Functions  8.1 When you must use function expressions (as when passing an anonymous function), use arrow function notation. eslint: prefer-arrow-callback, arrow-spacing jscs: requireArrowFunctions
+ Why? It creates a version of the function that executes in the context of this, which is usually what you want, and is a more concise syntax.
+Why not? If you have a fairly complicated function, you might move that logic out into its own function declaration.</description>
+    </item>
+    
+    <item>
+      <title>Classes &amp; Constructors</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/classes--constructors/</link>
+      <pubDate>Tue, 11 Jul 2017 15:30:39 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/classes--constructors/</guid>
+      <description>Classes &amp;amp; Constructors  9.1 Always use class. Avoid manipulating prototype directly.
+ Why? class syntax is more concise and easier to reason about.
+ // bad function Queue(contents = []) { this.queue = [...contents]; } Queue.prototype.pop = function () { const value = this.queue[0]; this.queue.splice(0, 1); return value; }; // good class Queue { constructor(contents = []) { this.queue = [...contents]; } pop() { const value = this.queue[0]; this.</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/modules/</link>
+      <pubDate>Tue, 11 Jul 2017 15:33:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/modules/</guid>
+      <description>Modules  10.1 Always use modules (import/export) over a non-standard module system. You can always transpile to your preferred module system.
+ Why? Modules are the future, let’s start using the future now.
+ // bad const AirbnbStyleGuide = require(&#39;./AirbnbStyleGuide&#39;); module.exports = AirbnbStyleGuide.es6; // ok import AirbnbStyleGuide from &#39;./AirbnbStyleGuide&#39;; export default AirbnbStyleGuide.es6; // best import { es6 } from &#39;./AirbnbStyleGuide&#39;; export default es6;  10.2 Do not use wildcard imports.</description>
+    </item>
+    
+    <item>
+      <title>Iterators And Generators</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/iterators-and-generators/</link>
+      <pubDate>Tue, 11 Jul 2017 15:35:55 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/iterators-and-generators/</guid>
+      <description>Iterators and Generators  11.1 Don’t use iterators. Prefer JavaScript’s higher-order functions instead of loops like for-in or for-of. eslint: no-iterator no-restricted-syntax
+ Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
+Use map() / every() / filter() / find() / findIndex() / reduce() / some() / &amp;hellip; to iterate over arrays, and Object.keys() / Object.values() / Object.</description>
+    </item>
+    
+    <item>
+      <title>Properties</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/properties/</link>
+      <pubDate>Tue, 11 Jul 2017 15:39:54 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/properties/</guid>
+      <description>Properties  12.1 Use dot notation when accessing properties. eslint: dot-notation jscs: requireDotNotation
+const luke = { jedi: true, age: 28, }; // bad const isJedi = luke[&#39;jedi&#39;]; // good const isJedi = luke.jedi;  12.2 Use bracket notation [] when accessing properties with a variable.
+const luke = { jedi: true, age: 28, }; function getProp(prop) { return luke[prop]; } const isJedi = getProp(&#39;jedi&#39;);   ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/variables/</link>
+      <pubDate>Tue, 11 Jul 2017 15:42:40 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/variables/</guid>
+      <description>Variables  13.1 Always use const or let to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that. eslint: no-undef prefer-const
+// bad superPower = new SuperPower(); // good const superPower = new SuperPower();  13.2 Use one const or let declaration per variable. eslint: one-var jscs: disallowMultipleVarDecl
+ Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a ; for a , or introducing punctuation-only diffs.</description>
+    </item>
+    
+    <item>
+      <title>Hoisting</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/hoisting/</link>
+      <pubDate>Tue, 11 Jul 2017 16:07:43 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/hoisting/</guid>
+      <description>Hoisting  14.1 var declarations get hoisted to the top of their scope, their assignment does not. const and let declarations are blessed with a new concept called Temporal Dead Zones (TDZ). It’s important to know why typeof is no longer safe.
+// we know this wouldn’t work (assuming there // is no notDefined global variable) function example() { console.log(notDefined); // =&amp;gt; throws a ReferenceError } // creating a variable declaration after you // reference the variable will work due to // variable hoisting.</description>
+    </item>
+    
+    <item>
+      <title>Comparison Operators &amp; Equality</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/comparison-operators--equality/</link>
+      <pubDate>Tue, 11 Jul 2017 16:08:08 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/comparison-operators--equality/</guid>
+      <description>Comparison Operators &amp;amp; Equality  15.1 Use === and !== over == and !=. eslint: eqeqeq
+ 15.2 Conditional statements such as the if statement evaluate their expression using coercion with the ToBoolean abstract method and always follow these simple rules:
+ Objects evaluate to true Undefined evaluates to false Null evaluates to false Booleans evaluate to the value of the boolean Numbers evaluate to false if +0, -0, or NaN, otherwise true Strings evaluate to false if an empty string &#39;&#39;, otherwise true  if ([0] &amp;amp;&amp;amp; []) { // true // an array (even an empty one) is an object, objects will evaluate to true }  15.</description>
+    </item>
+    
+    <item>
+      <title>Blocks</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/blocks/</link>
+      <pubDate>Tue, 11 Jul 2017 16:13:12 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/blocks/</guid>
+      <description>Blocks  16.1 Use braces with all multi-line blocks.
+// bad if (test) return false; // good if (test) return false; // good if (test) { return false; } // bad function foo() { return false; } // good function bar() { return false; }  16.2 If you&amp;rsquo;re using multi-line blocks with if and else, put else on the same line as your if block’s closing brace. eslint: brace-style jscs: disallowNewlineBeforeBlockStatements</description>
+    </item>
+    
+    <item>
+      <title>Control Statements</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/control-statements/</link>
+      <pubDate>Tue, 11 Jul 2017 16:13:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/control-statements/</guid>
+      <description>Control Statements  17.1 In case your control statement (if, while etc.) gets too long or exceeds the maximum line length, each (grouped) condition could be put into a new line. It’s up to you whether the logical operator should begin or end the line.
+// bad if ((foo === 123 || bar === &#39;abc&#39;) &amp;amp;&amp;amp; doesItLookGoodWhenItBecomesThatLong() &amp;amp;&amp;amp; isThisReallyHappening()) { thing1(); } // bad if (foo === 123 &amp;amp;&amp;amp; bar === &#39;abc&#39;) { thing1(); } // bad if (foo === 123 &amp;amp;&amp;amp; bar === &#39;abc&#39;) { thing1(); } // good if ( (foo === 123 || bar === &amp;quot;abc&amp;quot;) &amp;amp;&amp;amp; doesItLookGoodWhenItBecomesThatLong() &amp;amp;&amp;amp; isThisReallyHappening() ) { thing1(); } // good if (foo === 123 &amp;amp;&amp;amp; bar === &#39;abc&#39;) { thing1(); } // good if ( foo === 123 &amp;amp;&amp;amp; bar === &#39;abc&#39; ) { thing1(); } // good if ( foo === 123 &amp;amp;&amp;amp; bar === &#39;abc&#39; ) { thing1(); }   ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/comments/</link>
+      <pubDate>Tue, 11 Jul 2017 16:17:12 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/comments/</guid>
+      <description>Comments  18.1 Use /** ... */ for multi-line comments.  // bad // make() returns a new element // based on the passed in tag name // // @param {String} tag // @return {Element} element function make(tag) { // ... return element; } // good /** * make() returns a new element * based on the passed-in tag name */ function make(tag) { // ... return element; }   18.</description>
+    </item>
+    
+    <item>
+      <title>Whitespace</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/whitespace/</link>
+      <pubDate>Tue, 11 Jul 2017 16:24:15 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/whitespace/</guid>
+      <description>Whitespace  19.1 Use soft tabs (space character) set to 2 spaces. eslint: indent jscs: validateIndentation
+// bad function foo() { ∙∙∙∙let name; } // bad function bar() { ∙let name; } // good function baz() { ∙∙let name; }  19.2 Place 1 space before the leading brace. eslint: space-before-blocks jscs: requireSpaceBeforeBlockStatements
+// bad function test(){ console.log(&#39;test&#39;); } // good function test() { console.log(&#39;test&#39;); } // bad dog.set(&#39;attr&#39;,{ age: &#39;1 year&#39;, breed: &#39;Bernese Mountain Dog&#39;, }); // good dog.</description>
+    </item>
+    
+    <item>
+      <title>Commas</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/commas/</link>
+      <pubDate>Tue, 11 Jul 2017 16:24:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/commas/</guid>
+      <description>Commas  20.1 Leading commas: Nope. eslint: comma-style jscs: requireCommaBeforeLineBreak
+// bad const story = [ once , upon , aTime ]; // good const story = [ once, upon, aTime, ]; // bad const hero = { firstName: &#39;Ada&#39; , lastName: &#39;Lovelace&#39; , birthYear: 1815 , superPower: &#39;computers&#39; }; // good const hero = { firstName: &#39;Ada&#39;, lastName: &#39;Lovelace&#39;, birthYear: 1815, superPower: &#39;computers&#39;, };  20.2 Additional trailing comma: Yup.</description>
+    </item>
+    
+    <item>
+      <title>Semicolons</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/semicolons/</link>
+      <pubDate>Tue, 11 Jul 2017 16:33:04 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/semicolons/</guid>
+      <description>Semicolons  21.1 Yup. eslint: semi jscs: requireSemicolons
+// bad (function () { const name = &#39;Skywalker&#39; return name })() // good (function () { const name = &#39;Skywalker&#39;; return name; }()); // good, but legacy (guards against the function becoming an argument when two files with IIFEs are concatenated) ;((() =&amp;gt; { const name = &#39;Skywalker&#39;; return name; })());  Read more.
+  ⬆ Back to Table of Contents</description>
+    </item>
+    
+    <item>
+      <title>Type Casting &amp; Coercion</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/type-casting--coercion/</link>
+      <pubDate>Tue, 11 Jul 2017 16:36:30 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/type-casting--coercion/</guid>
+      <description>Type Casting &amp;amp; Coercion  22.1 Perform type coercion at the beginning of the statement.
+ 22.2 Strings:
+// =&amp;gt; this.reviewScore = 9; // bad const totalScore = this.reviewScore + &#39;&#39;; // invokes this.reviewScore.valueOf() // bad const totalScore = this.reviewScore.toString(); // isn’t guaranteed to return a string // good const totalScore = String(this.reviewScore);  22.3 Numbers: Use Number for type casting and parseInt always with a radix for parsing strings.</description>
+    </item>
+    
+    <item>
+      <title>Naming Conventions</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/naming-conventions/</link>
+      <pubDate>Tue, 11 Jul 2017 16:40:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/naming-conventions/</guid>
+      <description>Naming Conventions  23.1 Avoid single letter names. Be descriptive with your naming. eslint: id-length
+// bad function q() { // ... } // good function query() { // ... }  23.2 Use camelCase when naming objects, functions, and instances. eslint: camelcase jscs: requireCamelCaseOrUpperCaseIdentifiers
+// bad const OBJEcttsssss = {}; const this_is_my_object = {}; function c() {} // good const thisIsMyObject = {}; function thisIsMyFunction() {}  23.3 Use PascalCase only when naming constructors or classes.</description>
+    </item>
+    
+    <item>
+      <title>Accessors</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/accessors/</link>
+      <pubDate>Tue, 11 Jul 2017 16:42:26 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/accessors/</guid>
+      <description>Accessors  24.1 Accessor functions for properties are not required.
+ 24.2 Do not use JavaScript getters/setters as they cause unexpected side effects and are harder to test, maintain, and reason about. Instead, if you do make accessor functions, use getVal() and setVal(&#39;hello&#39;).
+// bad class Dragon { get age() { // ... } set age(value) { // ... } } // good class Dragon { getAge() { // .</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/events/</link>
+      <pubDate>Tue, 11 Jul 2017 16:54:40 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/events/</guid>
+      <description>Events  25.1 When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass a hash instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
+// bad $(this).trigger(&#39;listingUpdated&#39;, listing.id); // ... $(this).on(&#39;listingUpdated&#39;, (e, listingId) =&amp;gt; { // do something with listingId });  prefer:</description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/jquery/</link>
+      <pubDate>Tue, 11 Jul 2017 16:54:45 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/jquery/</guid>
+      <description>jQuery  26.1 Prefix jQuery object variables with a $. jscs: requireDollarBeforejQueryAssignment
+// bad const sidebar = $(&#39;.sidebar&#39;); // good const $sidebar = $(&#39;.sidebar&#39;); // good const $sidebarBtn = $(&#39;.sidebar-btn&#39;);  26.2 Cache jQuery lookups.
+// bad function setSidebar() { $(&#39;.sidebar&#39;).hide(); // ... $(&#39;.sidebar&#39;).css({ &#39;background-color&#39;: &#39;pink&#39;, }); } // good function setSidebar() { const $sidebar = $(&#39;.sidebar&#39;); $sidebar.hide(); // ... $sidebar.css({ &#39;background-color&#39;: &#39;pink&#39;, }); }  26.3 For DOM queries use Cascading $(&#39;.</description>
+    </item>
+    
+    <item>
+      <title>Ecmascript 6 Es 2015 Styles</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/</link>
+      <pubDate>Tue, 11 Jul 2017 16:55:01 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/</guid>
+      <description>ECMAScript 6+ (ES 2015+) Styles  28.1 This is a collection of links to the various ES6 features.   Arrow Functions Classes Object Shorthand Object Concise Object Computed Properties Template Strings Destructuring Default Parameters Rest Array Spreads Let and Const Iterators and Generators Modules
+ 28.2 Do not use TC39 proposals that have not reached stage 3.   Why? They are not finalized, and they are subject to change or to be withdrawn entirely.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/testing/</link>
+      <pubDate>Tue, 11 Jul 2017 17:02:10 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/testing/</guid>
+      <description>Testing  29.1 Yup.
+function foo() { return true; }  29.2 No, but seriously:
+ Whichever testing framework you use, you should be writing tests! Strive to write many small pure functions, and minimize where mutations occur. Be cautious about stubs and mocks - they can make your tests more brittle. We primarily use mocha at Airbnb. tape is also used occasionally for small, separate modules. 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.</description>
+    </item>
+    
+    <item>
+      <title>Performance</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/performance/</link>
+      <pubDate>Tue, 11 Jul 2017 17:04:08 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/performance/</guid>
+      <description>Performance  On Layout &amp;amp; Web Performance String vs Array Concat Try/Catch Cost In a Loop Bang Function jQuery Find vs Context, Selector innerHTML vs textContent for script text Long String Concatenation Are Javascript functions like map(), reduce(), and filter() optimized for traversing arrays? Loading&amp;hellip;  ⬆ Back</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/resources/</link>
+      <pubDate>Tue, 11 Jul 2017 17:06:16 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/resources/</guid>
+      <description>Resources Learning ES6
+ Draft ECMA 2015 (ES6) Spec ExploringJS ES6 Compatibility Table Comprehensive Overview of ES6 Features  Read This
+ Standard ECMA-262  Tools
+ Code Style Linters  ESlint - Airbnb Style .eslintrc JSHint - Airbnb Style .jshintrc JSCS - Airbnb Style Preset (Deprecated, please use ESlint)  Neutrino preset - neutrino-preset-airbnb-base  Other Style Guides
+ Google JavaScript Style Guide jQuery Core Style Guidelines Principles of Writing Consistent, Idiomatic JavaScript  Other Styles</description>
+    </item>
+    
+    <item>
+      <title>In The Wild</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/in-the-wild/</link>
+      <pubDate>Tue, 11 Jul 2017 17:08:17 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/in-the-wild/</guid>
+      <description>In the Wild This is a list of organizations that are using this style guide. Send us a pull request and we&amp;rsquo;ll add you to the list.
+ 3blades: 3Blades/javascript 4Catalyzer: 4Catalyzer/javascript Aan Zee: AanZee/javascript Adult Swim: adult-swim/javascript Airbnb: airbnb/javascript AltSchool: AltSchool/javascript Apartmint: apartmint/javascript Ascribe: ascribe/javascript Avalara: avalara/javascript Avant: avantcredit/javascript Axept: axept/javascript BashPros: BashPros/javascript Billabong: billabong/javascript Bisk: bisk/javascript Bonhomme: bonhommeparis/javascript Brainshark: brainshark/javascript CaseNine: CaseNine/javascript Chartboost: ChartBoost/javascript-style-guide ComparaOnline: comparaonline/javascript Compass Learning: compasslearning/javascript-style-guide DailyMotion: dailymotion/javascript DoSomething: DoSomething/eslint-config Digitpaint digitpaint/javascript Ecosia: ecosia/javascript Evernote: evernote/javascript-style-guide Evolution Gaming: evolution-gaming/javascript EvozonJs: evozonjs/javascript ExactTarget: ExactTarget/javascript Expensify Expensify/Style-Guide Flexberry: Flexberry/javascript-style-guide Gawker Media: gawkermedia/javascript General Electric: GeneralElectric/javascript Generation Tux: GenerationTux/javascript GoodData: gooddata/gdc-js-style Grooveshark: grooveshark/javascript Honey: honeyscience/javascript How About We: howaboutwe/javascript Huballin: huballin/javascript HubSpot: HubSpot/javascript Hyper: hyperoslo/javascript-playbook InterCity Group: intercitygroup/javascript-style-guide Jam3: Jam3/Javascript-Code-Conventions JeopardyBot: kesne/jeopardy-bot JSSolutions: JSSolutions/javascript KickorStick: kickorstick/javascript Kinetica Solutions: kinetica/javascript Lonely Planet: lonelyplanet/javascript M2GEN: M2GEN/javascript Mighty Spring: mightyspring/javascript MinnPost: MinnPost/javascript MitocGroup: MitocGroup/javascript ModCloth: modcloth/javascript Money Advice Service: moneyadviceservice/javascript Muber: muber/javascript National Geographic: natgeo/javascript Nimbl3: nimbl3/javascript Nulogy: nulogy/javascript Orange Hill Development: orangehill/javascript Orion Health: orionhealth/javascript OutBoxSoft: OutBoxSoft/javascript Peerby: Peerby/javascript Razorfish: razorfish/javascript-style-guide reddit: reddit/styleguide/javascript React: facebook.</description>
+    </item>
+    
+    <item>
+      <title>The Javascript Style Guide Guide</title>
+      <link>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</link>
+      <pubDate>Tue, 11 Jul 2017 17:12:03 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</guid>
+      <description>The JavaScript Style Guide Guide  Reference  ⬆ Back</description>
     </item>
     
     <item>
