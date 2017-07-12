@@ -8,5 +8,5 @@ draft: false
 
 This document contains the guidelines and best practices for the frontend and backend web development team at *Xcidic*. This document is based on **MEANJS** framework.
 
-## Includes
+## Include
 1. [NodeJS Style Guide]({{%relref "meanjs/nodejs.md" %}})
