@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Basic Rules</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/basic-rules/</link>
+      <pubDate>Wed, 12 Jul 2017 10:26:12 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/basic-rules/</guid>
+      <description> Basic Rules  Only include one React component per file.  However, multiple Stateless, or Pure, Components are allowed per file. eslint: react/no-multi-comp.  Always use JSX syntax. Do not use React.createElement unless you&amp;rsquo;re initializing the app from a file that is not JSX.  </description>
+    </item>
+    
+    <item>
       <title>Single Responsibility</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</link>
       <pubDate>Mon, 10 Jul 2017 18:48:19 +0700</pubDate>
@@ -20,6 +29,17 @@
       <description>Single Responsibility Rule of 1 [Style Y001]  Define 1 component per file, recommended to be less than 400 lines of code.  Why?: One component per file promotes easier unit testing and mocking.
 Why?: One component per file makes it far easier to read, maintain, and avoid collisions with teams in source control.
 Why?: One component per file avoids hidden bugs that often arise when combining components in a file where they may share variables, create unwanted closures, or unwanted coupling with dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Class Vs React.createClass Vs Stateless</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/</link>
+      <pubDate>Wed, 12 Jul 2017 10:33:05 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/</guid>
+      <description>Class vs React.createClass vs stateless  If you have internal state and/or refs, prefer class extends React.Component over React.createClass. eslint: react/prefer-es6-class react/prefer-stateless-function
+// bad const Listing = React.createClass({ // ... render() { return &amp;lt;div&amp;gt;{this.state.hello}&amp;lt;/div&amp;gt;; } }); // good class Listing extends React.Component { // ... render() { return &amp;lt;div&amp;gt;{this.state.hello}&amp;lt;/div&amp;gt;; } }  And if you don&amp;rsquo;t have state or refs, prefer normal functions (not arrow functions) over classes:
+// bad class Listing extends React.</description>
     </item>
     
     <item>
@@ -33,6 +53,16 @@ Why?: When your code is minified and bundled into a single file for deployment t
     </item>
     
     <item>
+      <title>Mixins</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/mixins/</link>
+      <pubDate>Wed, 12 Jul 2017 10:35:49 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/mixins/</guid>
+      <description> Mixins  Do not use mixins.   Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
+ </description>
+    </item>
+    
+    <item>
       <title>Modules</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/modules/</link>
       <pubDate>Mon, 10 Jul 2017 18:47:01 +0700</pubDate>
@@ -43,6 +73,16 @@ Definitions (aka Setters) [Style Y021]  Declare modules without a variable using
     </item>
     
     <item>
+      <title>Naming</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/naming/</link>
+      <pubDate>Wed, 12 Jul 2017 10:38:12 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/naming/</guid>
+      <description>Naming  Extensions: Use .jsx extension for React components. Filename: Use PascalCase for filenames. E.g., ReservationCard.jsx. Reference Naming: Use PascalCase for React components and camelCase for their instances. eslint: react/jsx-pascal-case
+// bad import reservationCard from &#39;./ReservationCard&#39;; // good import ReservationCard from &#39;./ReservationCard&#39;; // bad const ReservationItem = &amp;lt;ReservationCard /&amp;gt;; // good const reservationItem = &amp;lt;ReservationCard /&amp;gt;;  Component Naming: Use the filename as the component name. For example, ReservationCard.jsx should have a reference name of ReservationCard.</description>
+    </item>
+    
+    <item>
       <title>Controllers</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/controllers/</link>
       <pubDate>Mon, 10 Jul 2017 18:43:46 +0700</pubDate>
@@ -50,6 +90,16 @@ Definitions (aka Setters) [Style Y021]  Declare modules without a variable using
       <guid>https://xcidic.github.io/coding-guidelines/angular1/controllers/</guid>
       <description>Controllers controllerAs View Syntax [Style Y030]  Use the controllerAs syntax over the classic controller with $scope syntax.  Why?: Controllers are constructed, &amp;ldquo;newed&amp;rdquo; up, and provide a single new instance, and the controllerAs syntax is closer to that of a JavaScript constructor than the classic $scope syntax.
 Why?: It promotes the use of binding to a &amp;ldquo;dotted&amp;rdquo; object in the View (e.g. customer.name instead of name), which is more contextual, easier to read, and avoids any reference issues that may occur without &amp;ldquo;dotting&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Declaration</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/declaration/</link>
+      <pubDate>Wed, 12 Jul 2017 10:54:11 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/declaration/</guid>
+      <description> Declaration  Do not use displayName for naming components. Instead, name the component by reference.
+// bad export default React.createClass({ displayName: &#39;ReservationCard&#39;, // stuff goes here }); // good export default class ReservationCard extends React.Component { }   </description>
     </item>
     
     <item>
@@ -64,6 +114,16 @@ Note: All Angular services are singletons. This means that there is only one ins
     </item>
     
     <item>
+      <title>Alignment</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/alignment/</link>
+      <pubDate>Wed, 12 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/alignment/</guid>
+      <description> Alignment  Follow these alignment styles for JSX syntax. eslint: react/jsx-closing-bracket-location
+// bad &amp;lt;Foo superLongParam=&amp;quot;bar&amp;quot; anotherSuperLongParam=&amp;quot;baz&amp;quot; /&amp;gt; // good &amp;lt;Foo superLongParam=&amp;quot;bar&amp;quot; anotherSuperLongParam=&amp;quot;baz&amp;quot; /&amp;gt; // if props fit in one line then keep it on the same line &amp;lt;Foo bar=&amp;quot;bar&amp;quot; /&amp;gt; // children get indented normally &amp;lt;Foo superLongParam=&amp;quot;bar&amp;quot; anotherSuperLongParam=&amp;quot;baz&amp;quot; &amp;gt; &amp;lt;Quux /&amp;gt; &amp;lt;/Foo&amp;gt;   </description>
+    </item>
+    
+    <item>
       <title>Factories</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/factories/</link>
       <pubDate>Mon, 10 Jul 2017 18:44:58 +0700</pubDate>
@@ -75,6 +135,17 @@ Note: All Angular services are singletons.
     </item>
     
     <item>
+      <title>Quotes</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/quotes/</link>
+      <pubDate>Wed, 12 Jul 2017 11:01:39 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/quotes/</guid>
+      <description> Quotes  Always use double quotes (&amp;quot;) for JSX attributes, but single quotes (&#39;) for all other JS. eslint: jsx-quotes
+ Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
+ // bad &amp;lt;Foo bar=&#39;bar&#39; /&amp;gt; // good &amp;lt;Foo bar=&amp;quot;bar&amp;quot; /&amp;gt; // bad &amp;lt;Foo style={{ left: &amp;quot;20px&amp;quot; }} /&amp;gt; // good &amp;lt;Foo style={{ left: &#39;20px&#39; }} /&amp;gt;   </description>
+    </item>
+    
+    <item>
       <title>Data Services</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/data-services/</link>
       <pubDate>Mon, 10 Jul 2017 18:44:00 +0700</pubDate>
@@ -82,6 +153,17 @@ Note: All Angular services are singletons.
       <guid>https://xcidic.github.io/coding-guidelines/angular1/data-services/</guid>
       <description>Data Services Separate Data Calls [Style Y060]  Refactor logic for making data operations and interacting with data to a factory. Make data services responsible for XHR calls, local storage, stashing in memory, or any other data operations.
 Why?: The controller&amp;rsquo;s responsibility is for the presentation and gathering of information for the view. It should not care how it gets the data, just that it knows who to ask for it.</description>
+    </item>
+    
+    <item>
+      <title>Spacing</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/spacing/</link>
+      <pubDate>Wed, 12 Jul 2017 11:03:32 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/spacing/</guid>
+      <description> Spacing  Always include a single space in your self-closing tag. eslint: no-multi-spaces, react/jsx-tag-spacing
+// bad &amp;lt;Foo/&amp;gt; // very bad &amp;lt;Foo /&amp;gt; // bad &amp;lt;Foo /&amp;gt; // good &amp;lt;Foo /&amp;gt;  Do not pad JSX curly braces with spaces. eslint: react/jsx-curly-spacing
+// bad &amp;lt;Foo bar={ baz } /&amp;gt; // good &amp;lt;Foo bar={baz} /&amp;gt;   </description>
     </item>
     
     <item>
@@ -97,6 +179,17 @@ Why?: One directive per file is easy to maintain.
     </item>
     
     <item>
+      <title>Props</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/props/</link>
+      <pubDate>Wed, 12 Jul 2017 11:09:56 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/props/</guid>
+      <description>Props  Always use camelCase for prop names.
+// bad &amp;lt;Foo UserName=&amp;quot;hello&amp;quot; phone_number={12345678} /&amp;gt; // good &amp;lt;Foo userName=&amp;quot;hello&amp;quot; phoneNumber={12345678} /&amp;gt;  Omit the value of the prop when it is explicitly true. eslint: react/jsx-boolean-value
+// bad &amp;lt;Foo hidden={true} /&amp;gt; // good &amp;lt;Foo hidden /&amp;gt;  Always include an alt prop on &amp;lt;img&amp;gt; tags. If the image is presentational, alt can be an empty string or the &amp;lt;img&amp;gt; must have role=&amp;quot;presentation&amp;quot;.</description>
+    </item>
+    
+    <item>
       <title>Resolving Promises</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/resolving-promises/</link>
       <pubDate>Mon, 10 Jul 2017 18:47:19 +0700</pubDate>
@@ -108,6 +201,16 @@ Why?: The controller activate makes it convenient to re-use the logic for a refr
     </item>
     
     <item>
+      <title>Refs</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/refs/</link>
+      <pubDate>Wed, 12 Jul 2017 11:14:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/refs/</guid>
+      <description> Refs  Always use ref callbacks. eslint: react/no-string-refs
+// bad &amp;lt;Foo ref=&amp;quot;myRef&amp;quot; /&amp;gt; // good &amp;lt;Foo ref={(ref) =&amp;gt; { this.myRef = ref; }} /&amp;gt;   </description>
+    </item>
+    
+    <item>
       <title>Manual Annotating for Dependencies Injection</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/manual-annotating-for-dependency-injection/</link>
       <pubDate>Mon, 10 Jul 2017 18:46:24 +0700</pubDate>
@@ -116,6 +219,16 @@ Why?: The controller activate makes it convenient to re-use the logic for a refr
       <description>Manual Annotating for Dependency Injection UnSafe from Minification [Style Y090]  Avoid using the shortcut syntax of declaring dependencies without using a minification-safe approach.
 Why?: The parameters to the component (e.g. controller, factory, etc) will be converted to mangled variables. For example, common and dataservice may become a or b and not be found by Angular.
 /* avoid - not minification-safe*/ angular .module(&#39;app&#39;) .controller(&#39;DashboardController&#39;, DashboardController); function DashboardController(common, dataservice) { }  This code may produce mangled variables when minified and thus cause runtime errors.</description>
+    </item>
+    
+    <item>
+      <title>Parentheses</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/parentheses/</link>
+      <pubDate>Wed, 12 Jul 2017 11:22:31 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/parentheses/</guid>
+      <description> Parentheses  Wrap JSX tags in parentheses when they span more than one line. eslint: react/jsx-wrap-multilines
+// bad render() { return &amp;lt;MyComponent className=&amp;quot;long body&amp;quot; foo=&amp;quot;bar&amp;quot;&amp;gt; &amp;lt;MyChild /&amp;gt; &amp;lt;/MyComponent&amp;gt;; } // good render() { return ( &amp;lt;MyComponent className=&amp;quot;long body&amp;quot; foo=&amp;quot;bar&amp;quot;&amp;gt; &amp;lt;MyChild /&amp;gt; &amp;lt;/MyComponent&amp;gt; ); } // good, when single line render() { const body = &amp;lt;div&amp;gt;hello&amp;lt;/div&amp;gt;; return &amp;lt;MyComponent&amp;gt;{body}&amp;lt;/MyComponent&amp;gt;; }   </description>
     </item>
     
     <item>
@@ -132,6 +245,17 @@ Why?: ng-min is deprecated
     </item>
     
     <item>
+      <title>Tags</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/tags/</link>
+      <pubDate>Wed, 12 Jul 2017 11:24:02 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/tags/</guid>
+      <description> Tags  Always self-close tags that have no children. eslint: react/self-closing-comp
+// bad &amp;lt;Foo className=&amp;quot;stuff&amp;quot;&amp;gt;&amp;lt;/Foo&amp;gt; // good &amp;lt;Foo className=&amp;quot;stuff&amp;quot; /&amp;gt;  If your component has multi-line properties, close its tag on a new line. eslint: react/jsx-closing-bracket-location
+// bad &amp;lt;Foo bar=&amp;quot;bar&amp;quot; baz=&amp;quot;baz&amp;quot; /&amp;gt; // good &amp;lt;Foo bar=&amp;quot;bar&amp;quot; baz=&amp;quot;baz&amp;quot; /&amp;gt;   </description>
+    </item>
+    
+    <item>
       <title>Exception Handling</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/exception-handling/</link>
       <pubDate>Mon, 10 Jul 2017 18:44:45 +0700</pubDate>
@@ -140,6 +264,18 @@ Why?: ng-min is deprecated
       <description>Exception Handling decorators [Style Y110]  Use a decorator, at config time using the $provide service, on the $exceptionHandler service to perform custom actions when exceptions occur.
 Why?: Provides a consistent way to handle uncaught Angular exceptions for development-time or run-time.
 Note: Another option is to override the service instead of using a decorator. This is a fine option, but if you want to keep the default behavior and extend it a decorator is recommended.</description>
+    </item>
+    
+    <item>
+      <title>Methods</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/methods/</link>
+      <pubDate>Wed, 12 Jul 2017 11:27:22 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/methods/</guid>
+      <description>Methods  Use arrow functions to close over local variables.
+function ItemList(props) { return ( &amp;lt;ul&amp;gt; {props.items.map((item, index) =&amp;gt; ( &amp;lt;Item key={item.key} onClick={() =&amp;gt; doSomethingWith(item.name, index)} /&amp;gt; ))} &amp;lt;/ul&amp;gt; ); }  Bind event handlers for the render method in the constructor. eslint: react/jsx-no-bind
+ Why? A bind call in the render path creates a brand new function on every single render.
+ // bad class extends React.Component { onClickDiv() { // do stuff } render() { return &amp;lt;div onClick={this.</description>
     </item>
     
     <item>
@@ -153,6 +289,16 @@ Note: Another option is to override the service instead of using a decorator. Th
     </item>
     
     <item>
+      <title>Ordering</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/ordering/</link>
+      <pubDate>Wed, 12 Jul 2017 11:36:50 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/ordering/</guid>
+      <description>Ordering  Ordering for class extends React.Component:   optional static methods constructor getChildContext componentWillMount componentDidMount componentWillReceiveProps shouldComponentUpdate componentWillUpdate componentDidUpdate componentWillUnmount clickHandlers or eventHandlers like onClickSubmit() or onChangeDescription() getter methods for render like getSelectReason() or getFooterContent() optional render methods like renderNavigation() or renderProfilePicture() render   How to define propTypes, defaultProps, contextTypes, etc&amp;hellip;
+import React from &#39;react&#39;; import PropTypes from &#39;prop-types&#39;; const propTypes = { id: PropTypes.number.isRequired, url: PropTypes.string.isRequired, text: PropTypes.</description>
+    </item>
+    
+    <item>
       <title>Application Structure Lift Principle</title>
       <link>https://xcidic.github.io/coding-guidelines/angular1/application-structure-lift-principle/</link>
       <pubDate>Mon, 10 Jul 2017 18:42:53 +0700</pubDate>
@@ -160,6 +306,16 @@ Note: Another option is to override the service instead of using a decorator. Th
       <guid>https://xcidic.github.io/coding-guidelines/angular1/application-structure-lift-principle/</guid>
       <description>Application Structure LIFT Principle LIFT [Style Y140]  Structure your app such that you can Locate your code quickly, Identify the code at a glance, keep the Flattest structure you can, and Try to stay DRY. The structure should follow these 4 basic guidelines.
 Why LIFT?: Provides a consistent structure that scales well, is modular, and makes it easier to increase developer efficiency by finding code quickly. Another way to check your app structure is to ask yourself: How quickly can you open and work in all of the related files for a feature?</description>
+    </item>
+    
+    <item>
+      <title>Ismounted</title>
+      <link>https://xcidic.github.io/coding-guidelines/react/ismounted/</link>
+      <pubDate>Wed, 12 Jul 2017 11:40:11 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/react/ismounted/</guid>
+      <description> isMounted  Do not use isMounted. eslint: react/no-is-mounted   Why? isMounted is an anti-pattern, is not available when using ES6 classes, and is on its way to being officially deprecated.
+ </description>
     </item>
     
     <item>

@@ -8,8 +8,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/basic-rules/</loc>
+    <lastmod>2017-07-12T10:26:12+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</loc>
     <lastmod>2017-07-10T18:48:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/</loc>
+    <lastmod>2017-07-12T10:33:05+07:00</lastmod>
   </url>
   
   <url>
@@ -18,8 +28,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/mixins/</loc>
+    <lastmod>2017-07-12T10:35:49+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/modules/</loc>
     <lastmod>2017-07-10T18:47:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/naming/</loc>
+    <lastmod>2017-07-12T10:38:12+07:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +48,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/declaration/</loc>
+    <lastmod>2017-07-12T10:54:11+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/services/</loc>
     <lastmod>2017-07-10T18:47:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/alignment/</loc>
+    <lastmod>2017-07-12T10:59:35+07:00</lastmod>
   </url>
   
   <url>
@@ -38,8 +68,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/quotes/</loc>
+    <lastmod>2017-07-12T11:01:39+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/data-services/</loc>
     <lastmod>2017-07-10T18:44:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/spacing/</loc>
+    <lastmod>2017-07-12T11:03:32+07:00</lastmod>
   </url>
   
   <url>
@@ -48,8 +88,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/props/</loc>
+    <lastmod>2017-07-12T11:09:56+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/resolving-promises/</loc>
     <lastmod>2017-07-10T18:47:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/refs/</loc>
+    <lastmod>2017-07-12T11:14:47+07:00</lastmod>
   </url>
   
   <url>
@@ -58,8 +108,18 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/parentheses/</loc>
+    <lastmod>2017-07-12T11:22:31+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/minification-and-annotation/</loc>
     <lastmod>2017-07-10T18:46:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/tags/</loc>
+    <lastmod>2017-07-12T11:24:02+07:00</lastmod>
   </url>
   
   <url>
@@ -68,13 +128,28 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/methods/</loc>
+    <lastmod>2017-07-12T11:27:22+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/naming/</loc>
     <lastmod>2017-07-10T18:47:09+07:00</lastmod>
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/ordering/</loc>
+    <lastmod>2017-07-12T11:36:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/application-structure-lift-principle/</loc>
     <lastmod>2017-07-10T18:42:53+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/ismounted/</loc>
+    <lastmod>2017-07-12T11:40:11+07:00</lastmod>
   </url>
   
   <url>
@@ -440,6 +515,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</loc>
     <lastmod>2017-07-11T17:12:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/react/</loc>
+    <lastmod>2017-07-12T10:24:24+07:00</lastmod>
   </url>
   
   <url>
