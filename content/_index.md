@@ -5,7 +5,7 @@ date = "2017-04-24T18:36:24+02:00"
 
 +++
 
-# Coding Guidelines Xcidic
+# Xcidic Coding Guidelines
 
 ## Main Contents
 
