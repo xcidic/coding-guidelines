@@ -5,8 +5,7 @@ This Repo is development version of coding guidelines for each Xcidic members to
 2. [Quickstart](https://gohugo.io/overview/quickstart/)
 
 ## Setup
-1. Clone this project. `git clone --recursive git@github.com:xcidic/coding-guidelines.g
-it`
+1. Clone this project. `git clone --recursive git@github.com:xcidic/coding-guidelines.git`
 
 1. Enter Project folder `cd coding-guidelines`
 

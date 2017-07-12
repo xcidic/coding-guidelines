@@ -27,63 +27,63 @@ weight: 14
 
     *Why?*: Provides pattern matching for any automated tasks.
 
-    ```javascript
-    /**
-     * common options
-     */
+  ```javascript
+  /**
+   * common options
+   */
 
-    // Controllers
-    avengers.js
-    avengers.controller.js
-    avengersController.js
+  // Controllers
+  avengers.js
+  avengers.controller.js
+  avengersController.js
 
-    // Services/Factories
-    logger.js
-    logger.service.js
-    loggerService.js
-    ```
+  // Services/Factories
+  logger.js
+  logger.service.js
+  loggerService.js
+  ```
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // controllers
-    avengers.controller.js
-    avengers.controller.spec.js
+  // controllers
+  avengers.controller.js
+  avengers.controller.spec.js
 
-    // services/factories
-    logger.service.js
-    logger.service.spec.js
+  // services/factories
+  logger.service.js
+  logger.service.spec.js
 
-    // constants
-    constants.js
+  // constants
+  constants.js
 
-    // module definition
-    avengers.module.js
+  // module definition
+  avengers.module.js
 
-    // routes
-    avengers.routes.js
-    avengers.routes.spec.js
+  // routes
+  avengers.routes.js
+  avengers.routes.spec.js
 
-    // configuration
-    avengers.config.js
+  // configuration
+  avengers.config.js
 
-    // directives
-    avenger-profile.directive.js
-    avenger-profile.directive.spec.js
-    ```
+  // directives
+  avenger-profile.directive.js
+  avenger-profile.directive.spec.js
+  ```
 
   Note: Another common convention is naming controller files without the word `controller` in the file name such as `avengers.js` instead of `avengers.controller.js`. All other conventions still hold using a suffix of the type. Controllers are the most common type of component so this just saves typing and is still easily identifiable. I recommend you choose 1 convention and be consistent for your team. My preference is `avengers.controller.js` identifying the `AvengersController`.
 
-    ```javascript
-    /**
-     * recommended
-     */
-    // Controllers
-    avengers.js
-    avengers.spec.js
-    ```
+  ```javascript
+  /**
+   * recommended
+   */
+  // Controllers
+  avengers.js
+  avengers.spec.js
+  ```
 
 ### Test File Names
 ###### [Style [Y122](#style-y122)]
@@ -94,15 +94,15 @@ weight: 14
 
     *Why?*: Provides pattern matching for [karma](http://karma-runner.github.io/) or other test runners.
 
-    ```javascript
-    /**
-     * recommended
-     */
-    avengers.controller.spec.js
-    logger.service.spec.js
-    avengers.routes.spec.js
-    avenger-profile.directive.spec.js
-    ```
+  ```javascript
+  /**
+   * recommended
+   */
+  avengers.controller.spec.js
+  logger.service.spec.js
+  avengers.routes.spec.js
+  avenger-profile.directive.spec.js
+  ```
 
 ### Controller Names
 ###### [Style [Y123](#style-y123)]
@@ -113,18 +113,18 @@ weight: 14
 
     *Why?*: UpperCamelCase is conventional for identifying object that can be instantiated using a constructor.
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // avengers.controller.js
-    angular
-        .module
-        .controller('HeroAvengersController', HeroAvengersController);
+  // avengers.controller.js
+  angular
+      .module
+      .controller('HeroAvengersController', HeroAvengersController);
 
-    function HeroAvengersController() { }
-    ```
+  function HeroAvengersController() { }
+  ```
 
 ### Controller Name Suffix
 ###### [Style [Y124](#style-y124)]
@@ -133,18 +133,18 @@ weight: 14
 
     *Why?*: The `Controller` suffix is more commonly used and is more explicitly descriptive.
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // avengers.controller.js
-    angular
-        .module
-        .controller('AvengersController', AvengersController);
+  // avengers.controller.js
+  angular
+      .module
+      .controller('AvengersController', AvengersController);
 
-    function AvengersController() { }
-    ```
+  function AvengersController() { }
+  ```
 
 ### Factory and Service Names
 ###### [Style [Y125](#style-y125)]
@@ -159,38 +159,38 @@ weight: 14
 
     *Why?*: Service names such as `avengers` are nouns and require a suffix and should be named `avengersService`.
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // logger.service.js
-    angular
-        .module
-        .factory('logger', logger);
+  // logger.service.js
+  angular
+      .module
+      .factory('logger', logger);
 
-    function logger() { }
-    ```
+  function logger() { }
+  ```
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // credit.service.js
-    angular
-        .module
-        .factory('creditService', creditService);
+  // credit.service.js
+  angular
+      .module
+      .factory('creditService', creditService);
 
-    function creditService() { }
+  function creditService() { }
 
-    // customer.service.js
-    angular
-        .module
-        .service('customerService', customerService);
+  // customer.service.js
+  angular
+      .module
+      .service('customerService', customerService);
 
-    function customerService() { }
-    ```
+  function customerService() { }
+  ```
 
 ### Directive Component Names
 ###### [Style [Y126](#style-y126)]
@@ -199,20 +199,20 @@ weight: 14
 
     *Why?*: Provides a consistent way to quickly identify and reference components.
 
-    ```javascript
-    /**
-     * recommended
-     */
+  ```javascript
+  /**
+   * recommended
+   */
 
-    // avenger-profile.directive.js
-    angular
-        .module
-        .directive('xxAvengerProfile', xxAvengerProfile);
+  // avenger-profile.directive.js
+  angular
+      .module
+      .directive('xxAvengerProfile', xxAvengerProfile);
 
-    // usage is <xx-avenger-profile> </xx-avenger-profile>
+  // usage is <xx-avenger-profile> </xx-avenger-profile>
 
-    function xxAvengerProfile() { }
-    ```
+  function xxAvengerProfile() { }
+  ```
 
 ### Modules
 ###### [Style [Y127](#style-y127)]
