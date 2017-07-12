@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="">
+
+
+    <title>NodeJS Style Guide :: Xcidic Coding Guideline</title>
+    <link rel="shortcut icon" href="/coding-guidelines/images/favicon.png" type="image/x-icon" />
+    <link href="/coding-guidelines/css/nucleus.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/hybrid.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/featherlight.min.css" rel="stylesheet">
+    <link href="/coding-guidelines/css/horsey.css" rel="stylesheet">
+    
+    <link href="/coding-guidelines/css/theme.css" rel="stylesheet">
+    
+    
+      <link href="/coding-guidelines/css/theme-gold.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/coding-guidelines/css/bootstrap.min.css">
+    <script src="/coding-guidelines/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/coding-guidelines/meanjs/nodejs/">
+    <nav id="sidebar" class="showVisitedLinks">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>Coding Guidelines Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/coding-guidelines/js/lunr.min.js"></script>
+<script type="text/javascript" src="/coding-guidelines/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/xcidic.github.io\/coding-guidelines\/";
+</script>
+<script type="text/javascript" src="/coding-guidelines/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/coding-guidelines/" class="dd-item">
+            <a href="/coding-guidelines/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
+
+
+
+">
+  <a href="/coding-guidelines/angular1/">
+    <span>Angular 1 Style Guide</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/single-responsibility/">
+            <span>Single Responsibility</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/iife/">
+            <span>IIFE</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/controllers/">
+            <span>Controllers</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/services/">
+            <span>Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/factories/">
+            <span>Factories</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/data-services/">
+            <span>Data Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/directives/">
+            <span>Directives</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/resolving-promises/">
+            <span>Resolving Promises</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
+            <span>Manual Annotating for Dependencies Injection</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/minification-and-annotation/">
+            <span>Minification and Annotation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/exception-handling/">
+            <span>Exception Handling</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/naming/">
+            <span>Naming</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
+            <span>Application Structure Lift Principle</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/application-structure/">
+            <span>Application Structure</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/modularity/">
+            <span>Modularity</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/startup-logic/">
+            <span>Startuplogic</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-wrapper-services/">
+            <span>Angular $ Wrapper Services</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/testing/">
+            <span>Testing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/animations/">
+            <span>Animations</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jshint/">
+            <span>JShint</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/jscs/">
+            <span>JSCS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/constants/">
+            <span>Constants</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
+            <span>File Templates And Snippets</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/yeoman-generator/">
+            <span>Yeoman Generator</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/routing/">
+            <span>Routing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/task-automation/">
+            <span>Task Automation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/filters/">
+            <span>Filters</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/angular1/angular-docs/">
+            <span>Angular Docs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/coding-guidelines/javascript/" class="dd-item 
+
+
+
+">
+  <a href="/coding-guidelines/javascript/">
+    <span>JavaScript Style Guide</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/testing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/testing/">
+            <span>Testing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/performance/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/performance/">
+            <span>Performance</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/resources/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/resources/">
+            <span>Resources</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/in-the-wild/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/in-the-wild/">
+            <span>In The Wild</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/the-javascript-style-guide-guide/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/the-javascript-style-guide-guide/">
+            <span>The Javascript Style Guide Guide</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+<li data-nav-id="/coding-guidelines/javascript/es5/" class="dd-item 
+
+
+
+">
+  <a href="/coding-guidelines/javascript/es5/">
+    <span>ES5</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/types/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/types/">
+            <span>Types</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/objects/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/objects/">
+            <span>Objects</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/arrays/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/arrays/">
+            <span>Arrays</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/strings/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/strings/">
+            <span>Strings</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/functions/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/functions/">
+            <span>Functions</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/properties/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/properties/">
+            <span>Properties</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/variables/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/variables/">
+            <span>Variables</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/hoisting/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/hoisting/">
+            <span>Hoisting</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/comparison-operators--equality/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/comparison-operators--equality/">
+            <span>Comparison Operators &amp; Equality</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/blocks/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/blocks/">
+            <span>Blocks</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/whitespace/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/whitespace/">
+            <span>Whitespace</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/commas/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/commas/">
+            <span>Commas</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/semicolons/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/semicolons/">
+            <span>Semicolons</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/type-casting--coercion/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/type-casting--coercion/">
+            <span>Type Casting &amp; Coercion</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/naming-conventions/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/naming-conventions/">
+            <span>Naming Conventions</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/accessors/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/accessors/">
+            <span>Accessors</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/constructors/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/constructors/">
+            <span>Constructors</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/events/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/events/">
+            <span>Events</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/jquery/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/jquery/">
+            <span>Jquery</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/">
+            <span>Ecmascript 5 Compatibility</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/coding-guidelines/javascript/es6/" class="dd-item 
+
+
+
+">
+  <a href="/coding-guidelines/javascript/es6/">
+    <span>ES6</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/types/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/types/">
+            <span>Types</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/references/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/references/">
+            <span>References</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/objects/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/objects/">
+            <span>Objects</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/arrays/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/arrays/">
+            <span>Arrays</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/destructuring/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/destructuring/">
+            <span>Destructuring</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/strings/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/strings/">
+            <span>Strings</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/functions/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/functions/">
+            <span>Functions</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/arrow-functions/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/arrow-functions/">
+            <span>Arrow Functions</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/classes--constructors/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/classes--constructors/">
+            <span>Classes &amp; Constructors</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/modules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/modules/">
+            <span>Modules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/iterators-and-generators/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/iterators-and-generators/">
+            <span>Iterators And Generators</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/properties/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/properties/">
+            <span>Properties</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/variables/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/variables/">
+            <span>Variables</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/hoisting/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/hoisting/">
+            <span>Hoisting</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/comparison-operators--equality/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/comparison-operators--equality/">
+            <span>Comparison Operators &amp; Equality</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/blocks/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/blocks/">
+            <span>Blocks</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/control-statements/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/control-statements/">
+            <span>Control Statements</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/comments/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/comments/">
+            <span>Comments</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/whitespace/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/whitespace/">
+            <span>Whitespace</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/commas/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/commas/">
+            <span>Commas</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/semicolons/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/semicolons/">
+            <span>Semicolons</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/type-casting--coercion/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/type-casting--coercion/">
+            <span>Type Casting &amp; Coercion</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/naming-conventions/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/naming-conventions/">
+            <span>Naming Conventions</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/accessors/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/accessors/">
+            <span>Accessors</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/events/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/events/">
+            <span>Events</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/jquery/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/jquery/">
+            <span>Jquery</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/">
+            <span>Ecmascript 6 Es 2015 Styles</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/coding-guidelines/meanjs/" class="dd-item 
+parent
+
+
+">
+  <a href="/coding-guidelines/meanjs/">
+    <span>MEAN Style Guide</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/meanjs/nodejs/" class="dd-item
+         active
+          ">
+            <a href="/coding-guidelines/meanjs/nodejs/">
+            <span>NodeJS Style Guide</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/meanjs/file-organization/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/meanjs/file-organization/">
+            <span>File Organization</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/meanjs/reference/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/meanjs/reference/">
+            <span>Reference</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/meanjs/mean-resources/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/meanjs/mean-resources/">
+            <span>MEAN Resources</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/coding-guidelines/react/" class="dd-item 
+
+
+
+">
+  <a href="/coding-guidelines/react/">
+    <span>React Style Guide</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/coding-guidelines/react/basic-rules/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/basic-rules/">
+            <span>Basic Rules</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/">
+            <span>Class Vs React.createClass Vs Stateless</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/mixins/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/mixins/">
+            <span>Mixins</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/naming/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/naming/">
+            <span>Naming</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/declaration/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/declaration/">
+            <span>Declaration</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/alignment/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/alignment/">
+            <span>Alignment</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/quotes/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/quotes/">
+            <span>Quotes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/spacing/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/spacing/">
+            <span>Spacing</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/props/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/props/">
+            <span>Props</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/refs/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/refs/">
+            <span>Refs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/parentheses/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/parentheses/">
+            <span>Parentheses</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/tags/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/tags/">
+            <span>Tags</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/methods/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/methods/">
+            <span>Methods</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/ordering/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/ordering/">
+            <span>Ordering</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/coding-guidelines/react/ismounted/" class="dd-item
+         
+          ">
+            <a href="/coding-guidelines/react/ismounted/">
+            <span>Ismounted</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/coding-guidelines/'>Xcidic Coding Guidelines</a> > <a href='/coding-guidelines/meanjs/'>MEAN Style Guide</a> > NodeJS Style Guide
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#node-js-style-and-structure">Node.JS: Style and structure</a>
+<ul>
+<li><a href="#additional-javascript-style-guides">Additional JavaScript style guides</a></li>
+</ul></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#avoid-this-and-new">Avoid this and new</a></li>
+<li><a href="#more-smaller-functions">More, smaller functions</a></li>
+<li><a href="#consistently-asynchronous-apis">Consistently asynchronous APIs</a></li>
+<li><a href="#always-check-for-errors-in-callbacks">Always check for errors in callbacks</a></li>
+<li><a href="#return-on-callbacks">Return on callbacks</a></li>
+<li><a href="#only-throw-in-synchronous-functions">Only throw in synchronous functions</a></li>
+<li><a href="#catch-errors-in-sync-calls">Catch errors in sync calls</a></li>
+<li><a href="#stick-to-the-callback-convention">Stick to the callback convention</a></li>
+<li><a href="#wrap-up">Wrap up</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>NodeJS Style Guide</h1>
+          
+
+
+
+
+
+
+<h2 id="node-js-style-and-structure">Node.JS: Style and structure</h2>
+
+<h3 id="additional-javascript-style-guides">Additional JavaScript style guides</h3>
+
+<ul>
+<li><a href="http://nodeguide.com/style.html">Felix&rsquo;s Node.js Style Guide</a></li>
+<li>Crockford&rsquo;s <a href="http://javascript.crockford.com/code.html">Code Conventions for the JavaScript Programming Language</a></li>
+<li>Or, for something a little more unconventional: <a href="https://docs.npmjs.com/misc/coding-style">NPM&rsquo;s Coding Style</a></li>
+<li>Define in this docs</li>
+</ul>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+<li><a href="#avoid-this-and-new">Avoid this and new</a></li>
+<li><a href="#more-smaller-functions">More, smaller functions</a></li>
+<li><a href="#consistently-asynchronous-apis">Consistently asynchronous APIs</a></li>
+<li><a href="#always-check-for-errors-in-callbacks">Always check for errors in callbacks</a></li>
+<li><a href="#return-on-callbacks">Return on callbacks</a></li>
+<li><a href="#only-throw-in-synchronous-functions">Only throw in synchronous functions</a></li>
+<li><a href="#catch-errors-in-sync-calls">Catch errors in sync calls</a></li>
+<li><a href="#stick-to-the-callback-convention">Stick to the callback convention</a></li>
+<li><a href="#wrap-up">Wrap up</a></li>
+</ol>
+
+<h2 id="avoid-this-and-new">Avoid this and new</h2>
+
+<p>This may seem like quibbling over coding style, but in Node.js it&rsquo;s an important way of keeping your functions easily composable and reusable.</p>
+
+<p>Because Node.js involves passing around many callbacks and using a lot of higher-level functions to manage control flow; you should make sure functions are easy to move around without having to bind to a specific context. Prefer closures over object methods, and prefer explicit arguments over closures.</p>
+
+<pre><code class="language-javascript">// contrived example using prototypes and 'this'
+
+function DB(url) {
+    this.url = url;
+}
+
+DB.prototype.info = function (callback) {
+    http.get(this.url + '/info', callback);
+};
+
+async.parallel([
+    function (cb) {
+        new DB('http://foo').info(cb);
+    },
+    function (cb) {
+        new DB('http://bar').info(cb);
+    }
+], ...);
+
+
+// similar example using closures
+
+function DB(url) {
+    return { info: async.apply(http.get, url + '/info') };
+}
+
+async.parallel([
+    DB('http://foo').info,
+    DB('http://bar').info
+], ...);
+
+
+// making all arguments explicit
+
+var dbInfo = function (url, callback) {
+    http.get(url + '/info', callback);
+};
+
+async.map(['http://foo', 'http://bar'], dbInfo, ...);
+</code></pre>
+
+<p>The final style, with all arguments made explicit, allows us to easily pass in an arbitrary list of URLs and perform the same operation on them all. Using a more functional style will make your life significantly easier when it comes to combining functionality in this way.</p>
+
+<p>Of course, there are cases where making all arguments explicit would be undesirable, and cases where using constructors and prototypes are more efficient. I simply recommend you prefer the latter styles over the former and justify your use of these features when necessary.</p>
+
+<h2 id="more-smaller-functions">More, smaller functions</h2>
+
+<p>Before you even start looking into control flow libraries like async, you can tame much of the &ldquo;callback hell&rdquo; by simply breaking up your functions into smaller components.</p>
+
+<pre><code class="language-javascript">// a deeply-nested function including four asynchronous operations
+
+function convertJsonToCsv(filename, target, callback) {
+    readFile(filename, function (err, content) {
+        if (err) {
+            return callback(err);
+        }
+        parseJson(content, function (err, data) {
+            if (err) {
+                return callback(err);
+            }
+            convertToCsv(data, function (err, csv) {
+                if (err) {
+                    return callback(err);
+                }
+                writeFile(target, csv, callback);
+            });
+        });
+    });
+}
+
+
+// the same functionality broken into smaller parts
+
+function convertJsonToCsv(filename, target, callback) {
+    readJsonFile(filename, function (err, data) {
+        if (err) {
+            return callback(err);
+        }
+        writeCsvFile(target, data, callback);
+    });
+}
+
+function readJsonFile(filename, callback) {
+    readFile(filename, function (err, content) {
+        if (err) {
+            return callback(err);
+        }
+        parseJson(content, callback);
+    });
+}
+
+function writeCsvFile(target, data, callback) {
+    convertToCsv(data, function (err, csv) {
+        if (err) {
+            return callback(err);
+        }
+        writeFile(target, csv, callback);
+    });
+}
+</code></pre>
+
+<p>I&rsquo;d recommend you try and keep your functions down to two asynchronous operations at a time, as in the above example, or to one iteration over a list (using async.map or similar). Having more, smaller functions also makes it easier to recombine them in new ways later on.</p>
+
+<p>Of course, you can further clean up your code using an asynchronous control flow library. But this is the first step in getting things readable again.</p>
+
+<h2 id="consistently-asynchronous-apis">Consistently asynchronous APIs</h2>
+
+<p>In order to keep your code predictable, a function should be either always asynchronous, or always synchronous. Consider the following:</p>
+
+<pre><code class="language-javascript">var CACHE = {};
+
+function getRecord(id, callback) {
+    if (CACHE[id]) {
+        return CACHE[id];
+    }
+    http.get('http://foo/' + id, callback);
+}
+</code></pre>
+
+<p>When someone attempts to use this function, it&rsquo;s very easy to miss out the cached case and have code that never completes:</p>
+
+<pre><code class="language-javascript">function getMyRecord(user, callback) {
+    getRecord('record-' + user.id, callback);
+}
+</code></pre>
+
+<p>The first time you call getMyRecord it will complete successfully, the second time it will never call the callback (because getRecord returns immediately with the cached result). This might halt execution of the request.</p>
+
+<p>Another concern with the getRecord function is execution order:</p>
+
+<pre><code class="language-javascript">function getMyRecord(user, callback) {
+    var r = getRecord('record-' + user.id, function (err, record) {
+        if (record) {
+            record.got = true;
+        }
+        return callback(err, record);
+    });
+    if (r) {
+        r.got = true;
+    }
+    return r;
+}
+</code></pre>
+
+<p>Code like this is just too difficult to reason about. In order to implement it reliably you&rsquo;d have to duplicate code inside the getRecord callback, and after it (in case it&rsquo;s synchronous). You then have to do the same thing any time you call the getMyRecord function too. This very quickly becomes messy and confusing.</p>
+
+<p>The correct way to handle this is to use process.nextTick to make getRecord asynchronous even when returning a cached result:</p>
+
+<pre><code class="language-javascript">var CACHE = {};
+
+function getRecord(id, callback) {
+    if (CACHE[id]) {
+        return process.nextTick(function () {
+            return callback(null, CACHE[id]);
+        });
+    }
+    http.get('http://foo/' + id, callback);
+}
+</code></pre>
+
+<p>Now we need only consider the asynchronous case and our code becomes much more predictable.</p>
+
+<h2 id="always-check-for-errors-in-callbacks">Always check for errors in callbacks</h2>
+
+<p>Missing an error check inside a callback is a common cause of confusion in debugging. The problem is that the program execution will continue and the failure may manifest itself elsewhere in the code and give you a different error message. You then have to trace it back to the original location.</p>
+
+<p>Failing to explicitly check for errors inside a callback should be considered a bug. I highly recommend you build this step into your code review process because it can be so easy to miss.</p>
+
+<pre><code class="language-javascript">// wrong!
+
+function writeCsvFile(target, data, callback) {
+    convertToCsv(data, function (err, csv) {
+        writeFile(target, csv, callback);
+    });
+}
+
+
+// right
+
+function writeCsvFile(target, data, callback) {
+    convertToCsv(data, function (err, csv) {
+        if (err) {
+            return callback(err);
+        }
+        writeFile(target, csv, callback);
+    });
+}
+</code></pre>
+
+<p>If you want to reduce the extra code, you can do a one-line if statement when checking for the error: if (err) return callback(err);. Whichever style you choose, I recommend you are consistent, because this piece of code should be easy to spot and easy to notice when it&rsquo;s missing.</p>
+
+<h2 id="return-on-callbacks">Return on callbacks</h2>
+
+<p>Usually, you call a callback as the last thing you do inside a function. You might consider it synonymous with return, only JavaScript does not halt function execution when it hits it. It can be easy to accidentally let execution continue after calling a callback, when you really expected it to end. In order to make this easy to spot, and make sure execution stops in the way you expect, I recommend returning the callback function call.</p>
+
+<pre><code class="language-javascript">// wrong!
+
+function writeCsvFile(target, data, callback) {
+    convertToCsv(data, function (err, csv) {
+        if (err) {
+            callback(err); // oops! no return
+        }
+        // this line gets called even when theres an error
+        writeFile(target, csv, callback);
+    });
+}
+
+
+// right
+
+function writeCsvFile(target, data, callback) {
+    convertToCsv(data, function (err, csv) {
+        if (err) {
+            return callback(err); // execution stops here
+        }
+        writeFile(target, csv, callback);
+    });
+}
+</code></pre>
+
+<h2 id="only-throw-in-synchronous-functions">Only throw in synchronous functions</h2>
+
+<p>Unfortunately, you can&rsquo;t use try-catch blocks around asynchronous code. That means any exceptions you throw will not be caught and bubble up to the top. This can kill your entire server process if you don&rsquo;t have an uncaughtException handler set up. Even in cases where you do, the error probably no longer has any meaningful context and you can&rsquo;t appropriately respond to a http request, for example.</p>
+
+<p>Always, always, always pass errors back to the callback in asynchronous functions. As long as you&rsquo;re following the &ldquo;Always check for errors in callbacks&rdquo; rule the errors will be handled in the appropriate place.</p>
+
+<pre><code class="language-javascript">// wrong!
+
+function getRecord(id, callback) {
+    http.get('http://foo/' + id, function (err, doc) {
+        if (err) {
+            return callback(err);
+        }
+        if (doc.deleted) {
+            // this will not get caught by the function calling getRecord
+            throw new Error('Record has been deleted');
+        }
+        return callback(null, doc);
+    });
+}
+
+// right
+
+function getRecord(id, callback) {
+    http.get('http://foo/' + id, function (err, doc) {
+        if (err) {
+            return callback(err);
+        }
+        if (doc.deleted) {
+            return callback(new Error('Record has been deleted'));
+        }
+        return callback(null, doc);
+    });
+}
+</code></pre>
+
+<h2 id="catch-errors-in-sync-calls">Catch errors in sync calls</h2>
+
+<p>This is essentially the same as the previous rule. If you&rsquo;re calling a synchronous function that might throw an exception, inside your asynchronous code, then calling your asynchronous code might also result in an exception.</p>
+
+<p>For example:</p>
+
+<pre><code class="language-javascript">// wrong!
+
+function readJson(filename, callback) {
+    fs.readFile(filename, function (err, content) {
+        if (err) {
+            return callback(err);
+        }
+
+        // uh-oh! this line might throw an exception if the content
+        // is not valid JSON
+        var data = JSON.parse(content.toString());
+
+        return callback(null, data);
+    });
+}
+
+// right
+
+function readJson(filename, callback) {
+    fs.readFile(filename, function (err, content) {
+        if (err) {
+            return callback(err);
+        }
+        try {
+            var data = JSON.parse(content.toString());
+        }
+        catch (e) {
+            return callback(e);
+        }
+        return callback(null, data);
+    });
+}
+</code></pre>
+
+<h2 id="stick-to-the-callback-convention">Stick to the callback convention</h2>
+
+<p>There is a vocal minority on the Node.js mailing list and elsewhere which promotes the use of other strategies for handling asynchronous code. Some of them even providing &ldquo;blocking-style&rdquo; APIs. While they are interesting, and you might happily use promises or fibers inside your team, please consider sticking to the Node-style callbacks; where the callback is the last argument to an async function and the first argument to the callback is an error (if one occurred).</p>
+
+<p>The vast majority of Node developers follow this style, there is consensus on this. If you expect Node developers outside of your team to use your modules then you&rsquo;ll have a much easier time sticking to convention.</p>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>While most of this is probably common-sense, I hope some of you find these rules useful. Feedback, argument, and further tips are encouraged in the comments.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/coding-guidelines/meanjs/" title="MEAN Style Guide"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/coding-guidelines/meanjs/file-organization/" title="File Organization" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/coding-guidelines/js/clipboard.min.js"></script>
+    <script src="/coding-guidelines/js/featherlight.min.js"></script>
+    <script src="/coding-guidelines/js/html5shiv-printshiv.min.js"></script>
+    <script src="/coding-guidelines/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/coding-guidelines/js/modernizr.custom.71422.js"></script>
+    <script src="/coding-guidelines/js/learn.js"></script>
+    <script src="/coding-guidelines/js/hugo-learn.js"></script>
+
+    
+    <link href="/coding-guidelines/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/coding-guidelines/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+

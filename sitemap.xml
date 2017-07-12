@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/meanjs/nodejs/</loc>
+    <lastmod>2017-07-12T14:18:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/react/basic-rules/</loc>
     <lastmod>2017-07-12T10:26:12+07:00</lastmod>
   </url>
@@ -15,6 +20,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</loc>
     <lastmod>2017-07-10T18:48:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/meanjs/file-organization/</loc>
+    <lastmod>2017-07-12T14:45:04+07:00</lastmod>
   </url>
   
   <url>
@@ -28,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/meanjs/reference/</loc>
+    <lastmod>2017-07-12T15:10:09+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/react/mixins/</loc>
     <lastmod>2017-07-12T10:35:49+07:00</lastmod>
   </url>
@@ -35,6 +50,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/modules/</loc>
     <lastmod>2017-07-10T18:47:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/meanjs/mean-resources/</loc>
+    <lastmod>2017-07-12T15:18:19+07:00</lastmod>
   </url>
   
   <url>
@@ -515,6 +535,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</loc>
     <lastmod>2017-07-11T17:12:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/meanjs/</loc>
+    <lastmod>2017-07-12T13:20:46+07:00</lastmod>
   </url>
   
   <url>

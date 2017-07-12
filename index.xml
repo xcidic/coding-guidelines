@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>NodeJS Style Guide</title>
+      <link>https://xcidic.github.io/coding-guidelines/meanjs/nodejs/</link>
+      <pubDate>Wed, 12 Jul 2017 14:18:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/meanjs/nodejs/</guid>
+      <description>Node.JS: Style and structure Additional JavaScript style guides  Felix&amp;rsquo;s Node.js Style Guide Crockford&amp;rsquo;s Code Conventions for the JavaScript Programming Language Or, for something a little more unconventional: NPM&amp;rsquo;s Coding Style Define in this docs  Table of Contents  Avoid this and new More, smaller functions Consistently asynchronous APIs Always check for errors in callbacks Return on callbacks Only throw in synchronous functions Catch errors in sync calls Stick to the callback convention Wrap up  Avoid this and new This may seem like quibbling over coding style, but in Node.</description>
+    </item>
+    
+    <item>
       <title>Basic Rules</title>
       <link>https://xcidic.github.io/coding-guidelines/react/basic-rules/</link>
       <pubDate>Wed, 12 Jul 2017 10:26:12 +0700</pubDate>
@@ -29,6 +38,16 @@
       <description>Single Responsibility Rule of 1 [Style Y001]  Define 1 component per file, recommended to be less than 400 lines of code.  Why?: One component per file promotes easier unit testing and mocking.
 Why?: One component per file makes it far easier to read, maintain, and avoid collisions with teams in source control.
 Why?: One component per file avoids hidden bugs that often arise when combining components in a file where they may share variables, create unwanted closures, or unwanted coupling with dependencies.</description>
+    </item>
+    
+    <item>
+      <title>File Organization</title>
+      <link>https://xcidic.github.io/coding-guidelines/meanjs/file-organization/</link>
+      <pubDate>Wed, 12 Jul 2017 14:45:04 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/meanjs/file-organization/</guid>
+      <description>File Organization Please do remember the the project name is using prefix project_. And if the project name is more than one word use _ to separate the name, ex: project_bla_bla, project_abc. Always build a master css file which include styles for every modules. Always build a module-specific css file for styles only used in said module.
+ Deliverables  Please remove legacy files, be certain the work is delivered in a clean file system, and in an orderly, logical structure that serves a clear purpose.</description>
     </item>
     
     <item>
@@ -53,6 +72,15 @@ Why?: When your code is minified and bundled into a single file for deployment t
     </item>
     
     <item>
+      <title>Reference</title>
+      <link>https://xcidic.github.io/coding-guidelines/meanjs/reference/</link>
+      <pubDate>Wed, 12 Jul 2017 15:10:09 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/meanjs/reference/</guid>
+      <description>MEAN.JS Documentation Official Documentation</description>
+    </item>
+    
+    <item>
       <title>Mixins</title>
       <link>https://xcidic.github.io/coding-guidelines/react/mixins/</link>
       <pubDate>Wed, 12 Jul 2017 10:35:49 +0700</pubDate>
@@ -70,6 +98,16 @@ Why?: When your code is minified and bundled into a single file for deployment t
       <guid>https://xcidic.github.io/coding-guidelines/angular1/modules/</guid>
       <description>Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.
 Definitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?</description>
+    </item>
+    
+    <item>
+      <title>MEAN Resources</title>
+      <link>https://xcidic.github.io/coding-guidelines/meanjs/mean-resources/</link>
+      <pubDate>Wed, 12 Jul 2017 15:18:19 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/meanjs/mean-resources/</guid>
+      <description>A Complete Guide to MEAN Stack ❤
+Articles  Full-Stack JavaScript With MEAN And Yeoman Build a real-time polls application with Node.js, Express, AngularJS, and MongoDB AngularJS Tutorial: Learn to Build Modern Web Apps Introduction to the MEAN Stack, Part One: Setting Up Your Tools Introduction to the MEAN Stack, Part Two: Building and Testing a To-do List Price Internationalization with the MEAN Stack The MEAN Stack: MongoDB, ExpressJS, AngularJS, and Node.</description>
     </item>
     
     <item>
