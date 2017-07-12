@@ -753,7 +753,7 @@
 	"title": "MEAN Style Guide",
 	"tags": [],
 	"description": "",
-	"content": " Introductions This document contains the guidelines and best practices for the frontend and backend web development team at Xcidic. This document is based on MEANJS framework.\nIncludes  NodeJS Style Guide  "
+	"content": " Introductions This document contains the guidelines and best practices for the frontend and backend web development team at Xcidic. This document is based on MEANJS framework.\nInclude  NodeJS Style Guide  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/react/",
@@ -767,7 +767,7 @@
 	"title": "Xcidic Coding Guidelines",
 	"tags": [],
 	"description": "",
-	"content": " Xcidic Coding Guidelines Main Contents  AngularJS Style Guide JavaScript Style Guide ReactJS Style Guide  "
+	"content": " Xcidic Coding Guidelines Main Contents  AngularJS Style Guide JavaScript Style Guide ReactJS Style Guide MEANJS Style Guide  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/_header/",
