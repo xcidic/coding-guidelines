@@ -1,7 +1,7 @@
 ---
-title: "Google Cloud Platform Guide"
+title: "Google Cloud Platform Guides"
 date: 2017-07-13T13:29:54+07:00
-draft: true
+draft: false
 ---
 
 ## Compute Engine - Google Cloud Platform Guide

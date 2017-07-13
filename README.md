@@ -3,7 +3,7 @@ This Repo is development version of coding guidelines for each Xcidic members to
 ## Needs
 1. [Hugo](https://gohugo.io). See Installation docs [Installation](https://gohugo.io/overview/installing/).
 2. [Quickstart](https://gohugo.io/overview/quickstart/)
-3. [docdock Themes]()
+3. [docdock Themes](https://themes.gohugo.io/theme/docdock/getting-start/)
 
 ## Setup
 1. Clone this project. `git clone --recursive git@github.com:xcidic/coding-guidelines.git`
