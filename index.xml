@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Create Bitnami VM</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp/create-bitnami-vm/</link>
+      <pubDate>Thu, 13 Jul 2017 14:51:59 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp/create-bitnami-vm/</guid>
+      <description> First you already got invitation the Project instance(internal), and then create your GCP project
+Create Bitnami VM  Open MEANSTACK Login to ssh in the dashboard  </description>
+    </item>
+    
+    <item>
       <title>NodeJS Style Guide</title>
       <link>https://xcidic.github.io/coding-guidelines/meanjs/nodejs/</link>
       <pubDate>Wed, 12 Jul 2017 14:18:35 +0700</pubDate>
@@ -38,6 +48,20 @@
       <description>Single Responsibility Rule of 1 [Style Y001]  Define 1 component per file, recommended to be less than 400 lines of code.  Why?: One component per file promotes easier unit testing and mocking.
 Why?: One component per file makes it far easier to read, maintain, and avoid collisions with teams in source control.
 Why?: One component per file avoids hidden bugs that often arise when combining components in a file where they may share variables, create unwanted closures, or unwanted coupling with dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Apache</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp/configuring-apache/</link>
+      <pubDate>Thu, 13 Jul 2017 14:52:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp/configuring-apache/</guid>
+      <description>Configuring Apache  Default Installation Directory /opt/bitnami Start the service
+sudo /opt/bitnami/ctlscript.sh start
+ Create the directories (below this, change YOUR_APP to your app name)
+  sudo mkdir /opt/bitnami/YOUR_APP/lithium sudo mkdir /opt/bitnami/apps/YOUR_APP/conf sudo mkdir /opt/bitnami/apps/YOUR_APP/htdocs   Create httpd-prefix.conf config file  sudo touch /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf sudo vim /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf   Insert the following to httpd-prefix.conf then save Include &amp;quot;/opt/bitnami/apps/YOUR_APP/conf/httpd-app.conf
+ Create httpd-app.conf config file
+  sudo touch /opt/bitnami/apps/YOUR_APP/conf/httpd-app.</description>
     </item>
     
     <item>
@@ -72,6 +96,17 @@ Why?: When your code is minified and bundled into a single file for deployment t
     </item>
     
     <item>
+      <title>Setting Up Mongodb</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp/setting-up-mongodb/</link>
+      <pubDate>Thu, 13 Jul 2017 15:48:25 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp/setting-up-mongodb/</guid>
+      <description> Setting Up MongoDB  Login to mongodb, your password is on dashboard  $ mongo admin --username root --password YOUR_DB_PWD
+ Create new database name  use YOUR_DB_NAME
+ Create new User for that DB  db.createUser( { user: &amp;quot;YOUR_database_user&amp;quot;, pwd: &amp;quot;YOUR_database_password&amp;quot;, roles: [ &amp;quot;readWrite&amp;quot;, &amp;quot;dbAdmin&amp;quot; ]} )  </description>
+    </item>
+    
+    <item>
       <title>Reference</title>
       <link>https://xcidic.github.io/coding-guidelines/meanjs/reference/</link>
       <pubDate>Wed, 12 Jul 2017 15:10:09 +0700</pubDate>
@@ -98,6 +133,19 @@ Why?: When your code is minified and bundled into a single file for deployment t
       <guid>https://xcidic.github.io/coding-guidelines/angular1/modules/</guid>
       <description>Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.
 Definitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Meanjs Application</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp/setting-up-meanjs-application/</link>
+      <pubDate>Thu, 13 Jul 2017 15:50:10 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp/setting-up-meanjs-application/</guid>
+      <description>Setting Up MEANJS Application  navigate to YOUR_APP directory  cd /opt/bitnami/apps/YOUR_APP/
+ Get the source  sudo git clone https://YOUR_GIT_URI/GIT_USERNAME/YOUR_PROJECT_REPO.git htdocs
+ Navigate to source cd htdocs
+ Update and Install dependencies
+  sudo apt-get update -q sudo apt-get install -yqq aptitude git traceroute dnsutils tree tcpdump psmisc gcc make build-essential libfreetype6 libfontconfig libkrb5-dev curl sudo apt-get install -y ruby sudo gem install sass sudo npm install --quiet -g grunt-cli gulp bower yo mocha karma-cli pm2 grunt sudo npm install --quiet --production sudo bower install --quiet --allow-root --config.</description>
     </item>
     
     <item>
@@ -128,6 +176,16 @@ Articles  Full-Stack JavaScript With MEAN And Yeoman Build a real-time polls app
       <guid>https://xcidic.github.io/coding-guidelines/angular1/controllers/</guid>
       <description>Controllers controllerAs View Syntax [Style Y030]  Use the controllerAs syntax over the classic controller with $scope syntax.  Why?: Controllers are constructed, &amp;ldquo;newed&amp;rdquo; up, and provide a single new instance, and the controllerAs syntax is closer to that of a JavaScript constructor than the classic $scope syntax.
 Why?: It promotes the use of binding to a &amp;ldquo;dotted&amp;rdquo; object in the View (e.g. customer.name instead of name), which is more contextual, easier to read, and avoids any reference issues that may occur without &amp;ldquo;dotting&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up SSL</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp/setting-up-ssl/</link>
+      <pubDate>Thu, 13 Jul 2017 15:51:41 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp/setting-up-ssl/</guid>
+      <description>Setting Up SSL  Generate the key and csr file using openssl  sudo openssl req -new -nodes -keyout server.key -out server.csr -newkey rsa:2048
+Generating a 2048 bit RSA private key...............................................+++..+++ writing new private key to &#39;server.key&#39; ----- You are about to be asked to enter information that will be incorporatedinto your certificate request. What you are about to enter is what is called a Distinguished Name or a DN.</description>
     </item>
     
     <item>

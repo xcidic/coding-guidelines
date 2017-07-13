@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/create-bitnami-vm/</loc>
+    <lastmod>2017-07-13T14:51:59+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/meanjs/nodejs/</loc>
     <lastmod>2017-07-12T14:18:35+07:00</lastmod>
   </url>
@@ -20,6 +25,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</loc>
     <lastmod>2017-07-10T18:48:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/configuring-apache/</loc>
+    <lastmod>2017-07-13T14:52:47+07:00</lastmod>
   </url>
   
   <url>
@@ -38,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/setting-up-mongodb/</loc>
+    <lastmod>2017-07-13T15:48:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/meanjs/reference/</loc>
     <lastmod>2017-07-12T15:10:09+07:00</lastmod>
   </url>
@@ -53,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/setting-up-meanjs-application/</loc>
+    <lastmod>2017-07-13T15:50:10+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/meanjs/mean-resources/</loc>
     <lastmod>2017-07-12T15:18:19+07:00</lastmod>
   </url>
@@ -65,6 +85,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/controllers/</loc>
     <lastmod>2017-07-10T18:43:46+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/setting-up-ssl/</loc>
+    <lastmod>2017-07-13T15:51:41+07:00</lastmod>
   </url>
   
   <url>
@@ -559,6 +584,12 @@
   
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/</loc>
+    <lastmod>2017-07-13T14:51:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
