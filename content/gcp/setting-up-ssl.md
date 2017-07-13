@@ -57,7 +57,7 @@ There will be 2 file, one certificate file (random name), and one bundle/chain c
 - Edit and adjust the certificate file
 
 ```bash
-SSLCertificateFile /opt/bitnami/apache2/conf/server.crt"
+SSLCertificateFile "/opt/bitnami/apache2/conf/server.crt"
 SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
 SSLCertificateChainFile "/opt/bitnami/apache2/conf/server.bundle.crt"
 ```
@@ -69,4 +69,46 @@ SSLCertificateChainFile "/opt/bitnami/apache2/conf/server.bundle.crt"
 - Go to `console.cloud.google.com`
 
 In order bucket to have https, we need to create Http(s) Load balancing pointing to bucket
-Create Http(s) Load balancing by go to Network > Load balancing
+- Create Http(s) Load balancing by go to Network > Load balancing
+
+![create load balancer](/coding-guidelines/create-load-balancer.png)
+
+- Choose Http(s) Load balancing > start configuration
+
+![https load balancing](/coding-guidelines/https-load-balancing.png)
+
+- Start the configuration 
+- On backend configuration choose bucket
+
+![https load balancing](/coding-guidelines/backend-service-and-bucket.png)
+
+- Browse your target bucket and create.
+- Click on next step "Host and path rules” leave it be, no configuration needed.
+- Click on next step “Frontend configuration”`
+
+![new frontend ip](/coding-guidelines/new-frontend-ip.png)
+
+- Click dropdown IP Address > Create IP Address
+- On the “Reserve a new static IP address” give some descriptive name
+- Add one front end and IP Port again
+
+![add frontend ip](/coding-guidelines/add-frontend-ip.png)
+
+- Change Protocol to HTTPS and use the prev created IP address
+
+![new frontend ip2](/coding-guidelines/new-frontend-ip2.png)
+
+- On Certificate, click “Create a new certificate”
+
+![create new certificate](/coding-guidelines/create-new-cerificate.png)
+
+- Copy content of certificate (server.crt) to “Public key certificate”
+- Copy content of certificate bundle (server.bundle.crt) to “Certificate chain”
+- Copy content of private key (server.key) to “Private Key”
+- Create the certificate info > done
+- Click next step “Review and finalize”
+
+![review and finalize](/coding-guidelines/review-and-finalize.png)
+
+- Check the configuration
+- Click create. 
