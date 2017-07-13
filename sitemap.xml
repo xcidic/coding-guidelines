@@ -563,6 +563,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/gcp/</loc>
+    <lastmod>2017-07-13T13:29:54+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/meanjs/</loc>
     <lastmod>2017-07-12T13:20:46+07:00</lastmod>
   </url>
@@ -584,12 +589,6 @@
   
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xcidic.github.io/coding-guidelines/gcp/</loc>
-    <lastmod>2017-07-13T14:51:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -784,6 +784,13 @@
 	"content": " The JavaScript Style Guide Guide  Reference  ⬆ Back \n"
 },
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/gcp/",
+	"title": "Google Cloud Platform Guides",
+	"tags": [],
+	"description": "",
+	"content": " Compute Engine - Google Cloud Platform Guide Table of Contents  Create Bitnami VM Configuring Apache Setting Up MongoDB Setting Up MEANJS Application Setting Up SSL  "
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/meanjs/",
 	"title": "MEAN Style Guide",
 	"tags": [],
@@ -814,13 +821,6 @@
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://xcidic.github.io/coding-guidelines/gcp/",
-	"title": "Gcps",
 	"tags": [],
 	"description": "",
 	"content": ""
