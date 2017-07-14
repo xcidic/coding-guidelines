@@ -1579,7 +1579,7 @@ There will be 2 file, one certificate file (random name), and one bundle/chain c
 <li>Edit and adjust the certificate file</li>
 </ul>
 
-<pre><code class="language-bash">SSLCertificateFile /opt/bitnami/apache2/conf/server.crt&quot;
+<pre><code class="language-bash">SSLCertificateFile &quot;/opt/bitnami/apache2/conf/server.crt&quot;
 SSLCertificateKeyFile &quot;/opt/bitnami/apache2/conf/server.key&quot;
 SSLCertificateChainFile &quot;/opt/bitnami/apache2/conf/server.bundle.crt&quot;
 </code></pre>
@@ -1597,7 +1597,65 @@ SSLCertificateChainFile &quot;/opt/bitnami/apache2/conf/server.bundle.crt&quot;
 </ul>
 
 <p>In order bucket to have https, we need to create Http(s) Load balancing pointing to bucket
-Create Http(s) Load balancing by go to Network &gt; Load balancing</p>
+- Create Http(s) Load balancing by go to Network &gt; Load balancing</p>
+
+<p><img src="/coding-guidelines/create-load-balancer.png" alt="create load balancer" /></p>
+
+<ul>
+<li>Choose Http(s) Load balancing &gt; start configuration</li>
+</ul>
+
+<p><img src="/coding-guidelines/https-load-balancing.png" alt="https load balancing" /></p>
+
+<ul>
+<li>Start the configuration</li>
+<li>On backend configuration choose bucket</li>
+</ul>
+
+<p><img src="/coding-guidelines/backend-service-and-bucket.png" alt="https load balancing" /></p>
+
+<ul>
+<li>Browse your target bucket and create.</li>
+<li>Click on next step &ldquo;Host and path rules” leave it be, no configuration needed.</li>
+<li>Click on next step “Frontend configuration”`</li>
+</ul>
+
+<p><img src="/coding-guidelines/new-frontend-ip.png" alt="new frontend ip" /></p>
+
+<ul>
+<li>Click dropdown IP Address &gt; Create IP Address</li>
+<li>On the “Reserve a new static IP address” give some descriptive name</li>
+<li>Add one front end and IP Port again</li>
+</ul>
+
+<p><img src="/coding-guidelines/add-frontend-ip.png" alt="add frontend ip" /></p>
+
+<ul>
+<li>Change Protocol to HTTPS and use the prev created IP address</li>
+</ul>
+
+<p><img src="/coding-guidelines/new-frontend-ip2.png" alt="new frontend ip2" /></p>
+
+<ul>
+<li>On Certificate, click “Create a new certificate”</li>
+</ul>
+
+<p><img src="/coding-guidelines/create-new-cerificate.png" alt="create new certificate" /></p>
+
+<ul>
+<li>Copy content of certificate (server.crt) to “Public key certificate”</li>
+<li>Copy content of certificate bundle (server.bundle.crt) to “Certificate chain”</li>
+<li>Copy content of private key (server.key) to “Private Key”</li>
+<li>Create the certificate info &gt; done</li>
+<li>Click next step “Review and finalize”</li>
+</ul>
+
+<p><img src="/coding-guidelines/review-and-finalize.png" alt="review and finalize" /></p>
+
+<ul>
+<li>Check the configuration</li>
+<li>Click create.</li>
+</ul>
 
 
 <footer class=" footline" >
