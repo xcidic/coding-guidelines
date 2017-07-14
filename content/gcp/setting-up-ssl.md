@@ -19,13 +19,13 @@ You are about to be asked to enter information that will be incorporatedinto you
 What you are about to enter is what is called a Distinguished Name or a DN.
 There are quite a few fields but you can leave some blankFor some fields there will be a default value,If you enter '.', the field will be left blank.
 -----
-Country Name (2 letter code) [AU]:SG
-State or Province Name (full name) [Some-State]:Singapore
-Locality Name (eg, city) []:Singapore
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:SB Rope Access Specialist Pte Ltd
-Organizational Unit Name (eg, section) []:SB Rope Access Specialist
-Common Name (e.g. server FQDN or YOUR name) []:*.sbropeaccess.com
-Email Address []:sbropeaccess@gmail.com
+Country Name (2 letter code) [AU]:COUNTRY_CODE
+State or Province Name (full name) [Some-State]:PROVINCE_NAME / STATE_NAME
+Locality Name (eg, city) []:COUNTRY_NAME
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:YOUR_ORGANIZATION_NAME
+Organizational Unit Name (eg, section) []:YOUR_ORGANIZATION_UNIT_NAME
+Common Name (e.g. server FQDN or YOUR name) []:*.YOUR_DOMAIN.com
+Email Address []:YOUR_EMAIL
 Please enter the following 'extra' attributes
 to be sent with your certificate request
 A challenge password []:An optional company name []:
@@ -77,7 +77,7 @@ In order bucket to have https, we need to create Http(s) Load balancing pointing
 
 ![https load balancing](/coding-guidelines/https-load-balancing.png)
 
-- Start the configuration 
+- Start the configuration
 - On backend configuration choose bucket
 
 ![https load balancing](/coding-guidelines/backend-service-and-bucket.png)
@@ -111,4 +111,4 @@ In order bucket to have https, we need to create Http(s) Load balancing pointing
 ![review and finalize](/coding-guidelines/review-and-finalize.png)
 
 - Check the configuration
-- Click create. 
+- Click create.
