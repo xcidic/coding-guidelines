@@ -15,7 +15,7 @@ weight: 3
 - Create the directories (below this, change YOUR_APP to your app name)
 
   ```bash
-  sudo mkdir /opt/bitnami/YOUR_APP/lithium
+  sudo mkdir /opt/bitnami/apps/YOUR_APP
   sudo mkdir 	/opt/bitnami/apps/YOUR_APP/conf
   sudo mkdir /opt/bitnami/apps/YOUR_APP/htdocs
   ```
