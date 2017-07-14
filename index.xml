@@ -59,7 +59,7 @@ Why?: One component per file avoids hidden bugs that often arise when combining 
       <description>Configuring Apache  Default Installation Directory /opt/bitnami Start the service
 sudo /opt/bitnami/ctlscript.sh start
  Create the directories (below this, change YOUR_APP to your app name)
-  sudo mkdir /opt/bitnami/YOUR_APP/lithium sudo mkdir /opt/bitnami/apps/YOUR_APP/conf sudo mkdir /opt/bitnami/apps/YOUR_APP/htdocs   Create httpd-prefix.conf config file  sudo touch /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf sudo vim /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf   Insert the following to httpd-prefix.conf then save Include &amp;quot;/opt/bitnami/apps/YOUR_APP/conf/httpd-app.conf
+  sudo mkdir /opt/bitnami/apps/YOUR_APP sudo mkdir /opt/bitnami/apps/YOUR_APP/conf sudo mkdir /opt/bitnami/apps/YOUR_APP/htdocs   Create httpd-prefix.conf config file  sudo touch /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf sudo vim /opt/bitnami/apps/YOUR_APP/conf/httpd-prefix.conf   Insert the following to httpd-prefix.conf then save Include &amp;quot;/opt/bitnami/apps/YOUR_APP/conf/httpd-app.conf
  Create httpd-app.conf config file
   sudo touch /opt/bitnami/apps/YOUR_APP/conf/httpd-app.</description>
     </item>
