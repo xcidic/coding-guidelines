@@ -14,3 +14,5 @@ date = "2017-04-24T18:36:24+02:00"
 * [JavaScript Style Guide]({{%relref "javascript/_index.md" %}})
 * [MEANJS Style Guide]({{%relref "meanjs/_index.md" %}})
 * [ReactJS Style Guide]({{%relref "react/_index.md" %}})
+* [Git Cheat Sheet]({{%relref "git/_index.md" %}})
+* [Deploy UAT Env]({{%relref "uat/_index.md" %}})
