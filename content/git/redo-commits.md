@@ -2,7 +2,7 @@
 title: "Redo commits"
 date: 2017-07-14T10:59:35+07:00
 draft: false
-weight: 7
+weight: 10
 ---
 
 ## Redo commits
