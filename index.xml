@@ -12,6 +12,23 @@
     
     
     <item>
+      <title>Configure</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/configure/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/configure/</guid>
+      <description>Configure  Sets the name you want attached to your commit transactions
+git config –global user.name &amp;quot;[name]&amp;quot;
+ Sets the email you want attached to your commit transactions
+git config –global user.email &amp;quot;[email address]&amp;quot;
+ Enables helpful colorization of command line output
+git config –global color.ui auto
+ Update a branch with the same name as current branch if no refspec is given
+git config –global push.default current
+ Which editor to use when commit and tag that lets you edit messages</description>
+    </item>
+    
+    <item>
       <title>Create Bitnami VM</title>
       <link>https://xcidic.github.io/coding-guidelines/gcp/create-bitnami-vm/</link>
       <pubDate>Thu, 13 Jul 2017 14:51:59 +0700</pubDate>
@@ -48,6 +65,39 @@ Create Bitnami VM  Open MEANSTACK Login to ssh in the dashboard  </description>
       <description>Single Responsibility Rule of 1 [Style Y001]  Define 1 component per file, recommended to be less than 400 lines of code.  Why?: One component per file promotes easier unit testing and mocking.
 Why?: One component per file makes it far easier to read, maintain, and avoid collisions with teams in source control.
 Why?: One component per file avoids hidden bugs that often arise when combining components in a file where they may share variables, create unwanted closures, or unwanted coupling with dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Create Heroku Account</title>
+      <link>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/</guid>
+      <description> Creating Heroku Account  Sign Up Heroku Click This Link to Register  </description>
+    </item>
+    
+    <item>
+      <title>Install Heroku CLI Mac and Windows</title>
+      <link>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/install-heroku/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/install-heroku/</guid>
+      <description>Heroku CLI Instalation Mac brew install heroku  Heroku CLI Instalation Windows  Download Heroku CLI x32 x64
+ Run setup  Click Next  Click Install
+  Need to install git for heroku  Click Next  Click Next  Click Next  Click Next  Click Next  Click Install  Click Finish  Heroku Instalation Complete  Setting Path Environment Variable  Click &amp;ldquo;Advance System Settings&amp;rdquo;  Click &amp;ldquo;Environment Variable&amp;rdquo;  Click &amp;ldquo;Edit&amp;rdquo;  Click &amp;ldquo;New&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Create Repositories</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/create-repositories/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/create-repositories/</guid>
+      <description> Create Repositories  Creates a new local repository with the specified name
+git init [project-name]
+ Downloads a project and its entire version history
+git clone [url]
+  </description>
     </item>
     
     <item>
@@ -96,6 +146,57 @@ Why?: When your code is minified and bundled into a single file for deployment t
     </item>
     
     <item>
+      <title>Create Database on Mlab</title>
+      <link>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/</guid>
+      <description> Registration using your email
+Click This Link to Register
+ Click &amp;ldquo;Create New&amp;rdquo; to Create new database
+   Select Cloud Provider as Google Cloud Platform, Plan Type as SANDBOX and clic &amp;ldquo;Continue&amp;rdquo;   Select the region then click &amp;ldquo;Continue&amp;rdquo;   Set the database name
+ Example database name:  project-a-dev (for development) project-a-uat (for uat)   Click &amp;ldquo;Continue&amp;rdquo; button
+   Confirm the order, Click &amp;ldquo;Submit Order&amp;rdquo;   Your database already created   Click your database to configure the users   Click &amp;ldquo;Users&amp;rdquo; tab, click &amp;ldquo;Add Database User&amp;rdquo;   Set your username add password, then click &amp;ldquo;Create&amp;rdquo;   User has been created   Backup your local data, go to &amp;ldquo;cmd&amp;rdquo;  mongodump --db YOUR_DB_NAME --excludeCollectionsWithPrefix acl_allows -o YOUR_OUTPUT_DIR   Restore to mongolab  restore --host YOUR_MLAB_HOST --port YOUR_MLAB_PORT --username YOUR_MLAB_USERNAME --password YOUR_MLAB_USERNAME --db YOUR_MLAB_DB_NAME YOUR_BACKUP_DIR  </description>
+    </item>
+    
+    <item>
+      <title>Create Heroku App and Deploy</title>
+      <link>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/</guid>
+      <description>Creating Heroku App and Deploy  Open &amp;ldquo;cmd&amp;rdquo; or &amp;ldquo;Terminal&amp;rdquo;
+ Login heroku using your heroku user
+$ heroku login Enter your Heroku credentials. Email: adam@example.com Password (typing will be hidden): Authentication successful.  Go to you project directory and create app on heroku
+ Application Name:
+ Development: project-name-dev
+ UAT: project-name-uat
+    $ heroku create application-name Creating app... done, ⬢ sleepy-meadow-81798 https://sleepy-meadow-81798.herokuapp.com/ | https://git.heroku.com/sleepy-meadow-81798.git   Set your remote repository  $ heroku git:remote -a falling-wind-1624 Git remote heroku added.</description>
+    </item>
+    
+    <item>
+      <title>Make Changes</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/make-changes/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/make-changes/</guid>
+      <description>Make Changes  Lists all new or modified files to be committed
+git status
+ Short view of status
+git status -s
+ Shows file differences not yet staged
+git diff
+ Snapshots the file in preparation for versioning
+git add [file]
+ Add all modified files to be commited
+git add .
+ Add only certain files
+git add &#39;*.txt&#39;
+ Snapshot only chunks of a file
+git add –patch filename.</description>
+    </item>
+    
+    <item>
       <title>Setting Up Mongodb</title>
       <link>https://xcidic.github.io/coding-guidelines/gcp/setting-up-mongodb/</link>
       <pubDate>Thu, 13 Jul 2017 15:48:25 +0700</pubDate>
@@ -133,6 +234,25 @@ Why?: When your code is minified and bundled into a single file for deployment t
       <guid>https://xcidic.github.io/coding-guidelines/angular1/modules/</guid>
       <description>Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.
 Definitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?</description>
+    </item>
+    
+    <item>
+      <title>Group changes</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/group-changes/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/group-changes/</guid>
+      <description>Group changes  Lists all local branches in the current directory
+git branch
+ Create a new branch
+git branch [branch-name]
+ Switches to the specified branch and updates the working directory
+git checkout [branch-name]
+ Switches to a remote branch
+git checkout -b &amp;lt;name&amp;gt; &amp;lt;remote&amp;gt;/&amp;lt;branch&amp;gt;
+ Return file to it&amp;rsquo;s previous version, if it hasn’t been staged yet
+git checkout [filename]
+ Combines the specified branch&amp;rsquo;s history into the current branch</description>
     </item>
     
     <item>
@@ -179,6 +299,34 @@ Why?: It promotes the use of binding to a &amp;ldquo;dotted&amp;rdquo; object in
     </item>
     
     <item>
+      <title>Setting Environment Variable</title>
+      <link>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/</guid>
+      <description>Login to your Heroku
+Click This Link to Login
+ Select your apps
+   Go to Settings menu   Click &amp;ldquo;Reveal Config Vars&amp;rdquo; Button   Fill the key field and value field then click &amp;ldquo;Add&amp;rdquo; button   From that list, at least you input:
+ ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGGOLAB_URI: your mongodb URI (mongodb://:@ds147872.</description>
+    </item>
+    
+    <item>
+      <title>Refactor filenames</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/refactore-filenames/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/refactore-filenames/</guid>
+      <description> Refactor filenames  Deletes the file from the working directory and stages the deletion
+git rm [file]
+ Removes the file from version control but preserves the file locally
+git rm –cached [file]
+ Changes the file name and prepares it for commit
+git mv [file-original] [file-renamed]
+  </description>
+    </item>
+    
+    <item>
       <title>Setting Up SSL</title>
       <link>https://xcidic.github.io/coding-guidelines/gcp/setting-up-ssl/</link>
       <pubDate>Thu, 13 Jul 2017 15:51:41 +0700</pubDate>
@@ -210,6 +358,22 @@ Note: All Angular services are singletons. This means that there is only one ins
     </item>
     
     <item>
+      <title>Suppress tracking</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/suppress-tracking/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/suppress-tracking/</guid>
+      <description> Suppress tracking  .gitignore
+ *.log
+ build/
+ temp-*
+ A text file named .gitignore suppresses accidental versioning of files and paths matching the specified patterns
+  Lists all ignored files in this project
+git ls-files –other –ignored –exclude-standard
+  </description>
+    </item>
+    
+    <item>
       <title>Alignment</title>
       <link>https://xcidic.github.io/coding-guidelines/react/alignment/</link>
       <pubDate>Wed, 12 Jul 2017 10:59:35 +0700</pubDate>
@@ -231,6 +395,23 @@ Note: All Angular services are singletons.
     </item>
     
     <item>
+      <title>Save fragments</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/save-fragments/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/save-fragments/</guid>
+      <description> Save fragments  Temporarily stores all modified tracked files
+git stash
+ Restores the most recently stashed files
+git stash pop
+ Lists all stashed changesets
+git stash list
+ Discards the most recently stashed changeset
+git stash drop
+  </description>
+    </item>
+    
+    <item>
       <title>Quotes</title>
       <link>https://xcidic.github.io/coding-guidelines/react/quotes/</link>
       <pubDate>Wed, 12 Jul 2017 11:01:39 +0700</pubDate>
@@ -249,6 +430,24 @@ Note: All Angular services are singletons.
       <guid>https://xcidic.github.io/coding-guidelines/angular1/data-services/</guid>
       <description>Data Services Separate Data Calls [Style Y060]  Refactor logic for making data operations and interacting with data to a factory. Make data services responsible for XHR calls, local storage, stashing in memory, or any other data operations.
 Why?: The controller&amp;rsquo;s responsibility is for the presentation and gathering of information for the view. It should not care how it gets the data, just that it knows who to ask for it.</description>
+    </item>
+    
+    <item>
+      <title>Review history</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/review-history/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/review-history/</guid>
+      <description>Review history  Lists version history for the current branch
+git log
+ Lists version history for a file, including renames
+git log –follow [file]
+ Pretty commit view, you can customize it as much as you want
+git log –pretty=format:&amp;quot;%h %s&amp;quot; –graph
+ See what the author has worked on in the last week
+git log –author=&#39;Name&#39; –after={1.week.ago} –pretty=oneline –abbrev-commit
+ See only changes in this branch
+git log ––no-merges master.</description>
     </item>
     
     <item>
@@ -275,6 +474,21 @@ Why?: One directive per file is easy to maintain.
     </item>
     
     <item>
+      <title>Redo commits</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/redo-commits/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/redo-commits/</guid>
+      <description> Redo commits  Unstage pending changes, the changes will still remain on file system
+git reset
+ Undoes all commits after [commit], preserving changes locally
+git reset [commit/tag]
+ Discards all history and changes back to the specified commit
+git reset –hard [commit]
+  </description>
+    </item>
+    
+    <item>
       <title>Props</title>
       <link>https://xcidic.github.io/coding-guidelines/react/props/</link>
       <pubDate>Wed, 12 Jul 2017 11:09:56 +0700</pubDate>
@@ -294,6 +508,25 @@ Why?: One directive per file is easy to maintain.
       <description>Resolving Promises Controller Activation Promises [Style Y080]  Resolve start-up logic for a controller in an activate function.
 Why?: Placing start-up logic in a consistent place in the controller makes it easier to locate, more consistent to test, and helps avoid spreading out the activation logic across the controller.
 Why?: The controller activate makes it convenient to re-use the logic for a refresh for the controller/View, keeps the logic together, gets the user to the View faster, makes animations easy on the ng-view or ui-view, and feels snappier to the user.</description>
+    </item>
+    
+    <item>
+      <title>Synchronize changes</title>
+      <link>https://xcidic.github.io/coding-guidelines/git/synchronize-changes/</link>
+      <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git/synchronize-changes/</guid>
+      <description>Synchronize changes  Downloads all history from the repository bookmark
+git fetch [bookmark]
+ Update history of remote branches, you can fetch and purge
+git fetch -p
+ Combines bookmark&amp;rsquo;s branch into current local branch
+git merge [bookmark]/[branch]
+ Push current branch to remote branch
+git push
+ Manually specify remote and branch to use every time
+git push [remote] [branch]
+ If a remote branch is not set up as an upstream, you can make it so</description>
     </item>
     
     <item>

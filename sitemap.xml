@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/configure/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/gcp/create-bitnami-vm/</loc>
     <lastmod>2017-07-13T14:51:59+07:00</lastmod>
   </url>
@@ -25,6 +30,21 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/single-responsibility/</loc>
     <lastmod>2017-07-10T18:48:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/install-heroku/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/create-repositories/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +68,21 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/make-changes/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/gcp/setting-up-mongodb/</loc>
     <lastmod>2017-07-13T15:48:25+07:00</lastmod>
   </url>
@@ -65,6 +100,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/modules/</loc>
     <lastmod>2017-07-10T18:47:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/group-changes/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
   
   <url>
@@ -88,6 +128,16 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/refactore-filenames/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/gcp/setting-up-ssl/</loc>
     <lastmod>2017-07-13T15:51:41+07:00</lastmod>
   </url>
@@ -103,6 +153,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/suppress-tracking/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/react/alignment/</loc>
     <lastmod>2017-07-12T10:59:35+07:00</lastmod>
   </url>
@@ -110,6 +165,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/factories/</loc>
     <lastmod>2017-07-10T18:44:58+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/save-fragments/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
   
   <url>
@@ -123,6 +183,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/review-history/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/react/spacing/</loc>
     <lastmod>2017-07-12T11:03:32+07:00</lastmod>
   </url>
@@ -133,6 +198,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/redo-commits/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/react/props/</loc>
     <lastmod>2017-07-12T11:09:56+07:00</lastmod>
   </url>
@@ -140,6 +210,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/resolving-promises/</loc>
     <lastmod>2017-07-10T18:47:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/synchronize-changes/</loc>
+    <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
   
   <url>
@@ -560,6 +635,16 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</loc>
     <lastmod>2017-07-11T17:12:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/</loc>
+    <lastmod>2017-07-14T10:24:24+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/git/</loc>
+    <lastmod>2017-07-14T10:24:24+07:00</lastmod>
   </url>
   
   <url>
