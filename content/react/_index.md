@@ -4,6 +4,8 @@ date: 2017-07-12T10:24:24+07:00
 draft: false
 ---
 
+![react](http://blog.brew.com.hk/content/images/2016/11/react-banner.png)
+
 # Airbnb React/JSX Style Guide
 
 *A mostly reasonable approach to React and JSX*

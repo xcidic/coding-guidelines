@@ -32,7 +32,7 @@ weight: 5
 	- MAILER_FROM: your account mailer
 	- MAILER_PASSWORD: your password
 	- MAILER_SERVICE_PROVIDER: your smtp service
-	- MONGGOLAB_URI: your mongodb URI (mongodb://<dbuser>:<dbpassword>@ds147872.mlab.com:47872/project-a-dev)
+	- MONGOLAB_URI: your mongodb URI (mongodb://<dbuser>:<dbpassword>@ds147872.mlab.com:47872/project-a-dev)
 
 - You can get mongodb uri on your mongolab
 ![Env 5](/coding-guidelines/setting-env-variable/env5.png)

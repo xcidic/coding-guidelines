@@ -4,6 +4,7 @@ date: 2017-07-11T17:18:32+07:00
 draft: false
 weight: 32
 ---
+![JS](http://449design.ca/wp-content/uploads/2016/01/JavaScriptRandomQuoteGenerator.png)
 
 ## Diff Style Guides:
   - [ES5]({{%relref "javascript/es5/_index.md"%}})

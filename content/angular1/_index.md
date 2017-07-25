@@ -5,6 +5,8 @@ draft: false
 weight: 1
 ---
 
+![Angular1](https://www.valuecoders.com/blog/wp-content/uploads/2017/07/angularjs-development-companies-india.png)
+
 ## Angular Team Endorsed
 Special thanks to Igor Minar, lead on the Angular team, for reviewing, contributing feedback, and entrusting me to shepherd this guide.
 

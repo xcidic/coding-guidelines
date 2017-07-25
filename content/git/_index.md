@@ -4,7 +4,7 @@ date: 2017-07-14T10:24:24+07:00
 draft: false
 ---
 
-# Airbnb Git/Git Cheat Sheet
+![Git](https://coursework.vschool.io/content/images/2017/03/git-blog-banner.png)
 
 ## Table of Contents
   
