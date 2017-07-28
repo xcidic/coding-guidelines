@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Git Contribution</title>
+      <link>https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/</link>
+      <pubDate>Wed, 12 Jul 2017 14:45:04 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/</guid>
+      <description>Git Contribution  Git Commit Guidelines We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history. But also, we use the git commit messages to generate the AngularJS change log.
+The commit message formatting can be added using a typical git workflow or through the use of a CLI wizard (Commitizen).</description>
+    </item>
+    
+    <item>
       <title>Configure</title>
       <link>https://xcidic.github.io/coding-guidelines/git/configure/</link>
       <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
@@ -308,7 +318,7 @@ Why?: It promotes the use of binding to a &amp;ldquo;dotted&amp;rdquo; object in
 Click This Link to Login
  Select your apps
    Go to Settings menu   Click &amp;ldquo;Reveal Config Vars&amp;rdquo; Button   Fill the key field and value field then click &amp;ldquo;Add&amp;rdquo; button   From that list, at least you input:
- ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGGOLAB_URI: your mongodb URI (mongodb://:@ds147872.</description>
+ ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGOLAB_URI: your mongodb URI (mongodb://:@ds147872.</description>
     </item>
     
     <item>
@@ -1400,6 +1410,22 @@ function foo() { return true; }  29.2 No, but seriously:
       
       <guid>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</guid>
       <description>The JavaScript Style Guide Guide  Reference  ⬆ Back</description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://xcidic.github.io/coding-guidelines/gcp-static/setup/</link>
+      <pubDate>Thu, 13 Jul 2017 13:29:54 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/gcp-static/setup/</guid>
+      <description>Hosting Static Web on Google Bucket  Verify domain ownership eg. www.domain.com
+ https://www.google.com/webmasters/verification/home
+ Follow the instruction to add DNS TXT Record
+ And add CNAME for target with “c.storage.googleapis.com”
+ After domain verified, add new Google Storage Bucket with the name of domain www.domain.com
+ Edit website configuration
+   For uploading to Google Storage Bucket please install Google Cloud SDK by this instruction
+Click This Link to See Insturction</description>
     </item>
     
     <item>

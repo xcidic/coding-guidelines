@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/",
+	"title": "Git Contribution",
+	"tags": [],
+	"description": "",
+	"content": " Git Contribution  Git Commit Guidelines We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history. But also, we use the git commit messages to generate the AngularJS change log.\nThe commit message formatting can be added using a typical git workflow or through the use of a CLI wizard (Commitizen). To use the wizard, run yarn run commit in your terminal after staging your changes in git.\nCommit Message Format Each commit message consists of a header, a body and a footer. The header has a special format that includes a type, a scope and a subject:\n\u0026lt;type\u0026gt;(\u0026lt;scope\u0026gt;): \u0026lt;subject\u0026gt; \u0026lt;BLANK LINE\u0026gt; \u0026lt;body\u0026gt; \u0026lt;BLANK LINE\u0026gt; \u0026lt;footer\u0026gt;  The header is mandatory and the scope of the header is optional.\nAny line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.\nRevert If the commit reverts a previous commit, it should begin with revert:, followed by the header of the reverted commit. In the body it should say: This reverts commit \u0026lt;hash\u0026gt;., where the hash is the SHA of the commit being reverted.\nType Must be one of the following:\n feat: A new feature fix: A bug fix docs: Documentation only changes style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) refactor: A code change that neither fixes a bug nor adds a feature perf: A code change that improves performance test: Adding missing or correcting existing tests chore: Changes to the build process or auxiliary tools and libraries such as documentation generation  Scope The scope could be anything specifying place of the commit change. For example $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView, etc\u0026hellip;\nYou can use * when the change affects more than a single scope.\nSubject The subject contains succinct description of the change:\n use the imperative, present tense: \u0026ldquo;change\u0026rdquo; not \u0026ldquo;changed\u0026rdquo; nor \u0026ldquo;changes\u0026rdquo; don\u0026rsquo;t capitalize first letter no dot (.) at the end  Body Message Just as in the subject, use the imperative, present tense: \u0026ldquo;change\u0026rdquo; not \u0026ldquo;changed\u0026rdquo; nor \u0026ldquo;changes\u0026rdquo;. The body should include the motivation for the change and contrast this with previous behavior.\nFooter Message The footer should contain any information about Breaking Changes and is also the place to [reference GitHub issues that this commit closes][closing-issues].\nBreaking Changes should start with the word BREAKING CHANGE: with a space or two newlines. The rest of the commit message is then used for this.\nA detailed explanation can be found in this [document][commit-message-format].\n"
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/angular1/",
 	"title": "Angular 1 Style Guide",
 	"tags": [],
@@ -179,7 +186,7 @@
 	"title": "Setting Environment Variable",
 	"tags": [],
 	"description": "",
-	"content": " Login to your Heroku\nClick This Link to Login\n Select your apps\n   Go to Settings menu   Click \u0026ldquo;Reveal Config Vars\u0026rdquo; Button   Fill the key field and value field then click \u0026ldquo;Add\u0026rdquo; button   From that list, at least you input:\n ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGGOLAB_URI: your mongodb URI (mongodb://:@ds147872.mlab.com:47872/project-a-dev)  You can get mongodb uri on your mongolab  Restart your heroku\n  heroku restart  "
+	"content": " Login to your Heroku\nClick This Link to Login\n Select your apps\n   Go to Settings menu   Click \u0026ldquo;Reveal Config Vars\u0026rdquo; Button   Fill the key field and value field then click \u0026ldquo;Add\u0026rdquo; button   From that list, at least you input:\n ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGOLAB_URI: your mongodb URI (mongodb://:@ds147872.mlab.com:47872/project-a-dev)  You can get mongodb uri on your mongolab  Restart your heroku\n  heroku restart  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/git/refactore-filenames/",
@@ -900,7 +907,7 @@
 	"title": "Git Cheat Sheet",
 	"tags": [],
 	"description": "",
-	"content": " Airbnb Git/Git Cheat Sheet Table of Contents  Configure Create repositories Make changes Group changes Refactor filenames Suppress tracking Save fragments Review history Redo commits Synchronize changes  "
+	"content": " Table of Contents  Configure Create repositories Make changes Group changes Refactor filenames Suppress tracking Save fragments Review history Redo commits Synchronize changes  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/gcp/",
@@ -908,6 +915,27 @@
 	"tags": [],
 	"description": "",
 	"content": " Compute Engine - Google Cloud Platform Guide Table of Contents  Create Bitnami VM Configuring Apache Setting Up MongoDB Setting Up MEANJS Application Setting Up SSL  "
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/gcp-static/",
+	"title": "Google Cloud Platform Static Web Guides",
+	"tags": [],
+	"description": "",
+	"content": " Table of Contents  Setup  "
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/gcp-static/setup/",
+	"title": "Setup",
+	"tags": [],
+	"description": "",
+	"content": " Hosting Static Web on Google Bucket  Verify domain ownership eg. www.domain.com\n https://www.google.com/webmasters/verification/home\n Follow the instruction to add DNS TXT Record\n And add CNAME for target with “c.storage.googleapis.com”\n After domain verified, add new Google Storage Bucket with the name of domain www.domain.com\n Edit website configuration\n   For uploading to Google Storage Bucket please install Google Cloud SDK by this instruction\nClick This Link to See Insturction\n On the build folder project do uploading your static web by executing gsutil command\ngsutil -m -h \u0026quot;Cache-Control:public, max-age=604800\u0026quot; cp -z js,html,css -a public-read * gs://www.domain.com\n Detail:\n -m for multiple upload\n -h \u0026ldquo;Cache-Control:public, max-age=604800\u0026rdquo; for set cache control\n cp for copying\n -z js,html,css for set gzip compression on js html and css\n -a public-read set access public read\n gs://www.domain.com\n   Wait until finish.\n Done\n  "
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/git-contribution/",
+	"title": "Git Contribution Guideline",
+	"tags": [],
+	"description": "",
+	"content": " Table of Contents  Git Contribution Guide  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/meanjs/",
@@ -928,7 +956,7 @@
 	"title": "Xcidic Coding Guidelines",
 	"tags": [],
 	"description": "",
-	"content": " Xcidic Coding Guidelines Main Contents  AngularJS Style Guide Google Cloud Platform Guide JavaScript Style Guide MEANJS Style Guide ReactJS Style Guide Git Cheat Sheet Deploy Dev and UAT Env  "
+	"content": " Xcidic Coding Guidelines Main Contents  AngularJS Style Guide Google Cloud Platform Guide Google Cloud Platform Static Web Guide JavaScript Style Guide MEANJS Style Guide ReactJS Style Guide Git Cheat Sheet Git Contribution Guideline Deploy Dev and UAT Env  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/_header/",
