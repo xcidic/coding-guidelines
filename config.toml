@@ -9,7 +9,7 @@ noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
 # themeStyle = "theme" # overide base css
-themeVariant = "gold" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "xcidic" # choose theme variant "green", "gold" , "gray", "blue" (default)
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
