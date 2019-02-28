@@ -1,5 +1,26 @@
 [
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/login-aws/",
+	"title": "Login AWS",
+	"tags": [],
+	"description": "",
+	"content": " 1. Access AWS Access https://aws.amazon.com/\n2. Login Click \u0026ldquo;Sign In to the Console\u0026rdquo; button. For \u0026ldquo;username\u0026rdquo; and \u0026ldquo;password\u0026rdquo; you can ask Head of Coder.\n- - - Finish - - -\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/flow-aws/",
+	"title": "Xcidic Development Flow in AWS",
+	"tags": [],
+	"description": "",
+	"content": " 1. Static Web Development Flow in AWS of Static Web.\n2. Non Static Web Development Flow in AWS of Non Static Web.\n3. Images Storage Development Flow in AWS of Images Storage.\n- - - Finish - - -\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/",
+	"title": "Generate SSH Keys",
+	"tags": [],
+	"description": "",
+	"content": " Generating SSH Keys  If you want to use gcp remote server make sure to generate private and public key pair in Setting \u0026gt; Pipelines \u0026gt; SSH Keys   Don\u0026rsquo;t forget to add fingerprint of your server  "
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/",
 	"title": "Git Contribution",
 	"tags": [],
@@ -12,6 +33,20 @@
 	"tags": [],
 	"description": "",
 	"content": " Angular Team Endorsed Special thanks to Igor Minar, lead on the Angular team, for reviewing, contributing feedback, and entrusting me to shepherd this guide.\nPurpose Opinionated Angular style guide for teams by @john_papa\nIf you are looking for an opinionated style guide for syntax, conventions, and structuring Angular applications, then step right in. These styles are based on my development experience with Angular, presentations, Pluralsight training courses and working in teams.\nThe purpose of this style guide is to provide guidance on building Angular applications by showing the conventions I use and, more importantly, why I choose them.\n If you like this guide, check out my Angular Patterns: Clean Code course at Pluralsight which is a companion to this guide.\n \nCommunity Awesomeness and Credit Never work in a vacuum. I find that the Angular community is an incredible group who are passionate about sharing experiences. As such, Angular expert Todd Motto and I have collaborated on many styles and conventions. We agree on most, and some we diverge. I encourage you to check out Todd\u0026rsquo;s guidelines to get a sense for his approach and how it compares.\nMany of my styles have been from the many pair programming sessions Ward Bell and I have had. My friend Ward has certainly helped influence the ultimate evolution of this guide.\nSee the Styles in a Sample App While this guide explains the what, why and how, I find it helpful to see them in practice. This guide is accompanied by a sample application that follows these styles and patterns. You can find the sample application (named modular) here in the modular folder. Feel free to grab it, clone it, or fork it. Instructions on running it are in its readme.\nTranslations Translations of this Angular style guide are maintained by the community and can be found here.\nTable of Contents  Single Responsibility IIFE Modules Controllers Services Factories Data Services Directives Resolving Promises Manual Annotating for Dependency Injection Minification and Annotation Exception Handling Naming Application Structure LIFT Principle Application Structure Modularity Startup Logic Angular $ Wrapper Services Testing Animations Comments JSHint JSCS Constants File Templates and Snippets Yeoman Generator Routing Task Automation Filters Angular Docs  "
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-instance/",
+	"title": "Create Instance",
+	"tags": [],
+	"description": "",
+	"content": " 1. Choose EC2 After Sign In success, click menu \u0026ldquo;Service\u0026rdquo; on header, then click \u0026ldquo;EC2\u0026rdquo;.\n2. Create Instance After click EC2, click \u0026ldquo;Instances\u0026rdquo; on left menu, then click \u0026ldquo;Launch Instance\u0026rdquo; button to create a new instance.\n3. Choose Operation System Choose the Operation System (OS), for Xcidic we choose \u0026ldquo;Ubuntu Server 16.04 LTS (HVM), SSD Volume Type\u0026rdquo;.\n4. Choose Instance Type Choose the Instance Type. It depends the scope of project, for default we choose \u0026ldquo;t2.micro\u0026rdquo;, then click \u0026ldquo;Next: Configure Instance Details\u0026rdquo; button.\n5. Configure Instance Details For this step we use AWS default, then click \u0026ldquo;Next: Add Storage\u0026rdquo; button.\n6. Add Storage For this step we use AWS default, then click \u0026ldquo;Next: Add Tags\u0026rdquo; button.\n7. Add Tags For default we don\u0026rsquo;t add tags, then click \u0026ldquo;Next: Configure Security Group\u0026rdquo; button.\n8. Configure Security Group We create a new security group, the name depends the project name. If the project name is \u0026ldquo;Project WW Staging\u0026rdquo;, so the security group name is \u0026ldquo;project-ww-staging-sg\u0026rdquo;, add \u0026ldquo;sg\u0026rdquo; after project name.\nNext, \u0026ldquo;Add Rule\u0026rdquo; to add the all ports that we use. On \u0026ldquo;Source\u0026rdquo; input, we choose Load Balancer Security Group. If finish, then click \u0026ldquo;Review and Launch\u0026rdquo; button.\n*p.s: If we haven\u0026rsquo;t created Load Balancer Security Group yet, please click this link.\n9. Review the Instance Review an instance detail. If we are sure to create this instance, just click \u0026ldquo;Launch\u0026rdquo; button. Finish. 😊\n- - - Finish - - -\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/",
+	"title": "Add SSH Keys to VM",
+	"tags": [],
+	"description": "",
+	"content": " ADD SSH Keys to VM  Go to your Google cloud console \u0026gt; VM Instance \u0026gt; Select your target remote server \u0026gt; VM instance details \u0026gt; Edit. In the bottom you will see SSH Keys section, click show and edit   Put your public key from bitbucket with addition your user for login the format should be \u0026lt;ssh-rsa\u0026gt; \u0026lt;base64key\u0026gt; \u0026lt;username\u0026gt;  Example   ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAinno+QU+p2of7V/U2VKGxwLi7/vmozA/ScGpW3y6N+vZZzWXm9UHQQp/NLaOvgHTUGglBV25i9P7NchPewOZbCbWrtDJhQawBqRdBc26BkteG8k mWq5sFGulOAXreXOtroNrqrKCx5UV1A2fVzXiPscmZCSdBEJ9N0MHsktRnkimUBmvWK1EzVJ5rN5KK7jOTIOf9pw8rO0XBUCkKXKOSMa1Oi2YJHKSTOg0rzT0RShuTTMrbd2ywRUBoRoFPEkRkX dNydQP4Wqr5NFF15ssLsu28CHVTueEbrTzpDs6MDhwvdmqWXYrLfZayuyybV5mymNfo8QpfGRnRFvdjhP/Nw== deploy   Save the setting and wait until the process is finished  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/git/configure/",
@@ -63,6 +98,20 @@
 	"content": " Heroku CLI Instalation Mac brew install heroku  Heroku CLI Instalation Windows  Download Heroku CLI x32 x64\n Run setup  Click Next  Click Install\n  Need to install git for heroku  Click Next  Click Next  Click Next  Click Next  Click Next  Click Install  Click Finish  Heroku Instalation Complete  Setting Path Environment Variable  Click \u0026ldquo;Advance System Settings\u0026rdquo;  Click \u0026ldquo;Environment Variable\u0026rdquo;  Click \u0026ldquo;Edit\u0026rdquo;  Click \u0026ldquo;New\u0026rdquo;\nC:\\Program Files\\Heroku\\bin\n   Click \u0026ldquo;Ok\u0026rdquo;  Click \u0026ldquo;Ok\u0026rdquo;  Run \u0026ldquo;cmd\u0026rdquo; Test heroku using heroku --version   "
 },
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-security-group/",
+	"title": "Create Security Group",
+	"tags": [],
+	"description": "",
+	"content": " 1. Choose EC2 After Sign In success, click menu \u0026ldquo;Service\u0026rdquo; on header, then click \u0026ldquo;EC2\u0026rdquo;.\n2. Create Security Group Click \u0026ldquo;Security Groups\u0026rdquo; on left menu, then click \u0026ldquo;Create Security Group\u0026rdquo; button to create a new security group.\n2.1 Create Security Group of Load Balancer We create a new security group for load balancer. For this security group, we only make it once that is used by all instance security groups.\nNext, \u0026ldquo;Add Rule\u0026rdquo; to add HTTP and HTTPS ports. If finish, then click \u0026ldquo;Create\u0026rdquo; button.\n2.2 Create Security Group of Instance We create a new security group, the name depends the project name. If the project name is \u0026ldquo;Project Sample Staging\u0026rdquo;, so the security group name is \u0026ldquo;project-sample-staging-sg\u0026rdquo;, add \u0026ldquo;sg\u0026rdquo; after project name.\nNext, \u0026ldquo;Add Rule\u0026rdquo; to add the all ports that we use. On \u0026ldquo;Source\u0026rdquo; input, we choose Load Balancer Security Group. If finish, then click \u0026ldquo;Create\u0026rdquo; button.\n- - - Finish - - -\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/",
+	"title": "Setting Bitbucket Env Variable",
+	"tags": [],
+	"description": "",
+	"content": " Setting Bitbucket Env Variable  Back to Bitbucket Setting, in Pipelines \u0026gt; Environment variables -Set your env variables used in build for example:   After Setting is completed, go to your source code, enable the bitbucket pipeline by creating bitbucket-pipelines.yml in root folder of your project  "
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/git/create-repositories/",
 	"title": "Create Repositories",
 	"tags": [],
@@ -112,6 +161,20 @@
 	"content": " Creating Heroku App and Deploy  Open \u0026ldquo;cmd\u0026rdquo; or \u0026ldquo;Terminal\u0026rdquo;\n Login heroku using your heroku user\n$ heroku login Enter your Heroku credentials. Email: adam@example.com Password (typing will be hidden): Authentication successful.  Go to you project directory and create app on heroku\n Application Name:\n Development: project-name-dev\n UAT: project-name-uat\n    $ heroku create application-name Creating app... done, ⬢ sleepy-meadow-81798 https://sleepy-meadow-81798.herokuapp.com/ | https://git.heroku.com/sleepy-meadow-81798.git   Set your remote repository  $ heroku git:remote -a falling-wind-1624 Git remote heroku added.   Build code use grunt  $ grunt build --force   Deploy your code  Default deploy   $ git push heroku master Initializing repository, done. updating 'refs/heads/master' ...  Branches pushed to Heroku other than master will be ignored by this command. If you’re working out of another branch locally, you can either merge to master before pushing, or specify that you want to push your local branch to a remote master. To push a branch other than master, use this syntax:\n$ git push heroku yourbranch:master  "
 },
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-target-group/",
+	"title": "Create Target Group",
+	"tags": [],
+	"description": "",
+	"content": " 1. Choose EC2 After Sign In success, click menu \u0026ldquo;Service\u0026rdquo; on header, then click \u0026ldquo;EC2\u0026rdquo;.\n2. Create Target Group Click \u0026ldquo;Target Groups\u0026rdquo; on left menu, then click \u0026ldquo;Create Target Group\u0026rdquo; button to create a new target group.\n3. Key In Target Group Name We create a new target group, the name depends the project name. If the project name is \u0026ldquo;Project Sample Staging Backend\u0026rdquo;, so the target group name is \u0026ldquo;project-sample-staging-backend\u0026rdquo;. Then click \u0026ldquo;Create\u0026rdquo; button.\n3. Edit Target of Target Groups We select our new target group. On bottom menu, select \u0026ldquo;Targets\u0026rdquo; tab, then click \u0026ldquo;Edit\u0026rdquo; button.\n4. Add Instance to registered We select our instance and key in the project port. Then, click \u0026ldquo;Add to Registered\u0026rdquo; button.\n5. Save Target After we add instance with specific port to registered, then click \u0026ldquo;Save\u0026rdquo; button\n- - - Finish - - -\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/example-content/",
+	"title": "Example Content",
+	"tags": [],
+	"description": "",
+	"content": " Example Content  The image is docker image you are using, in this example I’m using docker image built by dpolyakov (https://hub.docker.com/r/dpolyakov/docker-node-latest-with-rsync/) If you want specific build image just created your self.\n The pipelines is contain step by step to build and deploy your source code, Cache meaning we cache node and node_modules so we reduce the time for installing node modules.\n In script we put step by step to install your source code, this step is different each framework, you can also do integration testing or tdd test in this script.\n Rsync is tools to copy the result of build to remote server. (https://en.wikipedia.org/wiki/Rsync)\n The ssh command is to stop/start/restart the service inside remote server.\n  "
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/git/make-changes/",
 	"title": "Make Changes",
 	"tags": [],
@@ -145,6 +208,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.\nDefinitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?: With 1 component per file, there is rarely a need to introduce a variable for the module.\n/* avoid */ var app = angular.module('app', [ 'ngAnimate', 'ngRoute', 'app.shared', 'app.dashboard' ]);  Instead use the simple setter syntax.\n/* recommended */ angular .module('app', [ 'ngAnimate', 'ngRoute', 'app.shared', 'app.dashboard' ]);  Getters [Style Y022]  When using a module, avoid using a variable and instead use chaining with the getter syntax.  Why?: This produces more readable code and avoids variable collisions or leaks.\n/* avoid */ var app = angular.module('app'); app.controller('SomeController', SomeController); function SomeController() { }  /* recommended */ angular .module('app') .controller('SomeController', SomeController); function SomeController() { }  Setting vs Getting [Style Y023]  Only set once and get for all other instances.  Why?: A module should only be created once, then retrieved from that point and after.\n/* recommended */ // to set a module angular.module('app', []); // to get a module angular.module('app');  Named vs Anonymous Functions [Style Y024]  Use named functions instead of passing an anonymous function in as a callback.  Why?: This produces more readable code, is much easier to debug, and reduces the amount of nested callback code.\n/* avoid */ angular .module('app') .controller('DashboardController', function() { }) .factory('logger', function() { });  /* recommended */ // dashboard.js angular .module('app') .controller('DashboardController', DashboardController); function DashboardController() { }  // logger.js angular .module('app') .factory('logger', logger); function logger() { }  Back to Table of Contents\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-load-balancer/",
+	"title": "Create Load Balancer",
+	"tags": [],
+	"description": "",
+	"content": " 1. Choose EC2 After Sign In success, click menu \u0026ldquo;Service\u0026rdquo; on header, then click \u0026ldquo;EC2\u0026rdquo;.\n2. Create Load Balancer Click \u0026ldquo;Load Balancers\u0026rdquo; on left menu, then click \u0026ldquo;Create Load Balancer\u0026rdquo; button to create a new load balancer.\n3. Select Load Balancer type Click \u0026ldquo;Create\u0026rdquo; button on \u0026ldquo;Application Load Balancer\u0026rdquo; with HTTP/HTTPS logo.\n4. Configure Load Balancer Type the Load Balancer name, then Add \u0026ldquo;HTTPS\u0026rdquo; on Listeners, then choose 2 Availability Zones, then click \u0026ldquo;Next: Configure Security Settings\u0026rdquo;.\n5. Configure Security Settings Choose our ACM, then click \u0026ldquo;Next: Configure Security Groups\u0026rdquo;.\np.s: If there is no ACM yet, you can click this link\n6. Configure Security Groups Choose Security Groups for Load Balancer, then click \u0026ldquo;Next: Configure Routing\u0026rdquo;.\np.s: If there is no Security Groups for Load Balancer yet, you can click this link\n7. Configure Routing Choose our target group, then click \u0026ldquo;Next: Register Targets\u0026rdquo;.\np.s: If there is no target group yet, you can click this link\n8. Register Targets Review our register targets, then click \u0026ldquo;Next: Review\u0026rdquo;.\n9. Review Review our load balancer, then click \u0026ldquo;Create\u0026rdquo;.\n- - - Finish - - -\n"
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/git/group-changes/",
@@ -189,6 +259,13 @@
 	"content": " Login to your Heroku\nClick This Link to Login\n Select your apps\n   Go to Settings menu   Click \u0026ldquo;Reveal Config Vars\u0026rdquo; Button   Fill the key field and value field then click \u0026ldquo;Add\u0026rdquo; button   From that list, at least you input:\n ADMIN EMAIL: fill with the admin email DOMAIN: fill with your heroku domain MAILER_EMAIL_ID: your account mailer MAILER_FROM: your account mailer MAILER_PASSWORD: your password MAILER_SERVICE_PROVIDER: your smtp service MONGOLAB_URI: your mongodb URI (mongodb://:@ds147872.mlab.com:47872/project-a-dev)  You can get mongodb uri on your mongolab  Restart your heroku\n  heroku restart  "
 },
 {
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-s3/",
+	"title": "Create S3",
+	"tags": [],
+	"description": "",
+	"content": " 1. Access AWS Access https://aws.amazon.com/\n2. Login Click \u0026ldquo;Sign In to the Console\u0026rdquo; button. For \u0026ldquo;username\u0026rdquo; and \u0026ldquo;password\u0026rdquo; you can ask Head of Coder.\n- - - Finish - - -\n"
+},
+{
 	"uri": "https://xcidic.github.io/coding-guidelines/git/refactore-filenames/",
 	"title": "Refactor filenames",
 	"tags": [],
@@ -215,6 +292,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Services Singletons [Style Y040]  Services are instantiated with the new keyword, use this for public methods and variables. Since these are so similar to factories, use a factory instead for consistency.\nNote: All Angular services are singletons. This means that there is only one instance of a given service per injector.\n  // service angular .module('app') .service('logger', logger); function logger() { this.logError = function(msg) { /* */ }; }  // factory angular .module('app') .factory('logger', logger); function logger() { return { logError: function(msg) { /* */ } }; }  Back to Table of Contents\n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/create-ssl-acm/",
+	"title": "Create SSL / ACM",
+	"tags": [],
+	"description": "",
+	"content": " 1. Access AWS Access https://aws.amazon.com/\n2. Login Click \u0026ldquo;Sign In to the Console\u0026rdquo; button. For \u0026ldquo;username\u0026rdquo; and \u0026ldquo;password\u0026rdquo; you can ask Head of Coder.\n- - - Finish - - -\n"
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/git/suppress-tracking/",
@@ -894,6 +978,20 @@
 	"tags": [],
 	"description": "",
 	"content": " The JavaScript Style Guide Guide  Reference  ⬆ Back \n"
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/aws/",
+	"title": "Amazon Web Services (AWS)",
+	"tags": [],
+	"description": "",
+	"content": " About Amazon Web Services (AWS) is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow. Explore how millions of customers are currently leveraging AWS cloud products and solutions to build sophisticated applications with increased flexibility, scalability and reliability.\nTable of Contents  AWS Development Flow Login AWS Create Instance Create Security Group Create Target Group Create Load Balancer Create S3 Create SSL / ACM  "
+},
+{
+	"uri": "https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/",
+	"title": "Setting pipeline in Bitbucket and GCP Guide",
+	"tags": [],
+	"description": "",
+	"content": " Setting pipeline in Bitbucket and GCP Guide Table of Contents  Generate SSH Keys Bitbucket Add SSH Keys to VM Setting Bitbucket Env Variable Example Content  "
 },
 {
 	"uri": "https://xcidic.github.io/coding-guidelines/deploy-dev-and-uat-env/",

@@ -12,6 +12,38 @@
     
     
     <item>
+      <title>Login AWS</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/login-aws/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/login-aws/</guid>
+      <description>1. Access AWS Access https://aws.amazon.com/
+2. Login Click &amp;ldquo;Sign In to the Console&amp;rdquo; button. For &amp;ldquo;username&amp;rdquo; and &amp;ldquo;password&amp;rdquo; you can ask Head of Coder.
+- - - Finish - - -</description>
+    </item>
+    
+    <item>
+      <title>Xcidic Development Flow in AWS</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/flow-aws/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/flow-aws/</guid>
+      <description>1. Static Web Development Flow in AWS of Static Web.
+2. Non Static Web Development Flow in AWS of Non Static Web.
+3. Images Storage Development Flow in AWS of Images Storage.
+- - - Finish - - -</description>
+    </item>
+    
+    <item>
+      <title>Generate SSH Keys</title>
+      <link>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/</link>
+      <pubDate>Wed, 27 Sep 2017 14:52:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/</guid>
+      <description> Generating SSH Keys  If you want to use gcp remote server make sure to generate private and public key pair in Setting &amp;gt; Pipelines &amp;gt; SSH Keys   Don&amp;rsquo;t forget to add fingerprint of your server  </description>
+    </item>
+    
+    <item>
       <title>Git Contribution</title>
       <link>https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/</link>
       <pubDate>Wed, 12 Jul 2017 14:45:04 +0700</pubDate>
@@ -19,6 +51,27 @@
       <guid>https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/</guid>
       <description>Git Contribution  Git Commit Guidelines We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history. But also, we use the git commit messages to generate the AngularJS change log.
 The commit message formatting can be added using a typical git workflow or through the use of a CLI wizard (Commitizen).</description>
+    </item>
+    
+    <item>
+      <title>Create Instance</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-instance/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:01 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-instance/</guid>
+      <description>1. Choose EC2 After Sign In success, click menu &amp;ldquo;Service&amp;rdquo; on header, then click &amp;ldquo;EC2&amp;rdquo;.
+2. Create Instance After click EC2, click &amp;ldquo;Instances&amp;rdquo; on left menu, then click &amp;ldquo;Launch Instance&amp;rdquo; button to create a new instance.
+3. Choose Operation System Choose the Operation System (OS), for Xcidic we choose &amp;ldquo;Ubuntu Server 16.04 LTS (HVM), SSD Volume Type&amp;rdquo;.
+4. Choose Instance Type Choose the Instance Type. It depends the scope of project, for default we choose &amp;ldquo;t2.</description>
+    </item>
+    
+    <item>
+      <title>Add SSH Keys to VM</title>
+      <link>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/</link>
+      <pubDate>Wed, 27 Sep 2017 14:52:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/</guid>
+      <description> ADD SSH Keys to VM  Go to your Google cloud console &amp;gt; VM Instance &amp;gt; Select your target remote server &amp;gt; VM instance details &amp;gt; Edit. In the bottom you will see SSH Keys section, click show and edit   Put your public key from bitbucket with addition your user for login the format should be &amp;lt;ssh-rsa&amp;gt; &amp;lt;base64key&amp;gt; &amp;lt;username&amp;gt;  Example   ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAinno+QU+p2of7V/U2VKGxwLi7/vmozA/ScGpW3y6N+vZZzWXm9UHQQp/NLaOvgHTUGglBV25i9P7NchPewOZbCbWrtDJhQawBqRdBc26BkteG8k mWq5sFGulOAXreXOtroNrqrKCx5UV1A2fVzXiPscmZCSdBEJ9N0MHsktRnkimUBmvWK1EzVJ5rN5KK7jOTIOf9pw8rO0XBUCkKXKOSMa1Oi2YJHKSTOg0rzT0RShuTTMrbd2ywRUBoRoFPEkRkX dNydQP4Wqr5NFF15ssLsu28CHVTueEbrTzpDs6MDhwvdmqWXYrLfZayuyybV5mymNfo8QpfGRnRFvdjhP/Nw== deploy   Save the setting and wait until the process is finished  </description>
     </item>
     
     <item>
@@ -95,6 +148,26 @@ Why?: One component per file avoids hidden bugs that often arise when combining 
       <description>Heroku CLI Instalation Mac brew install heroku  Heroku CLI Instalation Windows  Download Heroku CLI x32 x64
  Run setup  Click Next  Click Install
   Need to install git for heroku  Click Next  Click Next  Click Next  Click Next  Click Next  Click Install  Click Finish  Heroku Instalation Complete  Setting Path Environment Variable  Click &amp;ldquo;Advance System Settings&amp;rdquo;  Click &amp;ldquo;Environment Variable&amp;rdquo;  Click &amp;ldquo;Edit&amp;rdquo;  Click &amp;ldquo;New&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Create Security Group</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-security-group/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-security-group/</guid>
+      <description>1. Choose EC2 After Sign In success, click menu &amp;ldquo;Service&amp;rdquo; on header, then click &amp;ldquo;EC2&amp;rdquo;.
+2. Create Security Group Click &amp;ldquo;Security Groups&amp;rdquo; on left menu, then click &amp;ldquo;Create Security Group&amp;rdquo; button to create a new security group.
+2.1 Create Security Group of Load Balancer We create a new security group for load balancer. For this security group, we only make it once that is used by all instance security groups.</description>
+    </item>
+    
+    <item>
+      <title>Setting Bitbucket Env Variable</title>
+      <link>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/</link>
+      <pubDate>Wed, 27 Sep 2017 14:52:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/</guid>
+      <description> Setting Bitbucket Env Variable  Back to Bitbucket Setting, in Pipelines &amp;gt; Environment variables -Set your env variables used in build for example:   After Setting is completed, go to your source code, enable the bitbucket pipeline by creating bitbucket-pipelines.yml in root folder of your project  </description>
     </item>
     
     <item>
@@ -185,6 +258,28 @@ $ heroku login Enter your Heroku credentials. Email: adam@example.com Password (
     </item>
     
     <item>
+      <title>Create Target Group</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-target-group/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-target-group/</guid>
+      <description>1. Choose EC2 After Sign In success, click menu &amp;ldquo;Service&amp;rdquo; on header, then click &amp;ldquo;EC2&amp;rdquo;.
+2. Create Target Group Click &amp;ldquo;Target Groups&amp;rdquo; on left menu, then click &amp;ldquo;Create Target Group&amp;rdquo; button to create a new target group.
+3. Key In Target Group Name We create a new target group, the name depends the project name. If the project name is &amp;ldquo;Project Sample Staging Backend&amp;rdquo;, so the target group name is &amp;ldquo;project-sample-staging-backend&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Example Content</title>
+      <link>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/example-content/</link>
+      <pubDate>Wed, 27 Sep 2017 14:52:47 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/example-content/</guid>
+      <description>Example Content  The image is docker image you are using, in this example I’m using docker image built by dpolyakov (https://hub.docker.com/r/dpolyakov/docker-node-latest-with-rsync/) If you want specific build image just created your self.
+ The pipelines is contain step by step to build and deploy your source code, Cache meaning we cache node and node_modules so we reduce the time for installing node modules.
+ In script we put step by step to install your source code, this step is different each framework, you can also do integration testing or tdd test in this script.</description>
+    </item>
+    
+    <item>
       <title>Make Changes</title>
       <link>https://xcidic.github.io/coding-guidelines/git/make-changes/</link>
       <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
@@ -244,6 +339,18 @@ git add –patch filename.</description>
       <guid>https://xcidic.github.io/coding-guidelines/angular1/modules/</guid>
       <description>Modules Avoid Naming Collisions [Style Y020]  Use unique naming conventions with separators for sub-modules.  Why?: Unique names help avoid module name collisions. Separators help define modules and their submodule hierarchy. For example app may be your root module while app.dashboard and app.users may be modules that are used as dependencies of app.
 Definitions (aka Setters) [Style Y021]  Declare modules without a variable using the setter syntax.  Why?</description>
+    </item>
+    
+    <item>
+      <title>Create Load Balancer</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-load-balancer/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-load-balancer/</guid>
+      <description>1. Choose EC2 After Sign In success, click menu &amp;ldquo;Service&amp;rdquo; on header, then click &amp;ldquo;EC2&amp;rdquo;.
+2. Create Load Balancer Click &amp;ldquo;Load Balancers&amp;rdquo; on left menu, then click &amp;ldquo;Create Load Balancer&amp;rdquo; button to create a new load balancer.
+3. Select Load Balancer type Click &amp;ldquo;Create&amp;rdquo; button on &amp;ldquo;Application Load Balancer&amp;rdquo; with HTTP/HTTPS logo.
+4. Configure Load Balancer Type the Load Balancer name, then Add &amp;ldquo;HTTPS&amp;rdquo; on Listeners, then choose 2 Availability Zones, then click &amp;ldquo;Next: Configure Security Settings&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -322,6 +429,17 @@ Click This Link to Login
     </item>
     
     <item>
+      <title>Create S3</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-s3/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-s3/</guid>
+      <description>1. Access AWS Access https://aws.amazon.com/
+2. Login Click &amp;ldquo;Sign In to the Console&amp;rdquo; button. For &amp;ldquo;username&amp;rdquo; and &amp;ldquo;password&amp;rdquo; you can ask Head of Coder.
+- - - Finish - - -</description>
+    </item>
+    
+    <item>
       <title>Refactor filenames</title>
       <link>https://xcidic.github.io/coding-guidelines/git/refactore-filenames/</link>
       <pubDate>Fri, 14 Jul 2017 10:59:35 +0700</pubDate>
@@ -365,6 +483,17 @@ Generating a 2048 bit RSA private key...........................................
       <description>Services Singletons [Style Y040]  Services are instantiated with the new keyword, use this for public methods and variables. Since these are so similar to factories, use a factory instead for consistency.
 Note: All Angular services are singletons. This means that there is only one instance of a given service per injector.
   // service angular .module(&#39;app&#39;) .service(&#39;logger&#39;, logger); function logger() { this.logError = function(msg) { /* */ }; }  // factory angular .</description>
+    </item>
+    
+    <item>
+      <title>Create SSL / ACM</title>
+      <link>https://xcidic.github.io/coding-guidelines/aws/create-ssl-acm/</link>
+      <pubDate>Wed, 21 Nov 2018 14:00:00 +0700</pubDate>
+      
+      <guid>https://xcidic.github.io/coding-guidelines/aws/create-ssl-acm/</guid>
+      <description>1. Access AWS Access https://aws.amazon.com/
+2. Login Click &amp;ldquo;Sign In to the Console&amp;rdquo; button. For &amp;ldquo;username&amp;rdquo; and &amp;ldquo;password&amp;rdquo; you can ask Head of Coder.
+- - - Finish - - -</description>
     </item>
     
     <item>

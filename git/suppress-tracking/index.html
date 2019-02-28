@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="generator" content="Hugo 0.25.1" />
     <meta name="description" content="">
 
 
@@ -18,7 +18,7 @@
     <link href="/coding-guidelines/css/theme.css" rel="stylesheet">
     
     
-      <link href="/coding-guidelines/css/theme-gold.css" rel="stylesheet">
+      <link href="/coding-guidelines/css/theme-xcidic.css" rel="stylesheet">
     
     <link rel="stylesheet" href="/coding-guidelines/css/bootstrap.min.css">
     <script src="/coding-guidelines/js/jquery-2.x.min.js"></script>
@@ -35,6 +35,12 @@
   </head>
   <body class="" data-url="/coding-guidelines/git/suppress-tracking/">
     <nav id="sidebar" class="showVisitedLinks">
+
+
+
+
+
+<div class="highlightable">
   <div id="header-wrapper">
     <div id="header">
        
@@ -59,1674 +65,3125 @@
     
   </div>
 
-
-
-
-
-<div class="highlightable">
+  
     <ul class="topics">
-        
         
             <li data-nav-id="/coding-guidelines/" class="dd-item">
             <a href="/coding-guidelines/"><i class="fa fa-fw fa-home"></i></a>
             </li>
         
-
+        
+        
         
 
 
+ 
+  
+    <li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/angular1/">
+        <span>Angular 1 Style Guide</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
 
 
-<li data-nav-id="/coding-guidelines/angular1/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/angular1/">
-    <span>Angular 1 Style Guide</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/single-responsibility/">
+        <span>Single Responsibility</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/iife/">
+        <span>IIFE</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/modules/">
+        <span>Modules</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/angular1/single-responsibility/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/single-responsibility/">
-            <span>Single Responsibility</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/iife/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/iife/">
-            <span>IIFE</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/modules/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/modules/">
-            <span>Modules</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/controllers/">
-            <span>Controllers</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/services/">
-            <span>Services</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/factories/">
-            <span>Factories</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/data-services/">
-            <span>Data Services</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/directives/">
-            <span>Directives</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/resolving-promises/">
-            <span>Resolving Promises</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
-            <span>Manual Annotating for Dependencies Injection</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/minification-and-annotation/">
-            <span>Minification and Annotation</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/exception-handling/">
-            <span>Exception Handling</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/naming/">
-            <span>Naming</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
-            <span>Application Structure Lift Principle</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/application-structure/">
-            <span>Application Structure</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/modularity/">
-            <span>Modularity</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/startup-logic/">
-            <span>Startuplogic</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/angular-wrapper-services/">
-            <span>Angular $ Wrapper Services</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/testing/">
-            <span>Testing</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/animations/">
-            <span>Animations</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/comments/">
-            <span>Comments</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/jshint/">
-            <span>JShint</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/jscs/">
-            <span>JSCS</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/constants/">
-            <span>Constants</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
-            <span>File Templates And Snippets</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/yeoman-generator/">
-            <span>Yeoman Generator</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/routing/">
-            <span>Routing</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/task-automation/">
-            <span>Task Automation</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/filters/">
-            <span>Filters</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/angular1/angular-docs/">
-            <span>Angular Docs</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/javascript/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/javascript/">
-    <span>JavaScript Style Guide</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/controllers/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/controllers/">
+        <span>Controllers</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/services/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/services/">
+        <span>Services</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/factories/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/factories/">
+        <span>Factories</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/javascript/testing/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/testing/">
-            <span>Testing</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/performance/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/performance/">
-            <span>Performance</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/resources/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/resources/">
-            <span>Resources</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/in-the-wild/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/in-the-wild/">
-            <span>In The Wild</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/the-javascript-style-guide-guide/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/the-javascript-style-guide-guide/">
-            <span>The Javascript Style Guide Guide</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-<li data-nav-id="/coding-guidelines/javascript/es5/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/javascript/es5/">
-    <span>ES5</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/data-services/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/data-services/">
+        <span>Data Services</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/directives/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/directives/">
+        <span>Directives</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/resolving-promises/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/resolving-promises/">
+        <span>Resolving Promises</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/types/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/types/">
-            <span>Types</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/objects/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/objects/">
-            <span>Objects</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/arrays/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/arrays/">
-            <span>Arrays</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/strings/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/strings/">
-            <span>Strings</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/functions/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/functions/">
-            <span>Functions</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/properties/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/properties/">
-            <span>Properties</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/variables/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/variables/">
-            <span>Variables</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/hoisting/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/hoisting/">
-            <span>Hoisting</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/comparison-operators--equality/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/comparison-operators--equality/">
-            <span>Comparison Operators &amp; Equality</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/blocks/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/blocks/">
-            <span>Blocks</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/comments/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/comments/">
-            <span>Comments</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/whitespace/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/whitespace/">
-            <span>Whitespace</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/commas/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/commas/">
-            <span>Commas</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/semicolons/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/semicolons/">
-            <span>Semicolons</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/type-casting--coercion/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/type-casting--coercion/">
-            <span>Type Casting &amp; Coercion</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/naming-conventions/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/naming-conventions/">
-            <span>Naming Conventions</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/accessors/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/accessors/">
-            <span>Accessors</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/constructors/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/constructors/">
-            <span>Constructors</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/events/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/events/">
-            <span>Events</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/modules/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/modules/">
-            <span>Modules</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/jquery/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/jquery/">
-            <span>Jquery</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/">
-            <span>Ecmascript 5 Compatibility</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/javascript/es6/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/javascript/es6/">
-    <span>ES6</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/manual-annotating-for-dependency-injection/">
+        <span>Manual Annotating for Dependencies Injection</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/minification-and-annotation/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/minification-and-annotation/">
+        <span>Minification and Annotation</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/exception-handling/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/exception-handling/">
+        <span>Exception Handling</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/types/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/types/">
-            <span>Types</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/references/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/references/">
-            <span>References</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/objects/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/objects/">
-            <span>Objects</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/arrays/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/arrays/">
-            <span>Arrays</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/destructuring/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/destructuring/">
-            <span>Destructuring</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/strings/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/strings/">
-            <span>Strings</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/functions/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/functions/">
-            <span>Functions</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/arrow-functions/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/arrow-functions/">
-            <span>Arrow Functions</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/classes--constructors/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/classes--constructors/">
-            <span>Classes &amp; Constructors</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/modules/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/modules/">
-            <span>Modules</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/iterators-and-generators/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/iterators-and-generators/">
-            <span>Iterators And Generators</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/properties/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/properties/">
-            <span>Properties</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/variables/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/variables/">
-            <span>Variables</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/hoisting/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/hoisting/">
-            <span>Hoisting</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/comparison-operators--equality/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/comparison-operators--equality/">
-            <span>Comparison Operators &amp; Equality</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/blocks/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/blocks/">
-            <span>Blocks</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/control-statements/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/control-statements/">
-            <span>Control Statements</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/comments/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/comments/">
-            <span>Comments</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/whitespace/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/whitespace/">
-            <span>Whitespace</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/commas/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/commas/">
-            <span>Commas</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/semicolons/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/semicolons/">
-            <span>Semicolons</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/type-casting--coercion/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/type-casting--coercion/">
-            <span>Type Casting &amp; Coercion</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/naming-conventions/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/naming-conventions/">
-            <span>Naming Conventions</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/accessors/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/accessors/">
-            <span>Accessors</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/events/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/events/">
-            <span>Events</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/jquery/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/jquery/">
-            <span>Jquery</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/">
-            <span>Ecmascript 6 Es 2015 Styles</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/deploy-dev-and-uat-env/">
-    <span>Deployment Dev and UAT</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/naming/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/naming/">
+        <span>Naming</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/application-structure-lift-principle/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/application-structure-lift-principle/">
+        <span>Application Structure Lift Principle</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/application-structure/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/application-structure/">
+        <span>Application Structure</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/">
-            <span>Create Heroku Account</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/install-heroku/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/deploy-dev-and-uat-env/install-heroku/">
-            <span>Install Heroku CLI Mac and Windows</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/">
-            <span>Create Database on Mlab</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/">
-            <span>Create Heroku App and Deploy</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/">
-            <span>Setting Environment Variable</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/git/" class="dd-item 
-parent
-
-
-">
-  <a href="/coding-guidelines/git/">
-    <span>Git Cheat Sheet</span>
-
+ 
+  
     
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/modularity/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/modularity/">
+        <span>Modularity</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/startup-logic/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/startup-logic/">
+        <span>Startuplogic</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/angular-wrapper-services/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/angular-wrapper-services/">
+        <span>Angular $ Wrapper Services</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/git/configure/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/configure/">
-            <span>Configure</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/create-repositories/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/create-repositories/">
-            <span>Create Repositories</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/make-changes/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/make-changes/">
-            <span>Make Changes</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/group-changes/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/group-changes/">
-            <span>Group changes</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/refactore-filenames/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/refactore-filenames/">
-            <span>Refactor filenames</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/suppress-tracking/" class="dd-item
-         active
-          ">
-            <a href="/coding-guidelines/git/suppress-tracking/">
-            <span>Suppress tracking</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/save-fragments/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/save-fragments/">
-            <span>Save fragments</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/review-history/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/review-history/">
-            <span>Review history</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/redo-commits/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/redo-commits/">
-            <span>Redo commits</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/git/synchronize-changes/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git/synchronize-changes/">
-            <span>Synchronize changes</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/gcp/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/gcp/">
-    <span>Google Cloud Platform Guides</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/testing/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/testing/">
+        <span>Testing</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/animations/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/animations/">
+        <span>Animations</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/comments/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/comments/">
+        <span>Comments</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/gcp/create-bitnami-vm/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp/create-bitnami-vm/">
-            <span>Create Bitnami VM</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/gcp/configuring-apache/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp/configuring-apache/">
-            <span>Configuring Apache</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/gcp/setting-up-mongodb/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp/setting-up-mongodb/">
-            <span>Setting Up Mongodb</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/gcp/setting-up-meanjs-application/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp/setting-up-meanjs-application/">
-            <span>Setting Up Meanjs Application</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/gcp/setting-up-ssl/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp/setting-up-ssl/">
-            <span>Setting Up SSL</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/gcp-static/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/gcp-static/">
-    <span>Google Cloud Platform Static Web Guides</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/jshint/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/jshint/">
+        <span>JShint</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/jscs/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/jscs/">
+        <span>JSCS</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/constants/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/constants/">
+        <span>Constants</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/gcp-static/setup/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/gcp-static/setup/">
-            <span>Setup</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/git-contribution/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/git-contribution/">
-    <span>Git Contribution Guideline</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/file-templates-and-snippets/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/file-templates-and-snippets/">
+        <span>File Templates And Snippets</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/yeoman-generator/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/yeoman-generator/">
+        <span>Yeoman Generator</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/angular1/routing/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/routing/">
+        <span>Routing</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/git-contribution/git-contribution-guide/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/git-contribution/git-contribution-guide/">
-            <span>Git Contribution</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-        
+          
+          
 
 
-
-
-    </ul>
-</li>
-
-
-<li data-nav-id="/coding-guidelines/meanjs/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/meanjs/">
-    <span>MEAN Style Guide</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/task-automation/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/task-automation/">
+        <span>Task Automation</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/angular1/filters/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/filters/">
+        <span>Filters</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
-        
-         
-          <li data-nav-id="/coding-guidelines/meanjs/nodejs/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/meanjs/nodejs/">
-            <span>NodeJS Style Guide</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+      <li data-nav-id="/coding-guidelines/angular1/angular-docs/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/angular1/angular-docs/">
+        <span>Angular Docs</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
 
-            </a></li>
-         
+          
         
-         
-          <li data-nav-id="/coding-guidelines/meanjs/file-organization/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/meanjs/file-organization/">
-            <span>File Organization</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+      </ul>
+    </li>
+  
+ 
 
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/meanjs/reference/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/meanjs/reference/">
-            <span>Reference</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
-        
-         
-          <li data-nav-id="/coding-guidelines/meanjs/mean-resources/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/meanjs/mean-resources/">
-            <span>MEAN Resources</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
-
-            </a></li>
-         
         
         
 
 
+ 
+  
+    <li data-nav-id="/coding-guidelines/javascript/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/javascript/">
+        <span>JavaScript Style Guide</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+        
+        
+          
+          
 
 
-    </ul>
-</li>
+ 
+  
+    <li data-nav-id="/coding-guidelines/javascript/es5/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/javascript/es5/">
+        <span>ES5</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
 
 
-<li data-nav-id="/coding-guidelines/react/" class="dd-item 
-
-
-
-">
-  <a href="/coding-guidelines/react/">
-    <span>React Style Guide</span>
-
+ 
+  
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+      <li data-nav-id="/coding-guidelines/javascript/es5/types/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/types/">
+        <span>Types</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
+      <li data-nav-id="/coding-guidelines/javascript/es5/objects/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/objects/">
+        <span>Objects</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
     
-    <i style="color:grey" class="fa fa-check read-icon"></i>
-  </a>
-    <ul>
+      <li data-nav-id="/coding-guidelines/javascript/es5/arrays/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/arrays/">
+        <span>Arrays</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/basic-rules/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/basic-rules/">
-            <span>Basic Rules</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/strings/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/strings/">
+        <span>Strings</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/">
-            <span>Class Vs React.createClass Vs Stateless</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/functions/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/functions/">
+        <span>Functions</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/mixins/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/mixins/">
-            <span>Mixins</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/properties/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/properties/">
+        <span>Properties</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/naming/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/naming/">
-            <span>Naming</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/variables/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/variables/">
+        <span>Variables</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/declaration/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/declaration/">
-            <span>Declaration</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/hoisting/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/hoisting/">
+        <span>Hoisting</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/alignment/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/alignment/">
-            <span>Alignment</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/comparison-operators--equality/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/comparison-operators--equality/">
+        <span>Comparison Operators &amp; Equality</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/quotes/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/quotes/">
-            <span>Quotes</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/blocks/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/blocks/">
+        <span>Blocks</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/spacing/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/spacing/">
-            <span>Spacing</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/comments/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/comments/">
+        <span>Comments</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/props/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/props/">
-            <span>Props</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/whitespace/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/whitespace/">
+        <span>Whitespace</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/refs/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/refs/">
-            <span>Refs</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/commas/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/commas/">
+        <span>Commas</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/parentheses/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/parentheses/">
-            <span>Parentheses</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/semicolons/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/semicolons/">
+        <span>Semicolons</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/tags/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/tags/">
-            <span>Tags</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/type-casting--coercion/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/type-casting--coercion/">
+        <span>Type Casting &amp; Coercion</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/methods/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/methods/">
-            <span>Methods</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/naming-conventions/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/naming-conventions/">
+        <span>Naming Conventions</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/ordering/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/ordering/">
-            <span>Ordering</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/accessors/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/accessors/">
+        <span>Accessors</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
         
-         
-          <li data-nav-id="/coding-guidelines/react/ismounted/" class="dd-item
-         
-          ">
-            <a href="/coding-guidelines/react/ismounted/">
-            <span>Ismounted</span> 
-            <i style="color:grey" class="fa fa-check read-icon"></i>
+          
+          
 
-            </a></li>
-         
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/constructors/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/constructors/">
+        <span>Constructors</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/events/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/events/">
+        <span>Events</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/modules/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/modules/">
+        <span>Modules</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/jquery/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/jquery/">
+        <span>Jquery</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es5/ecmascript-5-compatibility/">
+        <span>Ecmascript 5 Compatibility</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/javascript/es6/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/javascript/es6/">
+        <span>ES6</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/types/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/types/">
+        <span>Types</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/references/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/references/">
+        <span>References</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/objects/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/objects/">
+        <span>Objects</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/arrays/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/arrays/">
+        <span>Arrays</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/destructuring/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/destructuring/">
+        <span>Destructuring</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/strings/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/strings/">
+        <span>Strings</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/functions/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/functions/">
+        <span>Functions</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/arrow-functions/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/arrow-functions/">
+        <span>Arrow Functions</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/classes--constructors/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/classes--constructors/">
+        <span>Classes &amp; Constructors</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/modules/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/modules/">
+        <span>Modules</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/iterators-and-generators/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/iterators-and-generators/">
+        <span>Iterators And Generators</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/properties/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/properties/">
+        <span>Properties</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/variables/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/variables/">
+        <span>Variables</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/hoisting/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/hoisting/">
+        <span>Hoisting</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/comparison-operators--equality/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/comparison-operators--equality/">
+        <span>Comparison Operators &amp; Equality</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/blocks/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/blocks/">
+        <span>Blocks</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/control-statements/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/control-statements/">
+        <span>Control Statements</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/comments/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/comments/">
+        <span>Comments</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/whitespace/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/whitespace/">
+        <span>Whitespace</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/commas/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/commas/">
+        <span>Commas</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/semicolons/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/semicolons/">
+        <span>Semicolons</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/type-casting--coercion/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/type-casting--coercion/">
+        <span>Type Casting &amp; Coercion</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/naming-conventions/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/naming-conventions/">
+        <span>Naming Conventions</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/accessors/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/accessors/">
+        <span>Accessors</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/events/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/events/">
+        <span>Events</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/jquery/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/jquery/">
+        <span>Jquery</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/es6/ecmascript-6-es-2015-styles/">
+        <span>Ecmascript 6 Es 2015 Styles</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/testing/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/testing/">
+        <span>Testing</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/performance/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/performance/">
+        <span>Performance</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/resources/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/resources/">
+        <span>Resources</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/in-the-wild/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/in-the-wild/">
+        <span>In The Wild</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/javascript/the-javascript-style-guide-guide/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/javascript/the-javascript-style-guide-guide/">
+        <span>The Javascript Style Guide Guide</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
         
         
 
 
+ 
+  
+    <li data-nav-id="/coding-guidelines/aws/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/aws/">
+        <span>Amazon Web Services (AWS)</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
 
 
-    </ul>
-</li>
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/login-aws/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/login-aws/">
+        <span>Login AWS</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
 
 
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/flow-aws/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/flow-aws/">
+        <span>Xcidic Development Flow in AWS</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-instance/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-instance/">
+        <span>Create Instance</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-security-group/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-security-group/">
+        <span>Create Security Group</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-target-group/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-target-group/">
+        <span>Create Target Group</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-load-balancer/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-load-balancer/">
+        <span>Create Load Balancer</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-s3/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-s3/">
+        <span>Create S3</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/aws/create-ssl-acm/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/aws/create-ssl-acm/">
+        <span>Create SSL / ACM</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/bitbucket-pipeline-gcp/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/bitbucket-pipeline-gcp/">
+        <span>Setting pipeline in Bitbucket and GCP Guide</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/">
+        <span>Generate SSH Keys</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/">
+        <span>Add SSH Keys to VM</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/">
+        <span>Setting Bitbucket Env Variable</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/bitbucket-pipeline-gcp/example-content/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/bitbucket-pipeline-gcp/example-content/">
+        <span>Example Content</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/deploy-dev-and-uat-env/">
+        <span>Deployment Dev and UAT</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-account/">
+        <span>Create Heroku Account</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/install-heroku/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/deploy-dev-and-uat-env/install-heroku/">
+        <span>Install Heroku CLI Mac and Windows</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/deploy-dev-and-uat-env/create-db-mlab/">
+        <span>Create Database on Mlab</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/deploy-dev-and-uat-env/create-heroku-app/">
+        <span>Create Heroku App and Deploy</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/deploy-dev-and-uat-env/setting-env-variable/">
+        <span>Setting Environment Variable</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/git/" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/coding-guidelines/git/">
+        <span>Git Cheat Sheet</span>
+        
+          <i class="fa fa-angle-down fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/configure/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/configure/">
+        <span>Configure</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/create-repositories/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/create-repositories/">
+        <span>Create Repositories</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/make-changes/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/make-changes/">
+        <span>Make Changes</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/group-changes/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/group-changes/">
+        <span>Group changes</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/refactore-filenames/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/refactore-filenames/">
+        <span>Refactor filenames</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/suppress-tracking/" class="dd-item
+     active
+      ">
+        <a href="/coding-guidelines/git/suppress-tracking/">
+        <span>Suppress tracking</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/save-fragments/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/save-fragments/">
+        <span>Save fragments</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/review-history/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/review-history/">
+        <span>Review history</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/redo-commits/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/redo-commits/">
+        <span>Redo commits</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git/synchronize-changes/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git/synchronize-changes/">
+        <span>Synchronize changes</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/gcp/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/gcp/">
+        <span>Google Cloud Platform Guides</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp/create-bitnami-vm/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp/create-bitnami-vm/">
+        <span>Create Bitnami VM</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp/configuring-apache/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp/configuring-apache/">
+        <span>Configuring Apache</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp/setting-up-mongodb/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp/setting-up-mongodb/">
+        <span>Setting Up Mongodb</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp/setting-up-meanjs-application/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp/setting-up-meanjs-application/">
+        <span>Setting Up Meanjs Application</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp/setting-up-ssl/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp/setting-up-ssl/">
+        <span>Setting Up SSL</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/gcp-static/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/gcp-static/">
+        <span>Google Cloud Platform Static Web Guides</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/gcp-static/setup/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/gcp-static/setup/">
+        <span>Setup</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/git-contribution/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/git-contribution/">
+        <span>Git Contribution Guideline</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/git-contribution/git-contribution-guide/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/git-contribution/git-contribution-guide/">
+        <span>Git Contribution</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/meanjs/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/meanjs/">
+        <span>MEAN Style Guide</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/meanjs/nodejs/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/meanjs/nodejs/">
+        <span>NodeJS Style Guide</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/meanjs/file-organization/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/meanjs/file-organization/">
+        <span>File Organization</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/meanjs/reference/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/meanjs/reference/">
+        <span>Reference</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/meanjs/mean-resources/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/meanjs/mean-resources/">
+        <span>MEAN Resources</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
+        
+
+
+ 
+  
+    <li data-nav-id="/coding-guidelines/react/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/coding-guidelines/react/">
+        <span>React Style Guide</span>
+        
+          <i class="fa fa-angle-right fa-lg category-icon"></i>
+        
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+      <ul>
+        
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/basic-rules/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/basic-rules/">
+        <span>Basic Rules</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/class-vs-reactcreateclass-vs-stateless/">
+        <span>Class Vs React.createClass Vs Stateless</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/mixins/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/mixins/">
+        <span>Mixins</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/naming/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/naming/">
+        <span>Naming</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/declaration/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/declaration/">
+        <span>Declaration</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/alignment/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/alignment/">
+        <span>Alignment</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/quotes/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/quotes/">
+        <span>Quotes</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/spacing/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/spacing/">
+        <span>Spacing</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/props/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/props/">
+        <span>Props</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/refs/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/refs/">
+        <span>Refs</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/parentheses/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/parentheses/">
+        <span>Parentheses</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/tags/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/tags/">
+        <span>Tags</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/methods/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/methods/">
+        <span>Methods</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/ordering/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/ordering/">
+        <span>Ordering</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+          
+          
+
+
+ 
+  
+    
+      <li data-nav-id="/coding-guidelines/react/ismounted/" class="dd-item
+     
+      ">
+        <a href="/coding-guidelines/react/ismounted/">
+        <span>Ismounted</span> 
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+        </a></li>
+     
+  
+ 
+
+          
+        
+      </ul>
+    </li>
+  
+ 
+
+        
 
         
     </ul>
@@ -1844,8 +3301,15 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                        
                     
+                    
+
+                    
+                        
             
             
                 
@@ -1853,20 +3317,27 @@ parent
                         
                         
                     
-                
                 
                 
-            
-        
+
+                    
+                    
                     
+
+                    
                         
             
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1877,7 +3348,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1886,9 +3362,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1899,7 +3380,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1908,9 +3394,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1921,7 +3412,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1930,9 +3426,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1943,7 +3444,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1952,9 +3458,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1965,7 +3476,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1974,9 +3490,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1987,7 +3508,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1996,9 +3522,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2009,7 +3540,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2018,9 +3554,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2031,7 +3572,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2040,9 +3586,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2053,7 +3604,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2062,9 +3618,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2075,7 +3636,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2084,9 +3650,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2097,7 +3668,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2106,9 +3682,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2119,7 +3700,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2128,9 +3714,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2141,7 +3732,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2150,9 +3746,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2163,7 +3764,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2172,9 +3778,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2185,29 +3796,45 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
-                
+            
+        
                     
+                        
             
             
                 
                     
-                
                 
                 
+
                     
+                    
+                        
+                    
+                    
+
+                    
+                        
             
             
                 
                     
                 
                 
-                
-            
-        
+
+                    
+                    
+                    
+
                     
                         
             
@@ -2216,7 +3843,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2225,9 +3857,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2238,7 +3875,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2247,9 +3889,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2260,7 +3907,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2269,9 +3921,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2282,7 +3939,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2291,9 +3953,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2304,7 +3971,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2313,9 +3985,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2326,7 +4003,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2335,9 +4017,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2348,7 +4035,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2357,9 +4049,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2370,7 +4067,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2381,8 +4083,13 @@ parent
                     
                 
                 
-                
-            
+
+                    
+                    
+                    
+
+                    
+            
         
                     
                         
@@ -2390,9 +4097,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2403,7 +4115,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2412,9 +4129,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2425,7 +4147,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2434,9 +4161,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2447,30 +4179,44 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
-                
+            
+        
                     
+                        
             
             
                 
                     
-                
                 
                 
-            
-        
+
+                    
+                    
                     
+
+                    
                         
             
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2481,7 +4227,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2490,9 +4241,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2503,7 +4259,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2512,9 +4273,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2525,7 +4291,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2534,9 +4305,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2547,7 +4323,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2556,9 +4337,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2569,7 +4355,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2578,9 +4369,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2591,7 +4387,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2600,9 +4401,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2613,7 +4419,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2622,9 +4433,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2635,7 +4451,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2644,9 +4465,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2657,7 +4483,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2666,9 +4497,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2679,7 +4515,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2688,9 +4529,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2701,7 +4547,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2710,9 +4561,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2723,7 +4579,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2732,9 +4593,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2745,7 +4611,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2754,13 +4625,17 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
-                
             
         
                     
@@ -2769,9 +4644,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2782,7 +4662,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2791,9 +4676,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2804,7 +4694,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2813,21 +4708,17 @@ parent
             
                 
                     
-                
                 
                 
-            
-        
+
                     
-                
                     
-            
+                    
+
+                    
             
-                
+        
                     
-                
-                
-                
             
         
                     
@@ -2836,20 +4727,27 @@ parent
             
                 
                     
-                
                 
                 
-            
-        
+
                     
+                    
+                    
+
+                    
                         
             
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2860,7 +4758,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2869,9 +4772,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2882,20 +4790,12 @@ parent
                     
                 
                 
-                
-            
-        
+
                     
-                
                     
-            
-            
-                
                     
+
                     
-                
-                
-                
             
         
                     
@@ -2904,12 +4804,14 @@ parent
             
                 
                     
-                        
-                        
-                    
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2920,7 +4822,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2931,7 +4838,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2940,32 +4852,78 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
                         
             
             
+                
+                    
                 
+                
+
+                    
+                    
                     
+
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
                         
             
             
+                
+                    
                 
+                
+
+                    
                     
                     
+
+                    
+            
+        
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2974,12 +4932,46 @@ parent
             
                 
                     
-                        
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
                     
+                    
+                    
+
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2990,7 +4982,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3001,7 +4998,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3010,21 +5012,66 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
+                        
+            
+            
+                
+                    
+                
                 
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
+                        
             
             
+                
+                    
+                    
                 
+                
+
+                    
+                    
                     
+
+                    
+                        
+            
+            
                 
+                    
+                        
+                        
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3035,7 +5082,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3046,7 +5098,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3057,7 +5114,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3066,9 +5128,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3077,21 +5144,50 @@ parent
             
                 
                     
-                
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
+                
                 
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
+                        
             
             
                 
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3102,19 +5198,60 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+                        
+            
+            
+                
                     
                 
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
+                        
             
             
+                
+                    
                 
+                
+
+                    
+                    
                     
+
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3123,21 +5260,46 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+                        
+            
+            
+                
                     
                 
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
+                        
             
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3148,18 +5310,47 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
                         
             
             
+                
+                    
                 
+                
+
+                    
                     
+                    
+
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3170,30 +5361,89 @@ parent
                     
                 
                 
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                 
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
                         
             
             
+                
+                    
                 
+                
+
+                    
                     
+                    
+
+                    
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
+                        
+            
+            
                 
+                    
+                
+                
+
+                    
                     
+                    
+
+                    
+            
+        
+                    
+                        
             
             
                 
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3204,7 +5454,15 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3212,10 +5470,28 @@ parent
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
+                        
+            
+            
                 
+                    
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3224,9 +5500,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3237,7 +5518,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3246,9 +5532,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3259,7 +5550,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3270,7 +5566,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3279,9 +5580,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3292,7 +5598,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3301,9 +5612,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3314,7 +5630,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3325,7 +5646,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3334,9 +5660,14 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3347,7 +5678,12 @@ parent
                     
                 
                 
-                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3356,13 +5692,36 @@ parent
             
                 
                     
-                
                 
                 
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+                        
+            
+            
+                
                     
+                
                 
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/login-aws/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/flow-aws/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/generate-ssh-bitbucket/</loc>
+    <lastmod>2017-09-27T14:52:47+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/git-contribution/git-contribution-guide/</loc>
     <lastmod>2017-07-12T14:45:04+07:00</lastmod>
   </url>
@@ -10,6 +25,16 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/</loc>
     <lastmod>2017-07-10T18:41:37+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-instance/</loc>
+    <lastmod>2018-11-21T14:00:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/add-ssh-gcp/</loc>
+    <lastmod>2017-09-27T14:52:47+07:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +73,16 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-security-group/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/setting-env-variable/</loc>
+    <lastmod>2017-09-27T14:52:47+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/git/create-repositories/</loc>
     <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
@@ -83,6 +118,16 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-target-group/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/example-content/</loc>
+    <lastmod>2017-09-27T14:52:47+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/git/make-changes/</loc>
     <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
@@ -105,6 +150,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/modules/</loc>
     <lastmod>2017-07-10T18:47:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-load-balancer/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -138,6 +188,11 @@
   </url>
   
   <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-s3/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xcidic.github.io/coding-guidelines/git/refactore-filenames/</loc>
     <lastmod>2017-07-14T10:59:35+07:00</lastmod>
   </url>
@@ -155,6 +210,11 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/angular1/services/</loc>
     <lastmod>2017-07-10T18:47:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/create-ssl-acm/</loc>
+    <lastmod>2018-11-21T14:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -640,6 +700,16 @@
   <url>
     <loc>https://xcidic.github.io/coding-guidelines/javascript/the-javascript-style-guide-guide/</loc>
     <lastmod>2017-07-11T17:12:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/aws/</loc>
+    <lastmod>2018-11-21T13:29:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xcidic.github.io/coding-guidelines/bitbucket-pipeline-gcp/</loc>
+    <lastmod>2017-09-27T13:29:54+07:00</lastmod>
   </url>
   
   <url>
