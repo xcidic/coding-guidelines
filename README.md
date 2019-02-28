@@ -27,10 +27,11 @@ git clone https://github.com/vjeantet/hugo-theme-docdock.git --branch v1.0.0 the
    ```
 
 ## Build destination folder
-- public
+- `public/`
 
 ## Release to github pages
-1. checkout to gh-pages branch
+1. run `hugo` to build pages in [master](https://github.com/xcidic/coding-guidelines/tree/master) branch
+2. checkout to [gh-pages](https://github.com/xcidic/coding-guidelines/tree/gh-pages) branch
    ```bash
     # first clone
     git fetch && git checkout gh-pages
@@ -39,8 +40,8 @@ git clone https://github.com/vjeantet/hugo-theme-docdock.git --branch v1.0.0 the
     # you have gh-pages branch in local
     git checkout gh-pages
    ```
-2. copy everything inside public to root folder
+3. copy everything inside public to root folder
    ```bash
     cp -a public/ ./
    ```
-3. commit and push to gh-pages branch
+4. commit and push to [gh-pages](https://github.com/xcidic/coding-guidelines/tree/gh-pages) branch
