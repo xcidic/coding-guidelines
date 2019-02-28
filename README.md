@@ -16,26 +16,31 @@ This Repo is development version of coding guidelines for each Xcidic members to
 git clone https://github.com/vjeantet/hugo-theme-docdock.git --branch v1.0.0 themes/docdock
 ```
 
-## Run dev
-- Run `hugo`. 
+## Run
+   ```bash
+    # Run dev
+    hugo server
 
-## Build
-- `hugo server`
+    # Run build
+    hugo 
 
-## Build Folder
-- `public`
+   ```
+
+## Build destination folder
+- public
 
 ## Release to github pages
 1. checkout to gh-pages branch
-  ```bash
+   ```bash
     # first clone
     git fetch && git checkout gh-pages
     
-    # or you have gh-pages branch in local
+    # or
+    # you have gh-pages branch in local
     git checkout gh-pages
-  ```
+   ```
 2. copy everything inside public to root folder
    ```bash
-     cp -a public/ ./
+    cp -a public/ ./
    ```
-3. commit and push to branch gh-pages
+3. commit and push to gh-pages branch
