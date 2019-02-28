@@ -21,3 +21,21 @@ git clone https://github.com/vjeantet/hugo-theme-docdock.git --branch v1.0.0 the
 
 ## Build
 - `hugo server`
+
+## Build Folder
+- `public`
+
+## Release to github pages
+1. checkout to gh-pages branch
+  ```bash
+    # first clone
+    git fetch && git checkout gh-pages
+    
+    # or you have gh-pages branch in local
+    git checkout gh-pages
+  ```
+2. copy everything inside public to root folder
+   ```bash
+     cp -a public/ ./
+   ```
+3. commit and push to branch gh-pages
